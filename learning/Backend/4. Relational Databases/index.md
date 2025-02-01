@@ -6,19 +6,22 @@ Relational databases are a type of database management system (DBMS) that organi
 
 **Relational Database Management Systems (RDBMS)**
 
-- [PostgreSQL](./4.1%20-%20PostgreSQL/index.md) - Advanced, open-source relational database. It supports a wide range of data types and advanced features, including complex queries, foreign keys, and full-text search. PostgreSQL is highly extensible, allowing users to define custom data types, operators, and functions. It supports ACID (Atomicity, Consistency, Isolation, Durability) properties for reliable transaction processing and offers strong support for concurrency and data integrity.
+- [PostgreSQL](./postgresql/index.md) - Advanced, open-source relational database. It supports a wide range of data types and advanced features, including complex queries, foreign keys, and full-text search. PostgreSQL is highly extensible, allowing users to define custom data types, operators, and functions. It supports ACID (Atomicity, Consistency, Isolation, Durability) properties for reliable transaction processing and offers strong support for concurrency and data integrity. [Link to my notes & docs on PostgreSQL](./postgresql/index.md)
 - **MySQL** - Open-source, maintained by Oracle. Commonly used with web servers and frameworks in stacks like LAMP (Linux/Apache/MySQL/PHP/Python/Perl)
 - **MariaDB** - Community-developed fork of MySQL.
 - **MS SQL** - RDBS developed by Microsoft. It is commonly used in enterprise environments for applications requiring reliable data storage, transaction processing, and reporting.
 - **Oracle Database** - Enterprise-grade RDBMS developed by Oracle Corporation. It is widely used in industries requiring large-scale, secure, and high-performance data processing.
 - **SQLite** - SQLite is a lightweight, serverless, self-contained SQL database engine that is designed for simplicity and efficiency. It is widely used in embedded systems and applications where a full-featured database server is not required, such as mobile apps, desktop applications, and small to medium-sized websites. SQLite stores data in a single file, which makes it easy to deploy and manage. It supports standard SQL queries and provides ACID (Atomicity, Consistency, Isolation, Durability) compliance to ensure data integrity. SQLite’s small footprint, minimal configuration, and ease of use make it a popular choice for applications needing a compact, high-performance database solution.
 
-**Introduction to SQL**
-[My notes to Stanford EDU's Introduction to SQL Course](../../Courses/1%20-%20Introduction%20to%20SQL%20-%20Stanford%20EdX/index.md)
+##### My notes & docs on courses and tutorials:
 
-**Courses:**
+- [Notes: Stanford EDU's Introduction to SQL Course](../../Courses/1%20-%20Introduction%20to%20SQL%20-%20Stanford%20EdX/index.md)
+- [Postgres: Full PostgreSQL tutorial](./postgresql/index.md)
+
+**Courses and tutorials:**
 
 - [Databases and SQL (Stanford EDU)](https://www.edx.org/course/databases-5-sql)
+- [PostgreSQL - Full Tutorial (neon.tech)](https://neon.tech/postgresql/tutorial)
 
 **Additional resources:**
 
