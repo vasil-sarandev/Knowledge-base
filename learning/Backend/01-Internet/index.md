@@ -1,4 +1,4 @@
-[Back to front page](../index.md)
+[Back to front page](../readme.md)
 
 # Internet
 
