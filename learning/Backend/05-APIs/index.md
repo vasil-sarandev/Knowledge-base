@@ -9,6 +9,8 @@
 3. [SOAP APIs](#soap-apis)
 4. [gPRC](#gprc)
 5. [GraphQL](#graphql)
+6. [Open API Specs](#open-api-specs)
+7. [HATEOAS](#hateoas)
 
 An API (Application Programming Interface) is a set of defined rules and protocols that allow different software applications to communicate and interact with each other. It provides a standardized way for developers to access and manipulate the functionalities or data of a service, application, or platform without needing to understand its internal workings. APIs can be public or private and are commonly used to integrate disparate systems, facilitate third-party development, and enable interoperability between applications. They typically include endpoints, request methods (like GET, POST, PUT), and data formats (like JSON or XML) to interact with.
 
@@ -120,3 +122,13 @@ It's basically a more efficient protocal than HTTP but can't be used directly in
 #### GraphQL
 
 GraphQL is a query language for APIs and a runtime for executing those queries, developed by Facebook. Unlike REST, where fixed endpoints return predefined data, GraphQL allows clients to request exactly the data they need, making API interactions more flexible and efficient. It uses a single endpoint and relies on a schema that defines the types and structure of the available data. This approach reduces over-fetching and under-fetching of data, making it ideal for complex applications with diverse data needs across multiple platforms (e.g., web, mobile).
+
+#### Open API Specs
+
+The _OpenAPI Specification_ (OAS), formerly known as `Swagger`, is a standard for defining and documenting _RESTful APIs_. It provides a structured format in YAML or JSON to describe API endpoints, request and response formats, authentication methods, and other metadata.
+
+By using OAS, developers can create a comprehensive and machine-readable API description that facilitates client generation, automated documentation, and testing. This specification promotes consistency and clarity in API design, enhances interoperability between different systems, and enables tools to generate client libraries, server stubs, and interactive API documentation.
+
+#### HATEOAS
+
+`HATEOAS` (Hypermedia As The Engine Of Application State) is a constraint of RESTful architecture that allows clients to navigate an API dynamically through hypermedia links provided in responses. Instead of hard-coding URLs or endpoints, the client discovers available actions through these links, much like a web browser following links on a webpage. This enables greater flexibility and decouples clients from server-side changes, making the system more adaptable and scalable without breaking existing clients. It’s a key element of REST’s principle of statelessness and self-descriptive messages.
