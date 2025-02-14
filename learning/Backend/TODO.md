@@ -1,4 +1,6 @@
 #### TODOs to add to the section
 
-- Database design
+- Database
+- Microservices in-depth
 - GraphQL in-depth (maybe?)
+- Redis in-depth (maybe?)

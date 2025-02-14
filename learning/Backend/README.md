@@ -10,4 +10,6 @@ This is my collection of notes regarding back-end technologies, concepts and des
    - [Notes: PostgreSQL](./04-Relational_Databases/2-postgresql.md)
    - [Notes: Database Design - WIP](./04-Relational_Databases/3-database_design.md)
 5. [APIs](./05-APIs/index.md)
-   - [Authentication](./05-APIs/Authentication/index.md)
+6. [Authentication](./06-authentication/index.md)
+7. [Caching](./07-caching/index.md)
+8. [Web Security](./08-web_security/index.md)

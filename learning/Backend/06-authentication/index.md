@@ -6,6 +6,11 @@
 
 - [JWT Authentication](./01-jwt.md)
 - [Open Authentication (OAuth)](./02-oauth.md)
+- [Basic Authentication](./03-basic_auth.md)
+- [Token Authentication](./04-token_authentication.md)
+- [Cookies (Session) Based Authentication](./05-cookied_based_authentication.md)
+- [OpenID](./06-openid.md)
+- [SAML](./07-saml.md)
 
 ### Introduction
 
@@ -23,4 +28,3 @@ API authentication protects sensitive data, prevents unauthorized access, enable
 - [Token Based Authentication - Roadmap](https://roadmap.sh/guides/token-authentication)
 - [Session Based Authentication - Roadmap](https://roadmap.sh/guides/session-authentication)
 - [Basic Authentication - Roadmap](https://roadmap.sh/guides/basic-authentication)
-

@@ -24,4 +24,4 @@ A common way to use JWTs is OAuth Bearer Tokens.
 4. Front-end stores the JWT and includes it in requests using the Bearer token format.
 5. The server verifies the JWT using the public key (for RS256) or shared secret (for HS256) to validate the token and its authenticity before processing the request.
 
-[Next: OAuth Authentication](./02-oauth.md)
+[Next: Open Authentication(OAuth)](./02-oauth.md)
