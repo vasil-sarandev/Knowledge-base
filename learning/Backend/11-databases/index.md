@@ -5,6 +5,13 @@
 ##### Linked materials
 
 - [ORMs (Object Relational Mapping)](./01-orms.md)
+- [ACID (Atomicity Consistentency Isolation Durability)](./02-acid.md)
+- [Transactions](./03-transcations.md)
+- [N+1 problem](./04-n-plus-1-problem.md)
+- [Normalization](./05-normalization.md)
+- [Failure Modes](./06-failure-modes.md)
+- [Profiling Performance](./07-profiling-performance.md)
+- [Migrations](./08-migrations.md)
 
 ### Introduction
 
