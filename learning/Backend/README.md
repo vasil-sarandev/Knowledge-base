@@ -15,3 +15,4 @@ This is my collection of notes regarding back-end technologies, concepts, and de
 9. [Testing](./09-testing/index.md)
 10. [CI/CD](./10-ci_cd/index.md)
 11. [Databases in depth](./11-databases-in-depth/index.md)
+12. [Scaling Databases](./12-scaling_databases/index.md)
