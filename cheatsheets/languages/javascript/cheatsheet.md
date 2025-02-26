@@ -4,44 +4,73 @@
 
 ##### Table of contents
 
-- [Variable declarations](#variable-declarations)
-- [Hoisting](#variable-hoisting)
+- [Event Loop](#event-loop)
+- [Javascript Modules](#javascript-modules)
+- [Variable declarations and hoisting](#variable-declarations-and-hoisting)
 - [Closures](#closures)
+- [Classes](#classes)
+- [Prototypes](#prototypes)
+- [This](#this)
 - [Promises/async await](#promisesasync-await)
 - [Javascript Array Methods](#javascript-array-methods)
 
-### Variable Declarations
+#### Event Loop
 
-**let** and **const** are **block scoped**, **var** is **function scoped**. All three declarations are **hoisted**.
+The event loop is a core concept in JavaScript that enables non-blocking, asynchronous behavior.
+
+Components of the Event Loop:
+
+- _Call Stack_: Keeps track of function calls. When a function is invoked, it is pushed onto the stack. When the function finishes execution, it is popped off.
+- _Web APIs_: Provides browser features like setTimeout, DOM events, and HTTP requests. These APIs handle asynchronous operations.
+- _Task Queue (Callback Queue)_: Stores tasks waiting to be executed after the call stack is empty. These tasks are queued by setTimeout, setInterval, or other APIs.
+- _Event Loop_: Continuously checks if the call stack is empty and pushes tasks from the microtask queue or task queue to the call stack for execution.
+
+![Event loop](./assets/event-loop.png)
+
+#### Javascript Modules
+
+_ES Modules(ESM)_ are the standart in Javascript while NodeJS still uses _CommonJS(CJS)_ as a default.
+
+```JavaScript
+// ES Modules (ESM) - uses "export" and "import" syntax
+
+import { foo, bar } from 'lib';
+export const foobar = () => {}
+
+import React from 'react';
+export default MyComponent;
+
+// CommonJS (CJS) - uses "module.exports" and "require" syntax
+
+const do = require('lib');
+module.exports = function doSomething() {do({...})}
+```
+
+#### Variable Declarations and hoisting
+
+All variable declarations are hoisted to the top.
+
+- `let` and `const`: block scoped, not initialized.
+- `var`: function scoped, initialized with a value of `undefined`.
 
 ```javascript
+// scope
 {
   var x = 1;
   let y = 1;
   const z = 1;
 }
 console.log(x); // 1
-console.log(y); // error because `y` has block scope
-console.log(z); // error because `z` has block scope
-```
+console.log({ y, z }); // error because `y` and `z` have block scope
 
-### Variable Hoisting
-
-Variables defined with let and const are hoisted to the top of the block, but not initialized.
-
-Variables defined with var are hoisted to the top of the block, but initialized with a value of undefined.
-
-```javascript
+// hoisting and initialization
 console.log(counter); // ReferenceError: Cannot access 'counter' before initialization
 let counter = 1;
-
-//
-
 console.log(counter); // undefined
 var counter = 1;
 ```
 
-### Closures
+#### Closures
 
 Closure means that an inner function always has access to the vars and parameters of its outer function, even after the outer function has returned.
 
@@ -60,7 +89,61 @@ log(counter()); // 3
 log(counter()); // 4
 ```
 
-### Promises/Async await
+#### Classes
+
+Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but have some syntax and semantics that are not shared with ES5 class-like semantics.
+
+```Javascript
+class Dog {
+  constructor(name) {
+    this.name = name;
+  }
+
+  greet = () => {
+    console.log(`Bark, bark! This is ${this.name} speaking`);
+  }
+}
+new Dog("Megatron").bark() // Bark, bark! This is Megatron speaking
+```
+
+#### Prototypes
+
+All constructor functions in JavaScript have a special property called `prototype`, which works with the new operator.
+
+The reference to the prototype object is copied to the internal `[[Prototype]]` property of the new instance.
+
+For example, when you do const `a1 = new A()`, JavaScript (after creating the object in memory and before running function A() with this defined to it) sets `a1.[[Prototype]] = A.prototype`.
+
+When you then access properties of the instance, JavaScript first checks whether they exist on that object directly, and if not, it looks in `[[Prototype]]`.
+
+`[[Prototype]]` is looked at recursively, i.e. `a1.doSomething`, `Object.getPrototypeOf(a1).doSomething`, `Object.getPrototypeOf(Object.getPrototypeOf(a1)).doSomething` etc., until it's found or `Object.getPrototypeOf` returns null.
+
+This means that all properties defined on prototype are effectively shared by all instances, and you can even later change parts of prototype and have the changes appear in all existing instances.
+
+```Javascript
+const parent = {
+  value: 2,
+  method() {
+    return this.value + 1;
+  },
+};
+const child = {
+  __proto__: parent,
+};
+console.log(child.method()); // 3
+```
+
+#### This
+
+The `this` keyword refers to the context where a piece of code, such as a function's body, is supposed to run. Most typically, it is used in object methods, where this refers to the object that the method is attached to, thus allowing the same method to be reused on different objects.
+
+The value of `this` in JavaScript depends on how a function is invoked (runtime binding), not how it is defined.
+
+_Arrow functions_ differ in their handling of `this`: they inherit `this` from the parent scope at the time they are defined.
+
+The `Function.prototype.bind()` method can create a function whose this binding doesn't change, and methods `Function.prototype.apply()` and `Function.prototype.call()` can also set the this value for a particular call.
+
+#### Promises/Async await
 
 The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value. .then() and .catch() can be used to invoke the resolve and reject functions.
 
@@ -76,9 +159,7 @@ const myFunction = new Promise((resolve, reject) => {
 });
 ```
 
-### JavaScript Array Methods.
-
-### <a id="arrays"></a>Arrays
+#### JavaScript Array Methods.
 
 - **Array.prototype.map()**
   - Returns a new array containing the results of invoking a function on every element in the calling array.
