@@ -6,7 +6,6 @@
 
 - [Notes: Stanford EDU's Introduction to SQL Course](../../Courses/1%20-%20Introduction%20to%20SQL%20-%20Stanford%20EdX/index.md)
 - [Notes: PostgreSQL](./2-postgresql.md)
-- [Notes: Database Design - WIP](./3-database_design.md)
 
 #### Introduction
 
