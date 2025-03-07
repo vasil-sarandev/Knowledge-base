@@ -2,8 +2,6 @@
 
 #### Creational Design Patterns
 
-##### Table of contents
-
 These are the design patterns that deal with the creation of an object.
 
 There are 5 design patterns in the creational design patterns category.
