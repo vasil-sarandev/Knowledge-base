@@ -6,8 +6,6 @@ These are the design patterns that deal with the creation of an object.
 
 There are 5 design patterns in the creational design patterns category.
 
-Pattern Name Description
-
 - [_Singleton_](#singleton) - The singleton pattern restricts the initialization of a class to ensure that only one instance of the class can be created.
 - [_Factory_](#factory) - The factory pattern takes out the responsibility of instantiating a object from the class to a Factory class.
 - [_Abstract Factory_](#abstract-factory) - Allows us to create a Factory for factory classes.
