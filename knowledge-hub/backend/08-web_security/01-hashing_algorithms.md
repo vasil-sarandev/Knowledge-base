@@ -18,8 +18,6 @@ SHA (Secure Hash Algorithm) is a family of cryptographic hash functions designed
 
 The SHA family includes several versions, such as SHA-1, SHA-2, and SHA-3. SHA-1 produces a 160-bit hash value but is now considered weak due to vulnerabilities, while SHA-2, with hash sizes of 224, 256, 384, and 512 bits, offers stronger security. SHA-3 is the latest member, providing additional security features and flexibility.
 
-##### Available resources
-
 [What is SHA?](https://www.encryptionconsulting.com/education-center/what-is-sha/)
 [SHA: Secure Hashing Algorithm](https://www.youtube.com/watch?v=DMtFhACPnTY)
 

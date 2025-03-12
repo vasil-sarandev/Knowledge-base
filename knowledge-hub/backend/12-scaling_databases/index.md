@@ -9,6 +9,11 @@
 [Sharding strategies](./03-sharding-strategies.md)
 [CAP Theorem](./04-CAP-theorem.md)
 
+##### Available Resources:
+
+- [Strategies for Scaling Databases: A Comprehensive Guide](https://medium.com/@anil.goyal0057/strategies-for-scaling-databases-a-comprehensive-guide-b69cda7df1d3)
+- [Horizontal vs. Vertical Scaling - How to Scale a Database](https://www.freecodecamp.org/news/horizontal-vs-vertical-scaling-in-database/)
+
 ### Introduction
 
 Scaling databases is the process of adapting them to handle more data and users efficiently.
@@ -76,8 +81,3 @@ Use cases:
 - High Traffic: For applications with high traffic, sharding can help by distributing the load across multiple servers.
 
 - Geographical Distribution: If your application has users in different geographical locations, you can improve performance by placing shards in the regions closer to your users.
-
-##### Available Resources:
-
-- [Strategies for Scaling Databases: A Comprehensive Guide](https://medium.com/@anil.goyal0057/strategies-for-scaling-databases-a-comprehensive-guide-b69cda7df1d3)
-- [Horizontal vs. Vertical Scaling - How to Scale a Database](https://www.freecodecamp.org/news/horizontal-vs-vertical-scaling-in-database/)

@@ -1,6 +1,6 @@
 [Back to front page](../README.md)
 
-### Programming paradigms
+# Programming paradigms
 
 ##### Table of contents
 
@@ -13,9 +13,9 @@
 
 ##### Available Resources
 
-[Overview of Programming paradigm](https://en.wikipedia.org/wiki/Programming_paradigm)
+- [Overview of Programming paradigm](https://en.wikipedia.org/wiki/Programming_paradigm)
 
-#### Introduction
+### Introduction
 
 A programming paradigm is a fundamental style or approach to solving problems using a programming language. Different programming paradigms provide different ways of organizing and structuring code, and have different strengths and weaknesses. Some of the most common programming paradigms include:
 
@@ -27,13 +27,13 @@ A programming paradigm is a fundamental style or approach to solving problems us
   - Logic programming
   - Functional programming
 
-#### Imperative Programming
+### Imperative Programming
 
 In computer science, imperative programming is a programming paradigm of software that uses statements that change a program's state. In much the same way that the imperative mood in natural languages expresses commands, an imperative program consists of commands for the computer to perform. Imperative programming focuses on describing how a program operates step by step (generally order of the steps being determined in source code by the placement of statements one below the other), rather than on high-level descriptions of its expected results.
 
 The term is often used in contrast to declarative programming, which focuses on what the program should accomplish without specifying all the details of how the program should achieve the result.
 
-##### Object-Oriented programming
+#### Object-Oriented programming
 
 Object-oriented programming (OOP) is a programming paradigm that is based on the concept of “objects”, which are instances of classes. OOP is a way of organizing and structuring code that is based on the principles of encapsulation, inheritance, and polymorphism.
 
@@ -55,7 +55,7 @@ Procedural programming is a programming paradigm, classified as imperative progr
 
 The first major procedural programming languages appeared c. 1957–1964, including Fortran, ALGOL, COBOL, PL/I and BASIC. Pascal and C were published c. 1970–1972.
 
-#### Declarative programming
+### Declarative programming
 
 In computer science, declarative programming is a programming paradigm—a style of building the structure and elements of computer programs—that expresses the logic of a computation without describing its control flow.
 
@@ -76,7 +76,7 @@ for(let i = 0; i<arr.length; i++>) {
 }
 ```
 
-##### Functional programming
+#### Functional programming
 
 Functional programming is a programming paradigm that emphasizes the use of pure functions and immutable data. It is a way of writing computer programs that emphasizes the use of functions and mathematical concepts, such as recursion, rather than using objects and classes like in object-oriented programming.
 

@@ -21,6 +21,8 @@ There are several primary principles that are considered fundamental to object-o
 
 ##### Inheritance
 
+[Inheritance (Object-oriented programming)](<https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)>)
+
 Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a new class to inherit the properties and methods of an existing class.
 
 The class that is inherited from is called the parent or super class, while the class that inherits is called the child or sub class. Inheritance enables code reuse and allows for a hierarchical organization of classes, where a child class can inherit the properties and methods of its parent class and potentially add or override them.
@@ -41,6 +43,8 @@ console.log(child.method()); // 3
 ```
 
 ##### Polymorphism
+
+[Polymorphism](https://www.geeksforgeeks.org/polymorphism-in-javascript/)
 
 Polymorphism is a concept in object-oriented programming (OOP) that allows objects of different classes to be treated as objects of a common parent class. This is achieved by defining a common interface for all classes that need to be treated polymorphically. The word polymorphism is derived from Greek, “poly” means many and “morph” means form.
 
@@ -87,14 +91,8 @@ There are two types of abstraction:
 
 ##### Encapsulation
 
+[Encapsulation in Computer Programming](<https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)>)
+
 Encapsulation is a concept in object-oriented programming (OOP) that refers to the practice of wrapping an object’s internal data and behavior within a defined interface, and hiding the implementation details from the outside world. It is one of the fundamental concepts of OOP and is closely related to the concepts of data hiding and information hiding.
 
 Encapsulation is achieved by using access modifiers (such as “public,” “private,” and “protected”) to control the visibility and accessibility of an object’s data and methods. For example, data members of a class can be declared as private, which means they can only be accessed by methods within the class, while methods can be declared as public, which means they can be called by any code that has a reference to the object.
-
-##### Available Resources
-
-[Inheritance (Object-oriented programming)](<https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)>)
-
-[Polymorphism](https://www.geeksforgeeks.org/polymorphism-in-javascript/)
-
-[Encapsulation in Computer Programming](<https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)>)

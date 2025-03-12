@@ -1,6 +1,6 @@
 [Back to front page](../README.md)
 
-### Software Design and Development Principles
+# Software Design and Development Principles
 
 There are many software design principles that aim to guide the development of software in a way that makes it easy to understand, maintain, and extend. Some of the most common design principles include:
 

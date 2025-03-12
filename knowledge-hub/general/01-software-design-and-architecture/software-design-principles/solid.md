@@ -2,13 +2,20 @@
 
 #### SOLID Principles
 
+##### Available Materials
+
+- [Get Started with SOLID](https://www.bmc.com/blogs/solid-design-principles/)
+- [SOLID Principles](https://khalilstemmler.com/articles/tags/solid/)
+
+##### Introduction
+
 _SOLID_ is an acronym that stands for five principles of object-oriented software development, which were first introduced by Robert C. Martin in the early 2000s. These principles are:
 
-- Single Responsibility Principle (SRP)
-- Open/Closed Principle (OCP)
-- Liskov Substitution Principle (LSP)
-- Interface Segregation Principle (ISP)
-- Dependency Inversion Principle (DIP)
+- [Single Responsibility Principle (SRP)](#single-responsibility-principle-srp)
+- [Open/Closed Principle (OCP)](#openclosed-principle-ocp)
+- [Liskov Substitution Principle (LSP)](#liskov-substition-principle-lsp)
+- [Interface Segregation Principle (ISP)](#interface-segregation-principle-isp)
+- [Dependency Inversion Principle (DIP)](#dependency-inversion-principle-dip)
 
 ##### Single Responsibility Principle (SRP)
 
@@ -88,8 +95,3 @@ class UserService {
   }
 }
 ```
-
-##### Available Materials
-
-- [Get Started with SOLID](https://www.bmc.com/blogs/solid-design-principles/)
-- [SOLID Principles](https://khalilstemmler.com/articles/tags/solid/)

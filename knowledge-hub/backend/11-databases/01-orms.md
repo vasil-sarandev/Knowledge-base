@@ -2,6 +2,11 @@
 
 ### ORMs (Object Relational Mapping)
 
+##### Available Resources:
+
+- [What is an ORM, how does it work, and how should I use one?](https://stackoverflow.com/a/1279678)
+- [What is an ORM](https://www.freecodecamp.org/news/what-is-an-orm-the-meaning-of-object-relational-mapping-database-tools/)
+
 #### Introduction
 
 Object-Relational Mapping (ORM) is a programming technique that allows developers to interact with a relational database using object-oriented programming concepts.
@@ -36,8 +41,3 @@ users.getById(20)
 - Learning how to use ORM tools can be time consuming.
 - They are likely not going to perform better when very complex queries are involved.
 - ORMs are generally slower than using SQL.
-
-##### Available Resources:
-
-- [What is an ORM, how does it work, and how should I use one?](https://stackoverflow.com/a/1279678)
-- [What is an ORM](https://www.freecodecamp.org/news/what-is-an-orm-the-meaning-of-object-relational-mapping-database-tools/)

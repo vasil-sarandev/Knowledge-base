@@ -1,6 +1,8 @@
 [Back to Relational Databases](../index.md)
 
-Table of Contents
+# PostgreSQL
+
+##### Table of Contents
 
 1. [Introduction](#postgresql)
 2. [Basics](#postgresql-basics)
@@ -9,14 +11,14 @@ Table of Contents
 3. [Transactions](#transactions)
 4. [Importing & Exporting Data](#import--export-data)
 
-# PostgreSQL
+##### Available Resources:
+
+- [Tutorial: PostgreSQL - Full Tutorial for Beginners](https://www.postgresqltutorial.com/)
+- [Roadmap: Dedicated PostgreSQL DBA Roadmap](https://roadmap.sh/postgresql-dba)
+
+### Introduction
 
 PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and standards compliance. It supports a wide range of data types and advanced features, including complex queries, foreign keys, and full-text search. PostgreSQL is highly extensible, allowing users to define custom data types, operators, and functions. It supports ACID (Atomicity, Consistency, Isolation, Durability) properties for reliable transaction processing and offers strong support for concurrency and data integrity. Its capabilities make it suitable for various applications, from simple web apps to large-scale data warehousing and analytics solutions.
-
-### Courses & Tutorials:
-
-[Learn PostgreSQL - Full Tutorial for Beginners](https://www.postgresqltutorial.com/)
-[Dedicated PostgreSQL DBA Roadmap](https://roadmap.sh/postgresql-dba)
 
 ### PostgreSQL basics
 

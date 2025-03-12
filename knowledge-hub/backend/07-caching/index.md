@@ -8,6 +8,11 @@
 - [CDN caching](./02-cdn_caching.md)
 - [Server-side caching](./03-server_side_caching.md)
 
+##### Available Resources:
+
+- [What is Caching (AWS)](https://aws.amazon.com/caching/)
+- [Caching (Cloudflare)](https://www.cloudflare.com/learning/cdn/what-is-caching/)
+
 ### Introduction
 
 Caching is a technique used in computing to store and retrieve frequently accessed data quickly, reducing the need to fetch it from the original, slower source repeatedly.
@@ -17,8 +22,3 @@ It involves keeping a copy of data in a location that’s faster to access than 
 Common caching strategies include time-based expiration, least recently used (LRU) algorithms, and write-through or write-back policies. While caching enhances speed and efficiency, it also introduces challenges in maintaining data consistency and freshness.
 
 Effective cache management is crucial in balancing performance gains with the need for up-to-date information in dynamic systems.
-
-##### Available Resources:
-
-- [What is Caching (AWS)](https://aws.amazon.com/caching/)
-- [Caching (Cloudflare)](https://www.cloudflare.com/learning/cdn/what-is-caching/)

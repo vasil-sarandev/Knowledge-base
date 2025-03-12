@@ -11,9 +11,3 @@ It states that in a distributed system, it’s impossible to simultaneously guar
 According to the theorem, a distributed system can only strongly provide two of these three guarantees at any given time. This principle guides the design and architecture of distributed systems, influencing decisions on data consistency models, replication strategies, and failure handling.
 
 Understanding the CAP Theorem is crucial for designing robust, scalable distributed systems and for choosing appropriate database solutions for specific use cases in distributed computing environments.
-
-##### Available resources:
-
-[What is CAP Theorem?]()
-[An Illustrated Proof of the CAP Theorem]()
-[CAP Theorem and its applications in NoSQL Databases]()

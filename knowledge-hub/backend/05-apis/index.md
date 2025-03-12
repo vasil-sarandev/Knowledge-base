@@ -12,6 +12,12 @@
 6. [Open API Specs](#open-api-specs)
 7. [HATEOAS](#hateoas)
 
+##### Available Resources
+
+- [Amazon AWS - What is an API](https://aws.amazon.com/what-is/api/)
+
+#### Introduction
+
 An API (Application Programming Interface) is a set of defined rules and protocols that allow different software applications to communicate and interact with each other. It provides a standardized way for developers to access and manipulate the functionalities or data of a service, application, or platform without needing to understand its internal workings. APIs can be public or private and are commonly used to integrate disparate systems, facilitate third-party development, and enable interoperability between applications. They typically include endpoints, request methods (like GET, POST, PUT), and data formats (like JSON or XML) to interact with.
 
 #### REST APIs
@@ -40,10 +46,6 @@ REST allows for an architecture composed of hierarchical layers. In doing so, ea
 
 **6. Code on demand**
 Because REST APIs download and execute code in the form of applets or scripts, there’s more client functionality. Oftentimes, a server will send back a static representation of resources in the form of XML or JSON. Servers can also send executable codes to the client when necessary.
-
-**Available Resources**
-
-- [Amazon AWS - What is an API](https://aws.amazon.com/what-is/api/)
 
 #### JSON APIs
 

@@ -9,3 +9,4 @@
 3. [Object-oriented programming](./03-object-oriented-programming.md)
 4. [Software Design Principles](./software-design-principles/index.md)
 5. [Software Design Patterns](./05-software-design-patterns.md)
+6. [Architectural Principles](./06-architectural-principles.md)

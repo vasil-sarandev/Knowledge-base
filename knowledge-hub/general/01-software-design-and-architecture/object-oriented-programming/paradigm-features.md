@@ -10,6 +10,10 @@
 4. [Interfaces](#interfaces)
 5. [Available Resources](#available-resources)
 
+##### Available Resources
+
+[Overview of Object-Oriented paradigm](https://www.tutorialspoint.com/software_architecture_design/object_oriented_paradigm.htm)
+
 Object-oriented programming (OOP) is a programming paradigm that is based on the concept of “objects,” which are instances of a class. OOP has several key features that distinguish it from other programming paradigms:
 
 - Encapsulation
@@ -23,6 +27,8 @@ Object-oriented programming (OOP) is a programming paradigm that is based on the
 - Message passing
 
 #### Abstract Classes
+
+[Abstract Classes in JavaScript](https://medium.com/@rheedhar/abstract-classes-in-javascript-d6510afac958)
 
 An abstract class is a class in object-oriented programming (OOP) that cannot be instantiated. Instead, it serves as a template or blueprint for other classes to inherit from.
 
@@ -57,8 +63,6 @@ A concrete class is a class in object-oriented programming (OOP) that can be ins
 
 Concrete classes are used to provide specific implementation details for a group of related classes that inherit from a common abstract class. They are also used to define unique behavior for a specific class. A concrete class can have its own methods and variables, and can also override the methods of its parent class.
 
-[Abstract Classes in JavaScript](https://medium.com/@rheedhar/abstract-classes-in-javascript-d6510afac958)
-
 #### Scope Visibility
 
 Scope visibility refers to the accessibility or visibility of variables, functions, and other elements in a program, depending on the context in which they are defined. In object-oriented programming (OOP), scope visibility is controlled through the use of access modifiers, such as “public,” “private,” and “protected.”
@@ -74,7 +78,3 @@ There are variations of scope visibility based on the programming language, but 
 In object-oriented programming (OOP), an interface is a contract or a set of methods that a class must implement. It defines a common set of methods that a class must provide, but it does not provide any implementation details. An interface can include both method signatures and constants.
 
 Interfaces are used to define a common behavior for a group of related classes, and to provide a way for objects of different classes to be treated polymorphically. A class that implements an interface must provide an implementation for all of the methods declared in the interface. A class can implement multiple interfaces, but can only inherit from one base class.
-
-##### Available Resources
-
-[Overview of Object-Oriented paradigm](https://www.tutorialspoint.com/software_architecture_design/object_oriented_paradigm.htm)

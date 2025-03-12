@@ -4,17 +4,17 @@
 
 This type of design patterns provide solution for the better interaction between objects, how to provide lose coupling, and flexibility to extend easily in future.
 
-- [_Template Method_]() - used to create a template method stub and defer some of the steps of implementation to the subclasses.
-- [_Mediator_]() - used to provide a centralized communication medium between different objects in a system.
-- [_Chain of Responsibility_]() - used to achieve loose coupling in software design where a request from the client is passed to a chain of objects to process them.
-- [_Observer_]() - useful when you are interested in the state of an object and want to get notified whenever there is any change.
-- [_Strategy_]() - Strategy pattern is used when we have multiple algorithm for a specific task and client decides the actual implementation to be used at runtime.
-- [_Command_]() - Command Pattern is used to implement lose coupling in a request-response model.
-- [_State_]() - State design pattern is used when an Object change it’s behavior based on it’s internal state.
-- [_Visitor_]() - Visitor pattern is used when we have to perform an operation on a group of similar kind of Objects.
-- [_Interpreter_]() - defines a grammatical representation for a language and provides an interpreter to deal with this grammar.
-- [_Iterator_]() - used to provide a standard way to traverse through a group of Objects.
-- [_Memento_]() - The memento design pattern is used when we want to save the state of an object so that we can restore later on.
+- [_Template Method_](#template-method) - used to create a template method stub and defer some of the steps of implementation to the subclasses.
+- [_Mediator_](#mediator) - used to provide a centralized communication medium between different objects in a system.
+- [_Chain of Responsibility_](#chain-of-responsibility) - used to achieve loose coupling in software design where a request from the client is passed to a chain of objects to process them.
+- [_Observer_](#observer) - useful when you are interested in the state of an object and want to get notified whenever there is any change.
+- [_Strategy_](#strategy) - Strategy pattern is used when we have multiple algorithm for a specific task and client decides the actual implementation to be used at runtime.
+- [_Command_](#command) - Command Pattern is used to implement lose coupling in a request-response model.
+- [_State_](#state) - State design pattern is used when an Object change it’s behavior based on it’s internal state.
+- [_Visitor_](#visitor) - Visitor pattern is used when we have to perform an operation on a group of similar kind of Objects.
+- [_Interpreter_](#interpreter) - defines a grammatical representation for a language and provides an interpreter to deal with this grammar.
+- [_Iterator_](#iterator) - used to provide a standard way to traverse through a group of Objects.
+- [_Memento_](#memento) - The memento design pattern is used when we want to save the state of an object so that we can restore later on.
 
 ##### Template Method
 
@@ -770,4 +770,223 @@ public class ShoppingCartClient {
 
 }
 
+```
+
+##### Interpreter
+
+Defines a grammatical representation for a language and provides an interpreter to deal with this grammar.
+
+```JAVA
+class Context {
+    // Any global information needed for interpretation
+}
+
+interface Expression {
+    int interpret(Context context);
+}
+
+class NumberExpression implements Expression {
+    private int number;
+
+    public NumberExpression(int number) {
+        this.number = number;
+    }
+
+    @Override
+    public int interpret(Context context) {
+        return number;
+    }
+}
+
+class AdditionExpression implements Expression {
+    private Expression left;
+    private Expression right;
+
+    public AdditionExpression(Expression left, Expression right) {
+        this.left = left;
+        this.right = right;
+    }
+
+    @Override
+    public int interpret(Context context) {
+        return left.interpret(context) + right.interpret(context);
+    }
+}
+
+class MultiplicationExpression implements Expression {
+    private Expression left;
+    private Expression right;
+
+    public MultiplicationExpression(Expression left, Expression right) {
+        this.left = left;
+        this.right = right;
+    }
+
+    @Override
+    public int interpret(Context context) {
+        return left.interpret(context) * right.interpret(context);
+    }
+}
+
+class Interpreter {
+    private Context context;
+
+    public Interpreter(Context context) {
+        this.context = context;
+    }
+
+    public int interpret(String expression) {
+        // Parse expression and create expression tree
+        Expression expressionTree = buildExpressionTree(expression);
+
+        // Interpret expression tree
+        return expressionTree.interpret(context);
+    }
+
+    private Expression buildExpressionTree(String expression) {
+        // Logic to parse expression and create expression tree
+        // For simplicity, assume the expression is already parsed
+        // and represented as an expression tree
+        return new AdditionExpression(
+            new NumberExpression(2),
+            new MultiplicationExpression(
+                new NumberExpression(3),
+                new NumberExpression(4)
+            )
+        );
+    }
+}
+
+public class Client {
+    public static void main(String[] args) {
+        // Input expression
+        String expression = "2 + 3 * 4";
+
+        // Create interpreter
+        Context context = new Context();
+        Interpreter interpreter = new Interpreter(context);
+
+        // Interpret expression
+        int result = interpreter.interpret(expression);
+        System.out.println("Result: " + result);
+    }
+}
+```
+
+##### Iterator
+
+Iterator design pattern in one of the behavioral pattern. Iterator pattern is used to provide a standard way to traverse through a group of Objects. Iterator pattern is widely used in Java Collection Framework. Iterator interface provides methods for traversing through a collection.
+
+```JAVA
+// We could also create an iterator ourselves. Java has iterators built in for some types.
+public class Geeks {
+    public static void main(String[] args) {
+
+        // Create an ArrayList
+        // and add some elements
+        ArrayList<String> al = new ArrayList<>();
+        al.add("A");
+        al.add("B");
+        al.add("C");
+
+        // Obtain an iterator for the ArrayList
+        Iterator<String> it = al.iterator();
+
+        // Iterate through the elements
+        // and print each one
+        while (it.hasNext()) {
+
+            // Get the next element
+            String n = it.next();
+            System.out.println(n);
+        }
+    }
+}
+```
+
+##### Memento
+
+The Memento Design Pattern offers a solution to implement undoable actions. We can do this by saving the state of an object at a given instant and restoring it if the actions performed since need to be undone.
+
+Practically, the object whose state needs to be saved is called an Originator. The Caretaker is the object triggering the save and restore of the state, which is called the Memento.
+
+```JAVA
+import java.util.ArrayList;
+import java.util.List;
+
+// Originator
+class Document {
+    private String content;
+
+    public Document(String content) {
+        this.content = content;
+    }
+
+    public void write(String text) {
+        this.content += text;
+    }
+
+    public String getContent() {
+        return this.content;
+    }
+
+    public DocumentMemento createMemento() {
+        return new DocumentMemento(this.content);
+    }
+
+    public void restoreFromMemento(DocumentMemento memento) {
+        this.content = memento.getSavedContent();
+    }
+}
+
+// Memento
+class DocumentMemento {
+    private String content;
+
+    public DocumentMemento(String content) {
+        this.content = content;
+    }
+
+    public String getSavedContent() {
+        return this.content;
+    }
+}
+
+// Caretaker
+class History {
+    private List<DocumentMemento> mementos;
+
+    public History() {
+        this.mementos = new ArrayList<>();
+    }
+
+    public void addMemento(DocumentMemento memento) {
+        this.mementos.add(memento);
+    }
+
+    public DocumentMemento getMemento(int index) {
+        return this.mementos.get(index);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Document document = new Document("Initial content\n");
+        History history = new History();
+
+        // Write some content
+        document.write("Additional content\n");
+        history.addMemento(document.createMemento());
+
+        // Write more content
+        document.write("More content\n");
+        history.addMemento(document.createMemento());
+
+        // Restore to previous state
+        document.restoreFromMemento(history.getMemento(1));
+
+        // Print document content
+        System.out.println(document.getContent());
+    }
+}
 ```

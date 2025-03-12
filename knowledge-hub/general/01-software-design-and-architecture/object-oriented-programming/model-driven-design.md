@@ -47,7 +47,6 @@ A domain language is a specific vocabulary and set of concepts used to describe 
 
 A domain language is used to provide a common understanding of the problem domain among all stakeholders, including developers, business analysts, and domain experts. It is also used to ensure that the software system accurately reflects the real-world problem it is intended to solve.
 
-[Overview of Domain-specific language]()
 [What are Domain Languages (DSLs)?](https://www.jetbrains.com/mps/concepts/domain-specific-languages/)
 
 ##### Class Invariants
@@ -57,4 +56,5 @@ A class invariant is a set of conditions that must be true for any object of a c
 Class invariants are typically defined in the constructor of a class and are enforced through the use of private methods and data members that are used to validate the state of the object. They are also checked in the class’s methods before and after any operation that can change the state of the object.
 
 [Overview of Class Invariant](https://en.wikipedia.org/wiki/Class_invariant)
+
 [The concept of class invariant in object-oriented programming](https://arxiv.org/abs/2109.06557)
