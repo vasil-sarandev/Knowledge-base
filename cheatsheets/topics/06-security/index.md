@@ -1,1 +1,0 @@
-Encryption, hashing, authentication protocols

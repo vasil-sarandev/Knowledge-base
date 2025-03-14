@@ -10,7 +10,7 @@
 
 ##### Available Resources
 
-- [What is Software Architecture & Styles](https://study.com/academy/lesson/software-architecture-styles-patterns-components.html)
+- [Overview - Architectural Patterns](https://en.wikipedia.org/wiki/Architectural_pattern)
 
 ### Introduction
 

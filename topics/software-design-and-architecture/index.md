@@ -10,3 +10,5 @@
 4. [Software Design Principles](./software-design-principles/index.md)
 5. [Software Design Patterns](./05-software-design-patterns.md)
 6. [Architectural Principles](./06-architectural-principles.md)
+7. [Architectural Styles](./07-architectural-styles.md)
+8. [Architectural Patterns](./08-architectural-patterns.md)
