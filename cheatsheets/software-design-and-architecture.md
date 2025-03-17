@@ -118,7 +118,8 @@ Some of the key Software Architectural Principles include:
 [In-depth notes](07-architectural-styles.md)
 
 Architectural styles in software refer to the overall design and organization of a software system, and the principles and patterns that are used to guide the design. These styles provide a general framework for the design of a system, and can be used to ensure that the system is well-structured, maintainable, and scalable.
-### Structural Architectural Styles
+
+**Structural Architectural Styles**
 
 Structural architecture in software refers to the organization and design of the components of a software system, and how they interact with each other. It deals with the physical organization of the system, and the relationships between the different components.
 
@@ -131,7 +132,8 @@ Structural architecture in software refers to the organization and design of the
 - **Domain-Driven**
 - **Client-Server**
 - **Peer-to-Peer**
-### Distributed Architecture
+
+**Distributed Architecture**
 
 Distributed systems refer to the design and organization of software components that are distributed across multiple devices or locations, connected via a network, and work together to achieve a common goal.
 
@@ -139,7 +141,8 @@ Distributed systems refer to the design and organization of software components 
  - **Event-driven architecture**
  - **Client-Server**
  - **Peer-to-Peer**
-### Messaging
+
+**Messaging**
 
 Messaging is a key concept in several architectural styles, including:
 
