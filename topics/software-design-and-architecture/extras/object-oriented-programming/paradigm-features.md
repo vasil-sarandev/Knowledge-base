@@ -1,12 +1,12 @@
-[Back to Object-oriented programming frontpage](03-object-oriented-programming.md)
+[Back to Object-oriented programming](03-object-oriented-programming.md)
 
-### Paradigm Features
+## Paradigm Features
 
 ##### Available Resources
 
 [Overview of Object-Oriented paradigm](https://www.tutorialspoint.com/software_architecture_design/object_oriented_paradigm.htm)
 
-#### Introduction
+### Introduction
 
 Object-oriented programming (OOP) is a programming paradigm that is based on the concept of “objects,” which are instances of a class. OOP has several key features that distinguish it from other programming paradigms:
 
@@ -20,7 +20,7 @@ Object-oriented programming (OOP) is a programming paradigm that is based on the
 - Dynamic binding
 - Message passing
 
-#### Abstract Classes
+### Abstract Classes
 
 [Abstract Classes in JavaScript](https://medium.com/@rheedhar/abstract-classes-in-javascript-d6510afac958)
 
@@ -51,13 +51,13 @@ class Circle extends Shape {
 }
 ```
 
-#### Concrete Classes
+### Concrete Classes
 
 A concrete class is a class in object-oriented programming (OOP) that can be instantiated, meaning objects can be created from it. A concrete class is a class that provides an implementation for all of the abstract methods declared in its parent class, if it inherits from an abstract class. A concrete class can also be a class that does not inherit from an abstract class, in that case it can have implementation for all of its methods.
 
 Concrete classes are used to provide specific implementation details for a group of related classes that inherit from a common abstract class. They are also used to define unique behavior for a specific class. A concrete class can have its own methods and variables, and can also override the methods of its parent class.
 
-#### Scope Visibility
+### Scope Visibility
 
 Scope visibility refers to the accessibility or visibility of variables, functions, and other elements in a program, depending on the context in which they are defined. In object-oriented programming (OOP), scope visibility is controlled through the use of access modifiers, such as “public,” “private,” and “protected.”
 
@@ -67,7 +67,7 @@ Scope visibility refers to the accessibility or visibility of variables, functio
 
 There are variations of scope visibility based on the programming language, but these are the most common.
 
-#### Interfaces
+### Interfaces
 
 In object-oriented programming (OOP), an interface is a contract or a set of methods that a class must implement. It defines a common set of methods that a class must provide, but it does not provide any implementation details. An interface can include both method signatures and constants.
 

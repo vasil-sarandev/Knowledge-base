@@ -1,6 +1,6 @@
 [Back to Software Design Patterns](05-software-design-patterns.md)
 
-#### Creational Design Patterns
+## Creational Design Patterns
 
 These are the design patterns that deal with the creation of an object.
 
@@ -12,7 +12,7 @@ There are 5 design patterns in the creational design patterns category.
 - [_Builder_](#builder) - Creating an object step by step and a method to finally get the object instance.
 - _Prototype_ - Creating a new object instance from another similar instance and then modify according to our requirements.
 
-##### Singleton
+### Singleton
 
 Singleton pattern restricts the instantiation of a class and ensures that only one instance of the class exists.
 
@@ -54,7 +54,7 @@ public class LazyInitializedSingleton {
 }
 ```
 
-##### Factory
+### Factory
 
 The factory design pattern is used when we have a superclass with multiple sub-classes and based on input, we need to return one of the sub-class.
 
@@ -98,7 +98,7 @@ class VehicleFactory {
 }
 ```
 
-##### Abstract Factory
+### Abstract Factory
 
 In the Abstract Factory pattern, we get rid of if-else block and have a factory class for each sub-class. Then an Abstract Factory class that will return the sub-class based on the input factory class. At first, it seems confusing but once you see the implementation, it’s really easy to grasp and understand the minor difference between Factory and Abstract Factory pattern. Like our factory pattern post, we will use the same superclass and sub-classes.
 
@@ -115,7 +115,7 @@ class BikeFactory extends VehicleAbstractFactory {
 
 ```
 
-##### Builder
+### Builder
 
 Builder pattern was introduced to solve some of the problems with Factory and Abstract Factory design patterns when the Object contains a lot of attributes. There are three major issues with Factory and Abstract Factory design patterns when the Object contains a lot of attributes.
 

@@ -1,6 +1,6 @@
-[Back to Object-oriented programming frontpage](03-object-oriented-programming.md)
+[Back to Object-oriented programming](03-object-oriented-programming.md)
 
-### Primary Principles
+## Primary Principles
 
 
 There are several primary principles that are considered fundamental to object-oriented programming (OOP). These principles include:
@@ -12,7 +12,7 @@ There are several primary principles that are considered fundamental to object-o
 - Classes: The blueprint for creating objects, which have both data (attributes) and behavior (methods).
 - Objects: Instances of a class, which have their own unique state and behavior.
 
-##### Inheritance
+### Inheritance
 
 [Inheritance (Object-oriented programming)](<https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)>)
 
@@ -35,7 +35,7 @@ const child = {
 console.log(child.method()); // 3
 ```
 
-##### Polymorphism
+### Polymorphism
 
 [Polymorphism](https://www.geeksforgeeks.org/polymorphism-in-javascript/)
 
@@ -73,7 +73,7 @@ new Dog().speak(); // dog barks
 // the subclass's method is invoked which is a run-time decision.
 ```
 
-##### Abstraction
+### Abstraction
 
 Abstraction is a concept in object-oriented programming (OOP) that refers to the process of hiding the implementation details of an object and exposing only its essential features. It enables the use of objects without the need to understand the underlying complexity of their internal structure and behavior.
 
@@ -82,7 +82,7 @@ There are two types of abstraction:
 - Data abstraction: refers to hiding the internal representation of data and providing a simplified view of the data through a set of well-defined interfaces.
 - Behavioral abstraction: refers to hiding the internal behavior of an object and providing a simplified view of its capabilities through a set of well-defined interfaces.
 
-##### Encapsulation
+### Encapsulation
 
 [Encapsulation in Computer Programming](<https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)>)
 

@@ -1,12 +1,12 @@
 [Back to Architectural Patterns](08-architectural-patterns.md)
 
-### Event Sourcing
+## Event Sourcing
 
 ##### Available Resources
 
 - [Event Sourcing Pattern - Microsoft](https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing)
 
-#### Introduction
+### Introduction
 
 Event sourcing is an architectural pattern that is used to build systems that need to maintain a history of all the changes that have occurred over time. This pattern stores all changes to the system’s state as a sequence of events, rather than just the current state.
 

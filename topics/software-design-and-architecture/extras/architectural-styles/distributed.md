@@ -1,12 +1,12 @@
 [Back to Architectural Styles](07-architectural-styles.md)
 
-### Distributed Systems
+## Distributed Systems
 
 ##### Available Resources
 
 [Overview of Distributed Architecture](https://www.tutorialspoint.com/software_architecture_design/distributed_architecture.htm)
 
-#### Introduction
+### Introduction
 
 Distributed systems refer to the design and organization of software components that are distributed across multiple devices or locations, connected via a network, and work together to achieve a common goal.
 
@@ -14,7 +14,7 @@ The main challenge in designing distributed systems is dealing with the inherent
 
 Additionally, security and coordination are also important aspects of distributed systems.
 
-#### Client-Server Distributed Architecture
+### Client-Server Distributed Architecture
 
 The client-server architecture is a common architecture pattern used in distributed systems, where a client (or multiple clients) send requests to a server, and the server responds to those requests. The client and server are separate entities that communicate over a network, such as the Internet or a local network.
 
@@ -24,7 +24,7 @@ The client is responsible for presenting the user interface and handling user in
 
 [Introduction to Client-Server Architecture - University of Waterloo](https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/ClientServer.pdf)
 
-#### Peer to Peer
+### Peer to Peer
 
 Peer-to-peer (P2P) architecture is a distributed computing architecture in which each node (peer) in the network acts as both a client and a server. In P2P architecture, there is no central authority or server that manages the network, and each node communicates directly with other nodes to exchange information, share resources, and perform computations.
 

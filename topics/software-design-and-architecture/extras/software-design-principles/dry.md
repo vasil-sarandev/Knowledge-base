@@ -1,6 +1,6 @@
-[Back to Software Design and Development Principles frontpage](04-software-design-principles.md)
+[Back to Software Design and Development Principles](04-software-design-principles.md)
 
-#### DRY (Don't Repeat Yourself)
+## DRY (Don't Repeat Yourself)
 
 ##### Available Materials
 

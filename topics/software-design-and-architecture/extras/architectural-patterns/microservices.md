@@ -1,12 +1,12 @@
 [Back to Architectural Patterns](08-architectural-patterns.md)
 
-### Microservices
+## Microservices
 
 ##### Available Resources
 
 - [Brief of Microservices](https://microservices.io/patterns/microservices.html)
 
-#### Introduction
+### Introduction
 
 Microservices is an architectural pattern that is used to design software systems as a collection of small, independent, and loosely-coupled services. Each service is responsible for a specific functionality and can be developed, deployed, and scaled independently.
 

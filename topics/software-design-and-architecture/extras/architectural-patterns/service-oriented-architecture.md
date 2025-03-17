@@ -1,12 +1,12 @@
 [Back to Architectural Patterns](08-architectural-patterns.md)
 
-### SOA (Service-Oriented Architecture)
+## SOA (Service-Oriented Architecture)
 
 ##### Available Resources
 
 [Overview of Service-Oriented Architecture](https://medium.com/design-microservices-architecture-with-patterns/service-oriented-architecture-1e4716fbca17)
 
-#### Introduction
+### Introduction
 
 SOA (Service-Oriented Architecture) is an architectural pattern that is used to design and organize software systems as a collection of services that can be accessed over a network, these services are autonomous, self-contained units of functionality that can be reused and combined to create new functionality.
 

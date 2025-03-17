@@ -1,12 +1,12 @@
 [Back to Architectural Patterns](08-architectural-patterns.md)
 
-### Serverless Architecture
+## Serverless Architecture
 
 ##### Available Resources
 
 - [Serverless Architecture Pattern in AWS](https://waswani.medium.com/serverless-architecture-patterns-in-aws-edeab0e46a32)
 
-#### Introduction
+### Introduction
 
 Serverless architecture is a design pattern that allows developers to build and run applications and services without having to provision and manage servers. Instead, these applications and services are executed in a fully managed environment, such as AWS Lambda, Azure Functions, or Google Cloud Functions, where the infrastructure and scaling are handled automatically by the cloud provider.
 

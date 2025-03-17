@@ -1,13 +1,13 @@
 [Back to Architectural Patterns](08-architectural-patterns.md)
 
-### Blackboard Pattern
+## Blackboard Pattern
 
 ##### Available Resources
 
 - [Overview of Blackboard (design pattern) - Wikipedia](<https://en.wikipedia.org/wiki/Blackboard_(design_pattern)>)
 - [Architectural Patterns: Blackboard](http://www.openloop.com/softwareEngineering/patterns/architecturePattern/arch_Blackboard.htm)
 
-#### Introduction
+### Introduction
 
 The Blackboard architectural pattern is a software design pattern that allows for the creation of a centralized repository of information that can be accessed and modified by multiple independent modules or subsystems.
 

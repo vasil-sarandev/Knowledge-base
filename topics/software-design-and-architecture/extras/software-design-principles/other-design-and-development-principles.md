@@ -1,14 +1,8 @@
-[Back to Software Design and Development Principles frontpage](04-software-design-principles.md)
+[Back to Software Design and Development Principles](04-software-design-principles.md)
 
-#### Other Software Design and Development Principles
+## Other Software Design and Development Principles
 
-##### Table of Contents
-
-- [Encapsulate what varies](#encapsulate-what-varies)
-- [Program Against Abstractions](#program-against-abstractions)
-- [Hollywood Principle](#hollywood-principle)
-
-#### Encapsulate What Varies
+### Encapsulate What Varies
 
 - [What does it mean when one says “Encapsulate what varies”?](https://softwareengineering.stackexchange.com/questions/337413/what-does-it-mean-when-one-says-encapsulate-what-varies)
 - [Overview of Encapsulate What Varies](https://bootcamp.uxdesign.cc/software-design-principles-every-developers-should-know-23d24735518e)
@@ -17,7 +11,7 @@
 
 Encapsulating what varies allows for more flexibility in the code. When changes are needed, they can be made to the encapsulated parts without affecting the rest of the code. This makes it easier to understand, test, and maintain the code.
 
-#### Program against Abstractions
+### Program against Abstractions
 
 [Overview of Abstraction principle](<https://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming)>)
 
@@ -25,7 +19,7 @@ Programming against abstractions is a programming principle that suggests that c
 
 Programming against abstractions allows for more flexibility in the code. When changes are needed, they can be made to the implementation of the abstractions without affecting the code that uses them. This makes it easier to understand, test, and maintain the code.
 
-#### Hollywood Principle
+### Hollywood Principle
 
 The Hollywood Principle is a software development principle that states: “Don’t call us, we’ll call you.” It suggests that high-level components should dictate the flow of control in an application, rather than low-level components.
 

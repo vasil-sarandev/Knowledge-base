@@ -1,6 +1,6 @@
 [Back to Software Design Patterns](05-software-design-patterns.md)
 
-#### Structural Design Patterns
+## Structural Design Patterns
 
 Structural design patterns explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient.
 
@@ -12,7 +12,7 @@ Structural design patterns explain how to assemble objects and classes into larg
 - [_Bridge_](#bridge) - The bridge design pattern is used to decouple the interfaces from implementation and hiding the implementation details from the client program.
 - [_Decorator_](#decorator) - The decorator design pattern is used to modify the functionality of an object at runtime.
 
-##### Adapter
+### Adapter
 
 One of the great real life example of Adapter design pattern is mobile charger. Mobile battery needs 3 volts to charge but the normal socket produces either 120V (US) or 240V (India). So the mobile charger works as an adapter between mobile charging socket and the wall socket. We will try to implement multi-adapter using adapter design pattern in this tutorial. So first of all we will have two classes - Volt (to measure volts) and Socket (producing constant volts of 120V).
 
@@ -98,7 +98,7 @@ public class SocketClassAdapterImpl extends Socket implements SocketAdapter{
 
 ```
 
-##### Composite
+### Composite
 
 When we need to create a structure in a way that the objects in the structure has to be treated the same way, we can apply composite design pattern. Lets understand it with a real life example - A diagram is a structure that consists of Objects such as Circle, Lines, Triangle etc. When we fill the drawing with color (say Red), the same color also gets applied to the Objects in the drawing. Here drawing is made up of different parts and they all have same operations. Composite Pattern consists of following objects.
 
@@ -153,7 +153,7 @@ public class Drawing implements Shape{
 
 ```
 
-##### Proxy
+### Proxy
 
 Proxy design pattern intent is: Provide a surrogate or placeholder for another object to control access to it.
 
@@ -201,7 +201,7 @@ public class CommandExecutorProxy implements CommandExecutor {
 
 ```
 
-##### Flyweight
+### Flyweight
 
 Caching and reusing object instances, used with immutable objects. For example, string pool.
 
@@ -264,7 +264,7 @@ public class FlyweightShapeFactory {
 }
 ```
 
-##### Facade
+### Facade
 
 Facade design pattern is used to help client applications to easily interact with the system.
 
@@ -308,7 +308,7 @@ public class HelperFacade {
 }
 ```
 
-##### Bridge
+### Bridge
 
 The bridge design pattern is used to decouple the interfaces from implementation and hiding the implementation details from the client program.
 
@@ -348,7 +348,7 @@ public class Triangle extends Shape{
 }
 ```
 
-##### Decorator
+### Decorator
 
 Decorator design pattern is used to modify the functionality of an object at runtime. At the same time other instances of the same class will not be affected by this, so individual object gets the modified behavior.
 

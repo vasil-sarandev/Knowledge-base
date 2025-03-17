@@ -1,6 +1,6 @@
 [Back to Software Design Patterns](05-software-design-patterns.md)
 
-#### Behavioral Design Patterns
+## Behavioral Design Patterns
 
 This type of design patterns provide solution for the better interaction between objects, how to provide lose coupling, and flexibility to extend easily in future.
 
@@ -16,7 +16,7 @@ This type of design patterns provide solution for the better interaction between
 - [_Iterator_](#iterator) - used to provide a standard way to traverse through a group of Objects.
 - [_Memento_](#memento) - The memento design pattern is used when we want to save the state of an object so that we can restore later on.
 
-##### Template Method
+### Template Method
 
 Used to create a template method stub and defer some of the steps of implementation to the subclasses.
 
@@ -76,7 +76,7 @@ public class GlassHouse extends HouseTemplate {
 }
 ```
 
-##### Mediator
+### Mediator
 
 Mediator design pattern is used to provide a centralized communication medium between different objects in a system.
 
@@ -164,7 +164,7 @@ public class ChatClient {
 
 ```
 
-##### Chain of Responsibility
+### Chain of Responsibility
 
 Chain of responsibility pattern is used to achieve loose coupling in software design where a request from client is passed to a chain of objects to process them. Then the object in the chain will decide themselves who will be processing the request and whether the request is required to be sent to the next object in the chain or not.
 
@@ -279,7 +279,7 @@ public class ATMDispenseChain {
 
 ```
 
-##### Observer
+### Observer
 
 Observer Pattern is one of the behavioral design pattern. Observer design pattern is useful when you are interested in the state of an object and want to get notified whenever there is any change. In observer pattern, the object that watch on the state of another object are called Observer and the object that is being watched is called Subject.
 
@@ -427,7 +427,7 @@ public class ObserverPatternTest {
 // Obj3:: Consuming message::New Message
 ```
 
-##### Strategy
+### Strategy
 
 Strategy pattern is also known as Policy Pattern. We define multiple algorithms and let client application pass the algorithm to be used as a parameter. One of the best example of strategy pattern is Collections.sort() method that takes Comparator parameter. Based on the different implementations of Comparator interfaces, the Objects are getting sorted in different ways.
 
@@ -549,7 +549,7 @@ public class ShoppingCartTest {
 }
 ```
 
-##### Command
+### Command
 
 In command pattern, the request is send to the invoker and invoker pass it to the encapsulated command object. Command object passes the request to the appropriate method of Receiver to perform the specific action. The client program create the receiver object and then attach it to the Command. Then it creates the invoker object and attach the command object to perform an action. Now when client program executes the action, it’s processed based on the command and receiver object.
 
@@ -653,7 +653,7 @@ public class TVRemote {
 }
 ```
 
-##### Visitor
+### Visitor
 
 Visitor pattern is used when we have to perform an operation on a group of similar kind of Objects. With the help of visitor pattern, we can move the operational logic from the objects to another class.
 
@@ -772,7 +772,7 @@ public class ShoppingCartClient {
 
 ```
 
-##### Interpreter
+### Interpreter
 
 Defines a grammatical representation for a language and provides an interpreter to deal with this grammar.
 
@@ -873,7 +873,7 @@ public class Client {
 }
 ```
 
-##### Iterator
+### Iterator
 
 Iterator design pattern in one of the behavioral pattern. Iterator pattern is used to provide a standard way to traverse through a group of Objects. Iterator pattern is widely used in Java Collection Framework. Iterator interface provides methods for traversing through a collection.
 

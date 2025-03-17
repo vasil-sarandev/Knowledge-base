@@ -7,7 +7,6 @@
 - [Distributed Architecture](distributed.md)
 - [Messaging](messaging.md)
 - [Structural Architectural Styles](structural.md)
-
 ##### Available Resources
 
 - [Overview - Architectural Patterns](https://en.wikipedia.org/wiki/Architectural_pattern)
