@@ -12,3 +12,4 @@
 6. [Architectural Principles](./06-architectural-principles.md)
 7. [Architectural Styles](./07-architectural-styles.md)
 8. [Architectural Patterns](./08-architectural-patterns.md)
+9. [Enterprise Patterns](./09-enterprise-patterns.md)
