@@ -1,4 +1,4 @@
-[Back to course frontpage](courses/introduction-to-sql/index.md)
+[Back to course frontpage](structured-query-language.md)
 
 Table of Contents:
 

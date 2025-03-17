@@ -1,4 +1,4 @@
-[Back to course index](../index.md)
+[Back to course index](structured-query-language.md)
 
 ## Movie Rating Modification Exercises
 

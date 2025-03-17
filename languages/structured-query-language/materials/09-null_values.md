@@ -1,4 +1,4 @@
-[Back to course frontpage](courses/introduction-to-sql/index.md)
+[Back to course frontpage](structured-query-language.md)
 
 ## Null Values
 
@@ -6,7 +6,7 @@ Unless specified otherwise, in databases any value in an attribute can take on t
 
 For example - we could have a student whose GPA is unknown and we'll represent that with a **NULL** or we could have a not yet made decision for an application in the Apply relation which we'll also represent with a **NULL**.
 
-![Null values](../assets/null-values-1.png)
+![Null values](null-values-1.png)
 
 ### Examples
 

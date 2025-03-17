@@ -1,4 +1,4 @@
-[Back to course frontpage](courses/introduction-to-sql/index.md)
+[Back to course frontpage](structured-query-language.md)
 
 ## Aggregation
 
@@ -17,7 +17,7 @@ Once aggregation functions are added, there are additional clauses we can includ
 - Group by - partitions our relations into groups.
 - Having - test filters over the result of aggregate values.
 
-![SQL Aggregation](../assets/sql-aggregation.png)
+![SQL Aggregation](sql-aggregation.png)
 
 ### Demos
 

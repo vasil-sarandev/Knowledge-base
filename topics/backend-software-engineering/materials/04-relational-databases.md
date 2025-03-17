@@ -1,11 +1,11 @@
-[Back to front page](topics/backend-software-engineering/index.md)
+[Back to front page](backend-software-engineering.md)
 
 # Relational Databases
 
 ##### Linked materials
 
 - [PostgreSQL](postgresql.md)
-- [Introduction to SQL: Stanford Onine](courses/introduction-to-sql/index.md)
+- [Introduction to SQL: Stanford Online](structured-query-language.md)
 
 ##### Available resources
 

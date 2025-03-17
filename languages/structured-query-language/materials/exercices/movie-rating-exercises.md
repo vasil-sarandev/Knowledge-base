@@ -1,4 +1,4 @@
-[Back to course index](../index.md)
+[Back to course index](structured-query-language.md)
 
 ## Movie Rating Exercies
 
@@ -25,7 +25,7 @@ You are to translate the English into a SQL query that computes the desired resu
 
 You may perform these exercises as many times as you like, so we strongly encourage you to keep working with them until you complete the exercises with full credit.
 
-![Movie Rating Exercises Database](../assets/movie-rating-exercise-db.png)
+![Movie Rating Exercises Database](movie-rating-exercise-db.png)
 
 ### Exercises
 

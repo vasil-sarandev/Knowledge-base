@@ -1,4 +1,4 @@
-[Back to front page](../../index)
+[Back to front page](index.md)
 
 # Relational Databases and SQL (Stanford EDU)
 

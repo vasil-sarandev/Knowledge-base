@@ -1,4 +1,4 @@
-[Back to course frontpage](courses/introduction-to-sql/index.md)
+[Back to course frontpage](structured-query-language.md)
 
 ## DATA TYPES
 
@@ -12,7 +12,7 @@ In standard SQL, a Boolean value can be TRUE, FALSE, or NULL. However, PostgreSQ
 
 The following table shows the valid literal values for TRUE and FALSE in PostgreSQL
 
-![Boolean type](../assets/boolean.png)
+![Boolean type](boolean.png)
 
 #### CHAR, VARCHAR, AND TEXT
 
@@ -86,7 +86,7 @@ To store the whole numbers in PostgreSQL, you can use one of the following integ
 
 The following table illustrates the limitations of each type:
 
-![Limitations-integers](../assets/int-bigint-smallint.png)
+![Limitations-integers](int-bigint-smallint.png)
 
 #### DATE
 

@@ -1,8 +1,8 @@
-[Back to course frontpage](courses/introduction-to-sql/index.md)
+[Back to course frontpage](structured-query-language.md)
 
 ## SQL: Table Variables and Set Operators
 
-![Table Variables](../assets/table-variables-first.png)
+![Table Variables](table-variables-first.png)
 
 In this example we're using variables to simplify the statement and make it shorter.
 

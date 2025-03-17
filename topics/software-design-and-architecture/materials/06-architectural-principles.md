@@ -1,4 +1,4 @@
-[Back to Software Design and Architecture](topics/software-design-and-architecture/index.md)
+[Back to Software Design and Architecture](topics/software-design-and-architecture/software-design-and-architecture.md)
 
 # Software Architectural Principles
 

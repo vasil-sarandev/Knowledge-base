@@ -1,8 +1,8 @@
-[Back to course frontpage](courses/introduction-to-sql/index.md)
+[Back to course frontpage](structured-query-language.md)
 
 ## SQL: The JOIN Family of Operators
 
-![SQL JOIN](../assets/sql-join-operators-1.png)
+![SQL JOIN](sql-join-operators-1.png)
 
 When we're listing the R1, R2... Rn in the FROM clause, SQL does a Cross-product or Cartesian product by default. This means that every tuple in every relation is matched with all other tuples in other relations.
 
@@ -21,7 +21,7 @@ This will return a join of all tuples that have a matching value in the attribut
 2. Compare values: It combines rows where the values in these matching columns are the same.
 3. Eliminate duplicates: The resulting relation includes each matching column only once in the output (it doesn't duplicate the column values).
 
-![Natural Join example](../assets/natural-join-example.png)
+![Natural Join example](natural-join-example.png)
 
 **Natural join** is problematic with its syntax because we might end up in a situation where a new attribute is added to a relation that matches another one in the other relation and this will mess with the results we expect.
 
@@ -135,7 +135,7 @@ select sName, sID, cName, major
 from Student left outer join Apply using(sID);
 ```
 
-![Left Outer Join example](../assets/left-outer-join-example.png);
+![Left Outer Join example](left-outer-join-example.png);
 
 The blank values in cName, major attributes are the student records that have no application whatsover.
 

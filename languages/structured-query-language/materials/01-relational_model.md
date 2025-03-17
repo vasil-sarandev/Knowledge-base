@@ -1,10 +1,10 @@
-[Back to course frontpage](courses/introduction-to-sql/index.md)
+[Back to course frontpage](structured-query-language.md)
 
 ## The Relational model
 
 An efficient model that's used by all major commercial database systems. Can be queried with high-level languages.
 
-![The Relational Model](../assets/relationa-model-visualized.png)
+![The Relational Model](relationa-model-visualized.png)
 
 ## Querying Relational Databases
 
@@ -27,4 +27,4 @@ Queries are **compositional** - a query can be run over the result of a previous
 - Relational Algebra - formal
 - SQL - actual / implemented
 
-![Query Languages example](../assets/query-languages-1.png)
+![Query Languages example](query-languages-1.png)

@@ -1,4 +1,4 @@
-[Back to course index](../index.md)
+[Back to course index](structured-query-language.md)
 
 ## Social-Network Query Exercises
 
@@ -17,7 +17,7 @@ Your queries will run over a small data set conforming to the schema. [View the 
 
 For your convenience, here is a graph showing the various connections between the students in our database. 9th graders are blue, 10th graders are green, 11th graders are yellow, and 12th graders are purple. Undirected black edges indicate friendships, and directed red edges indicate that one student likes another student.
 
-![Social-exercises](../assets/social-exercises.png)
+![Social-exercises](social-exercises.png)
 
 1.  Find the names of all students who are friends with someone named Gabriel.
 
