@@ -1,5 +1,6 @@
 [Back to Software Design and Architecture](topics/software-design-and-architecture/software-design-and-architecture.md)
 # Clean code
+
 Clean code is code that is easy to read, understand, and maintain. It follows a set of principles that are designed to make the code more readable, testable, and less error-prone. Some of the key principles of clean code include:
 - Clarity: The code should be easy to read and understand.
 - Simplicity: The code should be as simple as possible, avoiding unnecessary complexity.
