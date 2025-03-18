@@ -1,9 +1,6 @@
 [Back to Software Design Patterns](05-software-design-patterns.md)
-
 ## Behavioral Design Patterns
-
 This type of design patterns provide solution for the better interaction between objects, how to provide lose coupling, and flexibility to extend easily in future.
-
 - [_Template Method_](#template-method) - used to create a template method stub and defer some of the steps of implementation to the subclasses.
 - [_Mediator_](#mediator) - used to provide a centralized communication medium between different objects in a system.
 - [_Chain of Responsibility_](#chain-of-responsibility) - used to achieve loose coupling in software design where a request from the client is passed to a chain of objects to process them.
@@ -15,9 +12,7 @@ This type of design patterns provide solution for the better interaction between
 - [_Interpreter_](#interpreter) - defines a grammatical representation for a language and provides an interpreter to deal with this grammar.
 - [_Iterator_](#iterator) - used to provide a standard way to traverse through a group of Objects.
 - [_Memento_](#memento) - The memento design pattern is used when we want to save the state of an object so that we can restore later on.
-
 ### Template Method
-
 Used to create a template method stub and defer some of the steps of implementation to the subclasses.
 
 Template method defines the steps to execute an algorithm and it can provide default implementation that might be common for all or some of the subclasses.
@@ -77,7 +72,6 @@ public class GlassHouse extends HouseTemplate {
 ```
 
 ### Mediator
-
 Mediator design pattern is used to provide a centralized communication medium between different objects in a system.
 
 Mediator design pattern is very helpful in an enterprise application where multiple objects are interacting with each other. If the objects interact with each other directly, the system components are tightly-coupled with each other that makes higher maintainability cost and not hard to extend. Mediator pattern focuses on provide a mediator between objects for communication and help in implementing lose-coupling between objects.
@@ -163,9 +157,7 @@ public class ChatClient {
 }
 
 ```
-
 ### Chain of Responsibility
-
 Chain of responsibility pattern is used to achieve loose coupling in software design where a request from client is passed to a chain of objects to process them. Then the object in the chain will decide themselves who will be processing the request and whether the request is required to be sent to the next object in the chain or not.
 
 ```JAVA
@@ -278,9 +270,7 @@ public class ATMDispenseChain {
 // Enter amount to dispense
 
 ```
-
 ### Observer
-
 Observer Pattern is one of the behavioral design pattern. Observer design pattern is useful when you are interested in the state of an object and want to get notified whenever there is any change. In observer pattern, the object that watch on the state of another object are called Observer and the object that is being watched is called Subject.
 
 ```JAVA
@@ -426,9 +416,7 @@ public class ObserverPatternTest {
 // Obj2:: Consuming message::New Message
 // Obj3:: Consuming message::New Message
 ```
-
 ### Strategy
-
 Strategy pattern is also known as Policy Pattern. We define multiple algorithms and let client application pass the algorithm to be used as a parameter. One of the best example of strategy pattern is Collections.sort() method that takes Comparator parameter. Based on the different implementations of Comparator interfaces, the Objects are getting sorted in different ways.
 
 ```JAVA
@@ -548,19 +536,14 @@ public class ShoppingCartTest {
 
 }
 ```
-
 ### Command
-
 In command pattern, the request is send to the invoker and invoker pass it to the encapsulated command object. Command object passes the request to the appropriate method of Receiver to perform the specific action. The client program create the receiver object and then attach it to the Command. Then it creates the invoker object and attach the command object to perform an action. Now when client program executes the action, it’s processed based on the command and receiver object.
-
 ##### State
-
 If we have to change the behavior of an object based on its state, we can have a state variable in the Object. Then use if-else condition block to perform different actions based on the state. State design pattern is used to provide a systematic and loosely coupled way to achieve this through Context and State implementations.
 
 State Pattern Context is the class that has a State reference to one of the concrete implementations of the State. Context forwards the request to the state object for processing.
 
 **Basic example with if/else**
-
 ```JAVA
 public class TVRemoteBasic {
 
@@ -590,9 +573,7 @@ public class TVRemoteBasic {
 
 }
 ```
-
 **Example with Context**
-
 ```JAVA
 
 public interface State {
@@ -652,9 +633,7 @@ public class TVRemote {
 
 }
 ```
-
 ### Visitor
-
 Visitor pattern is used when we have to perform an operation on a group of similar kind of Objects. With the help of visitor pattern, we can move the operational logic from the objects to another class.
 
 ```JAVA
@@ -771,9 +750,7 @@ public class ShoppingCartClient {
 }
 
 ```
-
 ### Interpreter
-
 Defines a grammatical representation for a language and provides an interpreter to deal with this grammar.
 
 ```JAVA
@@ -872,9 +849,7 @@ public class Client {
     }
 }
 ```
-
 ### Iterator
-
 Iterator design pattern in one of the behavioral pattern. Iterator pattern is used to provide a standard way to traverse through a group of Objects. Iterator pattern is widely used in Java Collection Framework. Iterator interface provides methods for traversing through a collection.
 
 ```JAVA
