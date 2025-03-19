@@ -2,17 +2,14 @@
 # Software Architectural Principles
 
 Architectural principles refer to a set of guidelines or rules that are used to guide the design and development of a software architecture. These principles are intended to ensure that the resulting architecture is maintainable, scalable, and easy to understand and modify. Some common architectural principles include the separation of concerns, modularity, loose coupling, and high cohesion. Additionally, architectural principles are often used in conjunction with design patterns, which are reusable solutions to common software design problems.
-## Component Principles
 
-Component principles in software architecture refer to guidelines for designing and implementing software components that are modular, reusable, and easy to understand, test, and maintain. Some of the key component principles in software architecture include:
 - High cohesion - classes' responsibilities are in a similar domain and have a well-defined purpose.
 - Low coupling - changes in one module have minimal impact to other modules
-- Separation of concerns - broken down into smaller parts
+- Separation of concerns - dividing a system into distinct, independent parts, each responsible for a single functionality.
 - Interface-based design - program against interfaces, not implementations
 - Modularity - splitting the software in modules reduces coupling
-- Interoperability - Interoperability refers to the degree to which a software system, devices, applications or other entity can connect and communicate with other entities.
-
-By following these component principles, software can be developed in a way that is easy to understand, maintain, and extend, and that is less prone to bugs. It also enables better code reuse, and makes it easier to test and change the code, and also enables better code reuse, as components can be reused in different contexts.
+- Interoperability - The degree to which a software system, devices, applications or other entity can connect and communicate with other entities.
+- CAP Theorem
 ## CAP Theorem
 
 The **CAP theorem** states that any distributed system can provide only 2 of the following 3 guarantees: 
@@ -22,13 +19,6 @@ The **CAP theorem** states that any distributed system can provide only 2 of the
 - **Partition Tolerance** - The system continues to operate despite an arbitrary number of messages being dropped (or delayed) by the network between nodes.
 
 The theorem remains extremely relevant even today when we're talking about system design and architecture because there are trade-offs we need to be aware of
-## Policy vs Detail
-
-In software architecture, the distinction between **policy** and **detail** refers to the separation of high-level decisions and low-level implementation details.
-
-Policy refers to the high-level decisions that define the overall behavior and structure of the system. These decisions include things like the overall architecture, the system’s interface, and the major components and their interactions. Policy decisions are often made by architects and designers, and they set the overall direction for the system.
-
-Detail refers to the low-level implementation details that are required to implement the policy decisions. These include things like the specific algorithms, data structures, and code that make up the system’s components. Details are often implemented by developers and are responsible for the actual functioning of the system.
 ## Coupling and Cohesion
 
 Coupling and cohesion are two principles in software architecture that are used to measure the degree of interdependence between components in a system.
