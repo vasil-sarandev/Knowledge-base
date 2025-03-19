@@ -1,7 +1,9 @@
 [Back to Software Design and Architecture](topics/software-design-and-architecture/software-design-and-architecture.md)
 # Software Architectural Principles
 
-Architectural principles refer to a set of guidelines or rules that are used to guide the design and development of a software architecture. These principles are intended to ensure that the resulting architecture is maintainable, scalable, and easy to understand and modify. Some common architectural principles include the separation of concerns, modularity, loose coupling, and high cohesion. Additionally, architectural principles are often used in conjunction with design patterns, which are reusable solutions to common software design problems.
+Architectural principles refer to a set of guidelines or rules that are used to guide the design and development of a software architecture. These principles are intended to ensure that the resulting architecture is maintainable, scalable, and easy to understand and modify. 
+
+Additionally, architectural principles are often used in conjunction with design patterns, which are reusable solutions to common software design problems.
 
 - High cohesion - classes' responsibilities are in a similar domain and have a well-defined purpose.
 - Low coupling - changes in one module have minimal impact to other modules
