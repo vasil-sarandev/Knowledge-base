@@ -1,4 +1,4 @@
-[Back to Architectural Styles](07-architectural-styles.md)
+[Back to Architectural Styles](08-architectural-styles.md)
 ## Serverless Architecture
 
 Serverless architecture allows developers to build and run applications and services without having to provision and manage servers. Instead, these applications and services are executed in a fully managed environment, such as AWS Lambda, Azure Functions, or Google Cloud Functions, where the infrastructure and scaling are handled automatically by the cloud provider.

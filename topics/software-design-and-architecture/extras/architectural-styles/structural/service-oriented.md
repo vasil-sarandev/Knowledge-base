@@ -1,4 +1,4 @@
-[Back to Architectural Styles](07-architectural-styles.md)
+[Back to Architectural Styles](08-architectural-styles.md)
 ## SOA (Service-Oriented Architecture)
 
 SOA (Service-Oriented Architecture) is an architectural style that is used to design and organize software systems as a collection of services that can be accessed over a network, these services are autonomous, self-contained units of functionality that can be reused and combined to create new functionality.

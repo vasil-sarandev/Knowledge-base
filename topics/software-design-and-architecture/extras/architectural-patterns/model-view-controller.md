@@ -1,4 +1,4 @@
-[Back to Architectural Patterns](08-architectural-patterns.md)
+[Back to Architectural Patterns](09-architectural-patterns.md)
 ## Model-View-Controller (MVC)
 
 Model-View-Controller (MVC) is an architectural pattern that separates the concerns of a software system into three distinct components: the model, the view, and the controller, where the model represents the data and the business logic of the system, the view represents the user interface of the system and the controller acts as an intermediary between the model and the view.

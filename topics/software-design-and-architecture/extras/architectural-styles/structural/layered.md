@@ -1,4 +1,4 @@
-[Back to Architectural Styles](07-architectural-styles.md)
+[Back to Architectural Styles](08-architectural-styles.md)
 ## Layered Architecture
 
 In software architecture, Layered Architecture is a design approach in which a software system is divided into a set of layers, each of which has a specific responsibility and communicates with the other layers through well-defined interfaces. This approach allows for a more modular and flexible design, where each layer can be developed, tested, and deployed independently, making it easier to add new features, modify existing ones, and maintain the system.

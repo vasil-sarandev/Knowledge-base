@@ -1,4 +1,4 @@
-[Back to Architectural Patterns](08-architectural-patterns.md)
+[Back to Architectural Patterns](09-architectural-patterns.md)
 ## Meesage Queues / Streams
 
 Message queues and streams are architectural patterns that are used to decouple different components of a system and enable asynchronous communication between them.

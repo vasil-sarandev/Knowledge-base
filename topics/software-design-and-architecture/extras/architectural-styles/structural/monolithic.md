@@ -1,4 +1,4 @@
-[Back to Architectural Styles](07-architectural-styles.md)
+[Back to Architectural Styles](08-architectural-styles.md)
 ## Monolithic Architecture
 
 In software architecture, monolithic architecture is a design approach in which a software system is built as a single, integrated, and self-contained unit. In a monolithic architecture, all the components of the system are tightly coupled and depend on each other. This means that changes in one part of the system may affect other parts of the system.

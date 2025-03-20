@@ -1,4 +1,4 @@
-[Back to Architectural Patterns](08-architectural-patterns.md)
+[Back to Architectural Patterns](09-architectural-patterns.md)
 ## Blackboard Pattern
 
 The Blackboard architectural pattern is a software design pattern that allows for the creation of a centralized repository of information that can be accessed and modified by multiple independent modules or subsystems.

@@ -1,4 +1,4 @@
-[Back to Architectural Styles](07-architectural-styles.md)
+[Back to Architectural Styles](08-architectural-styles.md)
 ## Event-Driven Architecture (EDA)
 
 Event-driven architecture (EDA) is a software design pattern in which the system reacts to specific events that occur, rather than being continuously polled for changes. In EDA, events are messages that are sent asynchronously between components, and the components react to the events they are interested in.

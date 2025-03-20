@@ -1,4 +1,4 @@
-[Back to Architectural Styles](07-architectural-styles.md)
+[Back to Architectural Styles](08-architectural-styles.md)
 ## Domain-Driven Design (DDD)
 
 Domain-Driven Design (DDD) is used to design software systems based on the core business domain and business entities, it’s focused on creating a clear and accurate representation of the business domain within the software system, and on aligning the software system with the business goals and objectives.

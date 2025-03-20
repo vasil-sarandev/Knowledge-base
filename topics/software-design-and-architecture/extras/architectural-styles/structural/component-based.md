@@ -1,4 +1,4 @@
-[Back to Architectural Styles](07-architectural-styles.md)
+[Back to Architectural Styles](08-architectural-styles.md)
 ## Component-Based Architecture
 
 In software architecture, component-based design (CBD) is an approach to designing software systems by composing them from a set of reusable and independent software components. These components encapsulate specific functionality and can be easily integrated into different parts of the system, allowing for a more modular and flexible design.

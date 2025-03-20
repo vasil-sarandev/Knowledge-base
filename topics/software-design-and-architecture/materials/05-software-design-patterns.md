@@ -11,3 +11,5 @@ There are several different types of design patterns, including:
 - [Structural Patterns](structural-patterns.md)
 - [Behavioral Patterns](behavioral-patterns.md)
 
+### Available Resources
+- [GOF Design Patterns](https://www.digitalocean.com/community/tutorials/gangs-of-four-gof-design-patterns)

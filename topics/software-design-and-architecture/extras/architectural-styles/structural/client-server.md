@@ -1,4 +1,4 @@
-[Back to Architectural Styles](07-architectural-styles.md)
+[Back to Architectural Styles](08-architectural-styles.md)
 ## Client-Server Architecture
 
 The client-server architecture is a common architecture pattern used in distributed systems, where a client (or multiple clients) send requests to a server, and the server responds to those requests. The client and server are separate entities that communicate over a network, such as the Internet or a local network.

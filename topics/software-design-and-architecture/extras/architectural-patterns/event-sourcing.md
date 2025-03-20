@@ -1,4 +1,4 @@
-[Back to Architectural Patterns](08-architectural-patterns.md)
+[Back to Architectural Patterns](09-architectural-patterns.md)
 ## Event Sourcing
 
 Event sourcing is an architectural pattern that is used to build systems that need to maintain a history of all the changes that have occurred over time. This pattern stores all changes to the system’s state as a sequence of events, rather than just the current state.
