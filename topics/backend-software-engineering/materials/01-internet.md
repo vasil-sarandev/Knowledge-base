@@ -2,15 +2,15 @@
 
 # Internet
 
+## How does the Internet work?
+
+The internet is a global network of interconnected computers that communicate using standardized protocols, primarily TCP/IP. When you request a webpage, your device sends a data packet through your internet service provider (ISP) to a DNS server, which translates the website's domain name into an IP address. The packet is then routed across various networks (using routers and switches) to the destination server, which processes the request and sends back the response. This back-and-forth exchange enables the transfer of data like web pages, emails, and files, making the internet a dynamic, decentralized system for global communication.
+
 **Available resources:**
 
 - [How does the Internet Work?](<https://roadmap.sh/backend#:~:text=Article,work%3F%20(Full%20Course)>)
 - [The Internet Explained](<https://roadmap.sh/backend#:~:text=Article,work%3F%20(Full%20Course)>)
 - [How Does the Internet Work?](http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
-
-##  How does the Internet work?
-
-The internet is a global network of interconnected computers that communicate using standardized protocols, primarily TCP/IP. When you request a webpage, your device sends a data packet through your internet service provider (ISP) to a DNS server, which translates the website's domain name into an IP address. The packet is then routed across various networks (using routers and switches) to the destination server, which processes the request and sends back the response. This back-and-forth exchange enables the transfer of data like web pages, emails, and files, making the internet a dynamic, decentralized system for global communication.
 
 ## What is HTTP?
 

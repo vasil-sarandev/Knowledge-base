@@ -7,9 +7,13 @@ They are not specific to any particular programming language or technology, but 
 
 There are several different types of design patterns, including:
 
+- Creational Patterns
+- Structural Patterns
+- Behavioral Patterns
+## Linked Materials
+
 - [Creational Patterns](creational-patterns.md)
 - [Structural Patterns](structural-patterns.md)
 - [Behavioral Patterns](behavioral-patterns.md)
-
 ### Available Resources
 - [GOF Design Patterns](https://www.digitalocean.com/community/tutorials/gangs-of-four-gof-design-patterns)

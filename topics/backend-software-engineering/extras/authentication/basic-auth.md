@@ -1,6 +1,6 @@
 [Back to Authentication index](06-authentication.md)
 
-#### Basic Authentication
+## Basic Authentication
 
 Basic Authentication is a simple HTTP authentication scheme built into the HTTP protocol. It works by sending a user’s credentials (username and password) encoded in base64 format within the HTTP header.
 
@@ -8,7 +8,7 @@ When a client makes a request to a server requiring authentication, the server r
 
 While easy to implement, Basic Authentication has significant security limitations: credentials are essentially sent in plain text (base64 is easily decoded), and it doesn’t provide any encryption. Therefore, it should only be used over HTTPS connections to ensure the credentials are protected during transmission. Due to its simplicity and lack of advanced security features, Basic Authentication is generally recommended only for simple, low-risk scenarios or as a fallback mechanism.
 
-#### How it works
+### How it works
 
 1. The client sends a request to an endpoint that requires authentication
 2. The server responds with a 401 and `WWW-Authenticate` header.
@@ -16,5 +16,3 @@ While easy to implement, Basic Authentication has significant security limitatio
 4. The server checks the username and password and responds.
 
 (Of course we don't need the browser to handle this - it's just built in. We can send them before we receive the 401 error).
-
-[Next: Token Authentication](token-authentication.md)

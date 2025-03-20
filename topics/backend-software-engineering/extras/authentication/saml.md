@@ -1,6 +1,6 @@
 [Back to Authentication index](06-authentication.md)
 
-#### SAML
+## SAML
 
 Security Assertion Markup Language (SAML) is an XML-based framework used for single sign-on (SSO) and identity federation, enabling users to authenticate once and gain access to multiple applications or services.
 

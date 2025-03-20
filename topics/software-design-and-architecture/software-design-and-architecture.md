@@ -2,7 +2,7 @@
 
 # Software Design and Architecture
 
-##### Linked Materials
+## Linked Materials
 
 1. [Clean Code](01-clean-code.md)
 2. [Programming Paradigms](02-programming-paradigms.md)

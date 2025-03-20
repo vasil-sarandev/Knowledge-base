@@ -1,8 +1,6 @@
 [Back to Scaling Databases](12-scaling-databases.md)
 
-### CAP Theorem
-
-#### Introduction
+## CAP Theorem
 
 The CAP Theorem, also known as Brewer’s Theorem, is a fundamental principle in distributed database systems.
 

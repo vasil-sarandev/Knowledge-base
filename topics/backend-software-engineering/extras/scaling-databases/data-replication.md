@@ -1,12 +1,6 @@
 [Back to Scaling Databases](12-scaling-databases.md)
 
-### Data Replication
-
-##### Available resources:
-
-[Data Replication - IBM](https://www.ibm.com/topics/data-replication)
-
-#### Introduction
+## Data Replication
 
 Data replication is the process of creating and maintaining multiple copies of the same data across different locations or nodes in a distributed system. It enhances data availability, reliability, and performance by ensuring that data remains accessible even if one or more nodes fail.
 
@@ -17,3 +11,6 @@ It’s widely used in database systems, content delivery networks, and distribut
 While improving fault tolerance and read performance, replication introduces challenges in maintaining data consistency across copies and managing potential conflicts.
 
 Effective replication strategies must balance consistency, availability, and partition tolerance, often in line with the principles of the CAP theorem.
+### Available resources
+
+- [Data Replication - IBM](https://www.ibm.com/topics/data-replication)

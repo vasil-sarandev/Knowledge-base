@@ -1,6 +1,6 @@
 [Back to Authentication index](06-authentication.md)
 
-#### Cookie or Session Based Authentication
+## Cookie or Session Based Authentication
 
 Cookie-based authentication is a method of maintaining user sessions in web applications.
 
@@ -10,10 +10,8 @@ The actual session data is typically stored on the server, with the cookie merel
 
 Despite these limitations, it remains a common authentication method, especially for server-rendered web applications.
 
-##### Cookie for Session Based Auth example
+### Cookie for Session Based Auth example
 
 ```mathematica
 Set-Cookie: sessionId=abc123xyz456; HttpOnly; Secure; SameSite=Strict; Path=/; Max-Age=3600`
 ```
-
-[Next: OpenID](openid.md)

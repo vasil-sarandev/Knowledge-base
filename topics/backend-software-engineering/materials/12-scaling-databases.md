@@ -2,23 +2,16 @@
 
 # Scaling Databases
 
-##### Linked Materials
+
+Scaling databases is the process of adapting them to handle more data and users efficiently.
+
+It’s achieved by either upgrading existing hardware (vertical scaling) or adding more servers (horizontal scaling). Techniques like sharding and replication are key. This ensures databases continue to be a robust asset as they grow.
+## Linked Materials
 
 - [Database indexes](database-indexes.md)
 - [Data replication](data-replication.md)
 - [Sharding strategies](sharding-strategies.md)
 - [CAP Theorem](CAP-theorem.md)
-
-##### Available Resources
-
-- [Strategies for Scaling Databases: A Comprehensive Guide](https://medium.com/@anil.goyal0057/strategies-for-scaling-databases-a-comprehensive-guide-b69cda7df1d3)
-- [Horizontal vs. Vertical Scaling - How to Scale a Database](https://www.freecodecamp.org/news/horizontal-vs-vertical-scaling-in-database/)
-
-## Introduction
-
-Scaling databases is the process of adapting them to handle more data and users efficiently.
-
-It’s achieved by either upgrading existing hardware (vertical scaling) or adding more servers (horizontal scaling). Techniques like sharding and replication are key. This ensures databases continue to be a robust asset as they grow.
 
 ## Strategies for scaling databases
 
@@ -81,3 +74,9 @@ Use cases:
 - High Traffic: For applications with high traffic, sharding can help by distributing the load across multiple servers.
 
 - Geographical Distribution: If your application has users in different geographical locations, you can improve performance by placing shards in the regions closer to your users.
+
+
+## Available Resources
+
+- [Strategies for Scaling Databases: A Comprehensive Guide](https://medium.com/@anil.goyal0057/strategies-for-scaling-databases-a-comprehensive-guide-b69cda7df1d3)
+- [Horizontal vs. Vertical Scaling - How to Scale a Database](https://www.freecodecamp.org/news/horizontal-vs-vertical-scaling-in-database/)

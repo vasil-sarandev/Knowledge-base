@@ -1,6 +1,6 @@
 [Back to Authentication index](06-authentication.md)
 
-#### JWT Authentication
+## JWT Authentication
 
 `JWT` (JSON Web Token) is an open standard for securely transmitting information between parties as a JSON object. It consists of three parts:
 
@@ -12,16 +12,14 @@ JWTs are commonly used for authentication and authorization purposes, allowing u
 
 A common way to use JWTs is OAuth Bearer Tokens.
 
-##### JWT structure example
+### JWT structure example
 
 ![JWT Structure](jwt-decoded.png)
 
-##### How JWT works
+### How JWT works
 
 1. User signs up, password is hashed and stored.
 2. User signs in, password is hashed and compared against the stored hash.
 3. After successful authentication, the server issues a JWT with appropriate claims, signed with the secret/private key.
 4. Front-end stores the JWT and includes it in requests using the Bearer token format.
 5. The server verifies the JWT using the public key (for RS256) or shared secret (for HS256) to validate the token and its authenticity before processing the request.
-
-[Next: Open Authentication(OAuth)](oauth.md)

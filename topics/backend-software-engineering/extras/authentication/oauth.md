@@ -1,6 +1,5 @@
 [Back to Authentication index](06-authentication.md)
-
-#### Open Authentication (OAuth)
+## Open Authentication (OAuth)
 
 OAuth is an open standard for authorization that allows third-party applications to access a user’s resources without exposing their credentials.
 
@@ -8,7 +7,7 @@ It works by issuing access tokens after users grant permission, which applicatio
 
 OAuth enables secure, token-based access management, commonly used for granting applications permissions to interact with services like social media accounts or cloud storage.
 
-##### How OAuth works and why it exists.
+### How OAuth works and why it exists.
 
 Developers build a lot of APIs. The API Economy is a common buzzword you might hear in boardrooms today. Companies need to protect their REST APIs in a way that allows many devices to access them. In the old days, you’d enter your username/password directory and the app would login directly as you. This gave rise to the delegated authorization problem.
 
@@ -31,7 +30,7 @@ To break it down simply, OAuth is where:
 3. App presents proof of authorization to server to get a Token
 4. Token is restricted to only access what the User authorized for the specific App
 
-##### OAuth tokens
+### OAuth tokens
 
 - Access token
   The token that the client uses to access the Resource Server (API). They're short lived - think in hours and minutes.
@@ -39,8 +38,6 @@ To break it down simply, OAuth is where:
   This is much longer-lived; days, months, years. This can be used to get new tokens. To get a refresh token, applications typically require confidential clients with authentication. Refresh tokens can be revoked.
   When revoking an application’s access in a dashboard, you’re killing its refresh token. This gives you the ability to force the clients to rotate secrets. What you’re doing is you’re using your refresh token to get new access tokens and the access tokens are going over the wire to hit all the API resources. Each time you refresh your access token you get a new cryptographically signed token. Key rotation is built into the system.
 
-**Token formats**
+#### Token formats
 
 The _OAuth_ spec doesn’t define what a token is. It can be in whatever format you want. Usually though, you want these tokens to be _JSON Web Tokens_ (a standard). In a nutshell, a `JWT` (pronounced “jot”) is a secure and trustworthy standard for token authentication. JWTs allow you to digitally sign information (referred to as claims) with a signature and can be verified at a later time with a secret signing key.
-
-[Next: Basic Authentication](basic-auth.md)

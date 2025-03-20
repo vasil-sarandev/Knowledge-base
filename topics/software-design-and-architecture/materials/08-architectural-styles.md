@@ -3,6 +3,8 @@
 
 Architectural styles in software refer to the overall design and organization of a software system, and the principles and patterns that are used to guide the design. These styles provide a general framework for the design of a system, and can be used to ensure that the system is well-structured, maintainable, and scalable.
 
+## Linked Materials
+
 - [Client-Server Architecture](client-server.md)
 - [Monolithic Architecture](monolithic.md)
 - [Layered Architecture](layered.md)
