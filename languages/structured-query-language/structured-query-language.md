@@ -4,7 +4,7 @@
 
 [Course URL](https://learning.edx.org/course/course-v1:StanfordOnline+SOE.YDB-SQL0001+2T2020/block-v1:StanfordOnline+SOE.YDB-SQL0001+2T2020+type@sequential+block@seq-vid-join_operators/block-v1:StanfordOnline+SOE.YDB-SQL0001+2T2020+type@vertical+block@vert-vid-join_operators)
 
-Linked Materials:
+## Linked Materials
 
 1. [Introduction](00-introduction.md)
 2. [The Relational model & Querying Relational Databases](01-relational_model.md)
@@ -21,7 +21,7 @@ Linked Materials:
 13. [PostgreSQL: Data Types](12-data_types.md)
 14. [PostgreSQL: Conditional Expressions and Operators](13-conditional_expressions_and_operators.md)
 
-Exercises:
+## Exercises
 
 1. [movie-rating-exercises](movie-rating-exercises.md)
 2. [movie-rating-exercices-extras](movie-rating-exercices-extras.md)
