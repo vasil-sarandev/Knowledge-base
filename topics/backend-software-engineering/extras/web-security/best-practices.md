@@ -2,10 +2,6 @@
 
 ## API Security best practices
 
-### API Security checklist
-
-[API Security checklist](https://roadmap.sh/best-practices/api-security)
-
 ### HTTPS
 
 HTTPS (Hypertext Transfer Protocol Secure) is an extension of HTTP designed to secure data transmission between a client (e.g., browser) and a server. It uses encryption through SSL/TLS protocols to ensure data confidentiality, integrity, and authenticity. This prevents sensitive information, like login credentials or payment details, from being intercepted or tampered with by attackers.
@@ -62,3 +58,7 @@ Key practices include:
 - Security Hardening: Configuring servers with minimal services and features, applying security best practices to reduce the attack surface.
 - Regular Backups: Performing regular backups to ensure data can be restored in case of loss or corruption.
 - Monitoring and Logging: Continuously monitoring server activity and maintaining logs for auditing and detecting potential security incidents.
+
+### Available Resources
+
+- [API Security checklist](https://roadmap.sh/best-practices/api-security)

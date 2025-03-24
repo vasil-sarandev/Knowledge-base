@@ -19,4 +19,5 @@ This is my collection of notes regarding back-end technologies, concepts, and de
 15. [Search Engines](15-search-engines.md)
 16. [Web Servers](16-web-servers.md)
 17. [Real-Time Data](17-real-time-data.md)
-18. NoSQL databases
+18. [NoSQL Databases](18-nosql-databases.md)
+19. [Building for Scale](19-building-for-scale.md)
