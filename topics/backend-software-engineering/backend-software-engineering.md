@@ -14,3 +14,9 @@ This is my collection of notes regarding back-end technologies, concepts, and de
 10. [CI/CD](10-ci-cd.md)
 11. [Databases](11-databases-in-depth.md)
 12. [Scaling Databases](12-scaling-databases.md)
+13. [Containerization vs Virtualization](13-containerization-virtualization.md)
+14. [Message Brokers](14-message-brokers.md)
+15. [Search Engines](15-search-engines.md)
+16. [Web Servers](16-web-servers.md)
+17. [Real-Time Data](17-real-time-data.md)
+18. NoSQL databases
