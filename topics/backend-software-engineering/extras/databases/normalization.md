@@ -21,7 +21,7 @@ Courses attribute (column) is not an atomic value. It is further divisible.
 
 #### 2NF (Second Normal Form)
 
-Builds on 1NF by We need to remove redundant data from a table that is being applied to multiple rows. and placing them in separate tables. It requires all non-key attributes to be fully functional on the primary key.
+Builds on 1NF by ensuring that we remove redundant data from a table that is being applied to multiple rows by placing them in separate tables. It requires all non-key attributes to be fully functional on the primary key.
 
 Example Violation:
 ![2nf-violation](2nf-violation.png)

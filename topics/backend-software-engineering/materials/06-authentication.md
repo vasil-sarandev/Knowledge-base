@@ -18,5 +18,3 @@ API authentication protects sensitive data, prevents unauthorized access, enable
 - [OpenID](openid.md)
 - [SAML](saml.md)
 
-## Introduction
-

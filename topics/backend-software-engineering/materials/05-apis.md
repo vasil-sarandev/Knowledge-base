@@ -2,7 +2,11 @@
 
 # APIs
 
-An API (Application Programming Interface) is a set of defined rules and protocols that allow different software applications to communicate and interact with each other. It provides a standardized way for developers to access and manipulate the functionalities or data of a service, application, or platform without needing to understand its internal workings. APIs can be public or private and are commonly used to integrate disparate systems, facilitate third-party development, and enable interoperability between applications. They typically include endpoints, request methods (like GET, POST, PUT), and data formats (like JSON or XML) to interact with.
+An API (Application Programming Interface) is a set of defined rules and protocols that allow different software applications to communicate and interact with each other. 
+
+It provides a standardized way for developers to access and manipulate the functionalities or data of a service, application, or platform without needing to understand its internal workings. APIs can be public or private and are commonly used to integrate disparate systems, facilitate third-party development, and enable interoperability between applications. 
+
+They typically include endpoints, request methods (like GET, POST, PUT), and data formats (like JSON or XML) to interact with.
 
 ## REST APIs
 
@@ -86,7 +90,7 @@ soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
 
 gRPC is a high-performance, open source universal RPC framework, RPC stands for Remote Procedure Call, there’s an ongoing debate on what the g stands for. RPC is a protocol that allows a program to execute a procedure of another program located on another computer. The great advantage is that the developer doesn’t need to code the details of the remote interaction. The remote procedure is called like any other function. But the client and the server can be coded in different languages.
 
-It's basically a more efficient protocal than HTTP but can't be used directly in the browser. It's used to communicate between servers or microservices. It also has bi-directional streaming capabilities.
+It's basically a more efficient protocol than HTTP but can't be used directly in the browser. It's used to communicate between servers or microservices. It also has bi-directional streaming capabilities.
 
 ## GraphQL
 

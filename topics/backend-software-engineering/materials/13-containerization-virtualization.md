@@ -2,7 +2,7 @@
 
 # # Containerization vs Virtualization
 
-Containerization and virtualization are both technologies for isolating and running multiple applications on shared hardware, but they differ significantly in approach and resource usage. 
+Containerization and Virtualization are both technologies for isolating and running multiple applications on shared hardware, but they differ significantly in approach and resource usage. 
 
 Virtualization creates separate virtual machines (VMs), each with its own operating system, running on a hypervisor. This provides strong isolation but consumes more resources. 
 

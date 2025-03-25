@@ -25,7 +25,7 @@ The SHA family includes several versions, such as SHA-1, SHA-2, and SHA-3. SHA-1
 
 Scrypt is a key derivation function designed to be computationally intensive and memory-hard to resist brute-force attacks and hardware-based attacks, such as those using GPUs or ASICs.
 
-It was developed to provide secure password hashing by making it difficult and costly for attackers to perform large-scale attacks. scrypt combines a hash function with a large amount of memory usage and a CPU-intensive computation process, which ensures that even if an attacker can perform many computations in parallel, the memory requirements make such attacks impractical. It is commonly used in cryptographic applications, including secure password storage and cryptocurrency mining.
+It was developed to provide secure password hashing by making it difficult and costly for attackers to perform large-scale attacks. Scrypt combines a hash function with a large amount of memory usage and a CPU-intensive computation process, which ensures that even if an attacker can perform many computations in parallel, the memory requirements make such attacks impractical. It is commonly used in cryptographic applications, including secure password storage and cryptocurrency mining.
 
 #### Bcrypt
 
