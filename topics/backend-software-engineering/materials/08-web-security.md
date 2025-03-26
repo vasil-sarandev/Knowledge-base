@@ -19,23 +19,6 @@ Secure coding practices, effective session management, and regular updates and p
 - **Encryption** - Can be reversed with the correct key. Converts data into a secure format that can only be decrypted with a key. Used for secure communication (TLS/SSL), file encryption, protecting sensitive data.
 - **Encoding** - Easily reversible without a key. Converts data into a different format for compatibility and transmission. Used for Base64 encoding (e.g - images in emails), URL encoding, data serialization
 
-## Why HTTPS matters
-
-### HTTPS protects your website's integrity
-
-HTTPS helps prevent intruders from tampering with communication between your sites and your users' browsers. Intruders include both intentionally malicious attackers and legitimate but intrusive companies, such as ISPs that inject ads into pages
-
-Intruders exploit unprotected communications to trick your users into giving up sensitive information or installing malware, or to insert their own resources. For example, some third parties inject ads that can break your user experience and create security vulnerabilities.
-	
-Intruders exploit every unprotected resource that travels between your websites and your users. Images, cookies, scripts, and HTML are all exploitable. Intrusions can occur at any point in the network, including a user's machine, a Wi-Fi hotspot, or a compromised ISP, just to name a few. HTTPS makes it harder for intruders to get access to your sites' resources.
-
-### HTTPS protects your users' privacy and security
-
-HTTPS prevents intruders from passively listening to communications between your websites and your users.
-	
-One common misconception about HTTPS is that the only websites that need HTTPS are those that handle sensitive communications. In fact, every unprotected HTTP request can potentially reveal information about your users' behaviors and identities.
-	
-A single visit to one of your unprotected websites might seem benign, but some intruders look at your users' aggregate browsing activities to make inferences about their behaviors and intentions, and to de-anonymize their identities. For example, employees might inadvertently disclose sensitive health conditions to their employers just by reading unprotected medical articles.
 ## Available Resources
 
 - [OWASP Web Application Security Checklist](https://github.com/0xRadi/OWASP-Web-Checklist)

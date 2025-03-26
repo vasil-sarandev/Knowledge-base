@@ -8,7 +8,8 @@ Transactions adhere to the ACID properties:
 
 - Atomicity ensures all operations complete successfully or none are applied
 - Consistency maintains the database’s valid state
-- Isolation prevents transactions from interfering with each other - Durability guarantees that once a transaction is committed, its changes are permanent.
+- Isolation prevents transactions from interfering with each other 
+- Durability guarantees that once a transaction is committed, its changes are permanent.
 
 These properties collectively ensure that databases handle concurrent operations reliably and maintain accurate and consistent data even in the face of failures.
 

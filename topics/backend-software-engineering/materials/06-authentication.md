@@ -11,10 +11,10 @@ API authentication protects sensitive data, prevents unauthorized access, enable
 ## Linked materials
 
 - [JWT Authentication](jwt.md)
-- [Open Authentication (OAuth)](oauth.md)
 - [Basic Authentication](basic-auth.md)
 - [Token Authentication](token-authentication.md)
 - [Cookies (Session) Based Authentication](cookie-based-auth.md)
+- [Open Authentication (OAuth)](oauth.md)
 - [OpenID](openid.md)
 - [SAML](saml.md)
 
