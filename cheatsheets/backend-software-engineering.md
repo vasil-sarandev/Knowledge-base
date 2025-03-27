@@ -20,6 +20,7 @@ Hosting refers to the service of providing server space and resources for storin
 - **Virtual Private Server(VPS)**
 
 **Domain Name System(DNS)**
+
 Translates human-readable domain names (like www.example.com) into IP addresses (like 192.0.2.1) that computers use to identify each other. 
 
 ## Databases
@@ -42,6 +43,8 @@ ACID is an acronym representing four key properties that guarantee reliable proc
 - **Durability** - guarantees that once a transaction is committed, it remains so, even in the event of system failures.
 
 ### Database Normalization
+
+Database Normalization is the process of making sure our database and tables comply with the so called Normal Forms. This reduces data redundancy and improves data integrity.
 
 - **1NF:** Atomic values, unique records.
 - **2NF:** No partial dependencies.
