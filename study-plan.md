@@ -4,7 +4,7 @@
 
 ### Topics
 
-1. Wrap up backend software engineering
+1. Wrap up backend software engineering [v]
 2. Computer Science
 3. Data Structures & Algorithms
 4. System Design
