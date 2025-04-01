@@ -1,0 +1,15 @@
+[Back to Data Structures](01-data-structures.md)
+## Adjacency List
+
+A graph can either be represented as an adjacency matrix or an adjacency list.
+
+The adjacency matrix is a 2D array of size `V x V` where `V` is the number of vertices in a graph. Let the 2D array be `adj[][]`, a slot `adj[i][j] = 1` indicates that there is an edge from vertex `i` to vertex `j`.
+
+Adjacency list is an array of vectors. Size of the array is equal to the number of vertices. Let the array be `array[]`. An entry `array[i]` represents the list of vertices adjacent to the ith vertex. This representation can also be used to represent a weighted graph. The weights of edges can be represented as lists of pairs.
+
+[Adjacency List - Graph Representation](https://www.programiz.com/dsa/graph-adjacency-list)
+## Adjacency Matrix
+
+An adjacency matrix is a square matrix used to represent a finite graph. It is used to represent the connections between vertices in a graph. The matrix is filled with 0s and 1s, where a 1 represents a connection between two vertices and a 0 represents no connection.
+
+[Adjacency Matrix](https://en.wikipedia.org/wiki/Adjacency_matrix)
