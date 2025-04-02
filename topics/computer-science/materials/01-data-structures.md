@@ -1,4 +1,4 @@
-[Back to front page](topics/backend-software-engineering/backend-software-engineering.md)
+[Back to Computer Science frontpage](computer-science.md)
 
 # Data Structures
 
