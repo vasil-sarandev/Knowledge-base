@@ -12,5 +12,5 @@ As the name indicates itself, a **Data Structure** is a way of organizing the 
 - [Queues](queues.md)
 - [Hash Map](hash-map.md)
 - [Trees](trees.md)
-- [Graphs](graphs.md)
+- [Graphs](topics/computer-science/extras/data-structures/graphs.md)
 - [Adjacency List & Matrix](adjacency-list-matrix.md)
