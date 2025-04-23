@@ -6,19 +6,18 @@
 
 1. Wrap up backend software engineering [v]
 2. Computer Science
-3. Data Structures & Algorithms
-4. System Design
-5. Basic Devops
-6. JavaScript
-7. TypeScript
-8. NodeJS
-9. SQL
-10. PostgreSQL
-11. MongoDB
-12. Redis
-13. Docker
-14. Kubernetes
-15. Message brokers
+3. System Design
+4. Basic Devops
+5. JavaScript
+6. TypeScript
+7. NodeJS
+8. SQL
+9. PostgreSQL
+10. MongoDB
+11. Redis
+12. Docker
+13. Kubernetes
+14. Message brokers
 
 ### Cheatsheets
 
@@ -58,6 +57,11 @@ By this point You should be very confident in your understanding of the list of 
 
 It's time to start some exercises - here we can find good resources for project ideas:
 - https://roadmap.sh/projects?g=backend
+
+## LeetCode problems
+
+Start with the https://neetcode.io/roadmap.
+
 
 ## Maintenance of skillset & knowledge
 
