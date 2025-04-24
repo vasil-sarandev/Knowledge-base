@@ -11,6 +11,14 @@ This repository contains a centralized place of storage for my notes regarding d
 - [Backend Software Engineering](topics/backend-software-engineering/backend-software-engineering.md)
 
 ## Languages
+
 - [SQL (Structured Query Language)](structured-query-language.md)
 
 
+## Resources
+
+- https://roadmap.sh
+- https://awesome-architecture.com/ (Software Design and Architecture)
+- https://bradfieldcs.com/algos/ (DS and Algorithms)
+- https://neetcode.io/roadmap (LeetCode Roadmap)
+- https://github.com/donnemartin/system-design-primer (System Design)

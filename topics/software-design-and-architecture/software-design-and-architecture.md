@@ -14,3 +14,7 @@
 8. [Architectural Styles](08-architectural-styles.md)
 9. [Architectural Patterns](09-architectural-patterns.md)
 10. [Enterprise Patterns](10-enterprise-patterns.md)
+
+## Resources
+
+- https://awesome-architecture.com/
