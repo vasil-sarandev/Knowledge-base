@@ -2,7 +2,6 @@
 
 ## Sharding strategies
 
-
 Sharding strategy is a technique to split a large dataset into smaller chunks (logical shard) in which we distribute these chunks in different machines/database nodes in order to distribute the traffic load.
 
 It’s a good mechanism to improve the scalability of an application. Many databases support sharding, but not all.

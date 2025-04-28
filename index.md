@@ -22,3 +22,4 @@ This repository contains a centralized place of storage for my notes regarding d
 - https://bradfieldcs.com/algos/ (DS and Algorithms)
 - https://neetcode.io/roadmap (LeetCode Roadmap)
 - https://github.com/donnemartin/system-design-primer (System Design)
+- https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#url-shortener (System Design full course)
