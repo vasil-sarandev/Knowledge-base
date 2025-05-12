@@ -39,7 +39,6 @@ OOP is based on “objects,” instances of classes.
 - **Dynamic Binding**: Method invocation is determined at runtime.
 - **Scope Visibility**: Determines access to variables and methods (public, private, protected).
 - **Interfaces**: Contracts for classes to implement.
-    
 
 ## Software Design Principles
 
@@ -114,14 +113,12 @@ Distributed systems consist of components spread across multiple machines, worki
 
 - **Eventual Consistency**: Data across nodes may be temporarily out of sync.
 - **Strong Consistency**: Guarantees that all nodes have the same data.
-    
 
 ### Fault Tolerance
 
 - **Leader Election**: Ensures coordination in distributed environments.
 - **Circuit Breaker Pattern**: Prevents cascading failures in microservices.
 - **Retries & Exponential Backoff**: Gracefully handles transient failures.
-    
 
 ### Messaging
 

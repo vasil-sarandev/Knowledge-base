@@ -1,4 +1,4 @@
-[Back to Computer Science frontpage](computer-science.md)
+[Back to Computer Science frontpage](topics/computer-science/computer-science.md)
 
 # Complexity Classes
 

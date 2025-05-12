@@ -4,7 +4,7 @@ This repository contains a centralized place of storage for my notes regarding d
 
 ## Topics
 
-- [Computer Science](computer-science.md)
+- [Computer Science](topics/computer-science/computer-science.md)
 - [Data Structures and Algorithms](data-structures-and-algorithms.md)
 - [Software Design and Architecture](topics/software-design-and-architecture/software-design-and-architecture.md)
 - [System Design](system-design.md)
