@@ -19,5 +19,3 @@ The next figure shows a trie with the words “tree”, “trie”, “algo”, 
 - [Tries - DataStructure Notes](http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#Tries)
 - [The Trie: A Neglected Data Structure](https://www.toptal.com/java/the-trie-a-neglected-data-structure)
 - [TopCoder - Using Tries](https://www.topcoder.com/thrive/articles/Using%20Tries)
-
-d

@@ -9,7 +9,7 @@ This sections contains a list of grouped common algorithms you should know.
 - [Sorting Algorithms](sorting.md)
 - [Recursion Algorithms](recursion.md)
 - [Tree Algorithms](tree.md)
-- [Graph Algorithms](topics/computer-science/extras/data-structures/graphs.md)
+- [Graph Algorithms](topics/computer-science/extras/common-algorithms/graphs.md)
 - [Cache Algorithms](caches.md)
 - [Backtracking Algorithms](backtracking.md)
 - [Greedy Algorithms](greedy.md)
