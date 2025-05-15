@@ -10,6 +10,7 @@ Store elements in contiguous memory locations.
 - Slow insertions/deletions (except at end): **O(n)**.
 - Use when frequent indexing is required.
 
+---
 ### LinkedLists
 
 Stores its items in "containers". The list has a link to the first container and each container has a link to the next container in the list.
@@ -22,6 +23,7 @@ Stores its items in "containers". The list has a link to the first container and
 - Slow search: **O(n)**.
 - Use when frequent insertions/deletions are needed.
 
+---
 ### Stack
 
  A linear collection of items where items are inserted and removed in a particular order (LIFO - Last In, First Out).
@@ -33,6 +35,7 @@ Stores its items in "containers". The list has a link to the first container and
 - Time Complexity: **O(1)** for all operations.
 - Use for: expression parsing, undo operations, backtracking.
 
+---
 ### Queue
 
 A linear collection of items where items are inserted and removed in a particular order (FIFO - First in, First Out).
@@ -45,6 +48,7 @@ A linear collection of items where items are inserted and removed in a particula
 - Variants: Circular Queue, Dequeue, Priority Queue.
 - Use for: task scheduling, BFS traversal.
 
+---
 ### Hash Map / Hash Table
 
 `Hash Table`, `Map`, `HashMap`, `Dictionary` or `Associative` are all the names of the same data structure.
@@ -54,6 +58,7 @@ A linear collection of items where items are inserted and removed in a particula
 - Worst case (with collisions): **O(n)**.
 - Use for: fast lookups, caching, counting frequencies.
 
+---
 ### Trees
 
 A hierarchical data structure consisting of a collection of nodes such that each node of the tree stores a value and a list of references to other nodes (the “children”).
@@ -89,6 +94,7 @@ A hierarchical data structure consisting of a collection of nodes such that each
 
 A tree-like data structure that can be used to store strings. The idea is to store the characters of the string in such a way that each node of the tree represents a single character and each vertex represent a single word or a prefix.
 
+---
 ### Graphs
 
 Non-linear data structures made up of a finite number of nodes or vertices and the edges that connect them. 
@@ -101,6 +107,7 @@ Non-linear data structures made up of a finite number of nodes or vertices and t
 	- **Adjacency List** - array of lists (space-efficient)
 - Use for: pathfinding (Dijkstra, A*), network modeling, dependency resolution
 
+---
 ### Time Complexity Summary
 
 | Data Structure | Access   | Search   | Insertion | Deletion |
@@ -118,12 +125,14 @@ Non-linear data structures made up of a finite number of nodes or vertices and t
 
 Asymptotic notation is used to describe the efficiency of an algorithm as the input size grows. It helps compare algorithms based on their **growth rate**, abstracting away constants and lower-order terms.
 
+---
 ### **Notations** 
 
 - **Big O Notation (`O`)**  - describes the **upper bound** of an algorithm's running time. It tells us the **worst-case** scenario as input size `n` grows.
 - **Big Omega Notation (`Ω`)** - describes the **lower bound**, i.e., the **best-case** performance of an algorithm.
 - **Big Theta Notation (`Θ`)**  - describes the **tight bound**. It means the algorithm’s runtime is both **upper and lower bounded** by the same function — i.e., it always runs in Θ(f(n)) time.
 
+---
 ### Common Time Complexities
 
 | Name             | Complexity | Description                                                                                                                                               |
@@ -138,49 +147,76 @@ Asymptotic notation is used to describe the efficiency of an algorithm as the in
 ---
 ## Common Algorithms
 
-- **Sorting Algorithms**
-	- **Bubble Sort** - `O(n²)` - Repeatedly swaps adjacent elements if they're in the wrong order.
-	- **Selection Sort** - `O(n²)` - Selects the minimum element and swaps it with the front.
-	- **Insertion Sort** - `O(n²)` - Builds sorted array one element at a time by comparison and insertion.
-	- **Heap Sort** - `O(n logn)` - Builds a heap and repeatedly removes the root to sort the array.
-	- **Quick Sort** - `avg case - O(n logn)` - Picks a pivot, partitions around it, and sorts partitions recursively.
-	- **Merge Sort** - `O(n logn)` - Divides array in halves, sorts and merges them.
-- **Recursion** 
-	- **Tail Recursion**: Recursive call is the last operation. Can be optimized in some languages (e.g., Scheme, Scala).
-	- **Non-tail Recursion**: Additional operations are performed after recursion.
-- **Tree Algorithms** 
-	- **Pre-Order Traversal**: Root → Left → Right
-	- **In-Order Traversal**: Left → Root → Right (yields sorted order for BSTs)
-	- **Post-Order Traversal**: Left → Right → Root
-	- **Breadth-First Search (BFS)** – Explores neighbors level-by-level using a queue.
-	- **Depth-First Search (DFS)** – Explores as deep as possible using a stack or recursion.
-- **Graph Algorithms** 
-	- **Breadth-First Search (BFS)** 
-	- **Depth-First Search** 
-	- **Dijkstra’s Algorithm** – Finds the shortest path from a source to all nodes using a priority queue. No negative weights.
-	- **A\*** – Similar to Dijkstra but uses a heuristic function to guide search toward the goal.
-	- **Bellman-Ford** – Handles negative weights; slower than Dijkstra.
-	- **Kruskal’s Algorithm** – Greedy algorithm for finding the minimum spanning tree (MST) using Union-Find.
-	- **Prim’s Algorithm** – Grows MST from a chosen starting vertex.
-	- **Ford-Fulkerson** – Solves the maximum flow problem in flow networks.
-- **Search Algorithms**
-	- **Binary Search** – Works on sorted arrays by dividing search space in half at each step.
-		  - Time Complexity: `O(log n)`. ex: for n=1024, takes 10 steps.
-- **Cache Algorithms** - Cache algorithms help decide which data to evict when memory is full.
-	- **LRU (Least Recently Used)** – Removes the least recently accessed item.
-	- **LFU (Least Frequently Used)** – Removes the least frequently used item. Uses a key-value pair structure.
-	- **MRU (Most Recently Used)** – Removes the most recently accessed item (used in some caching strategies).
-- **Backtracking algorithms** - Backtracking algorithms recursively explore all possible options and backtrack on failure.
-	- **N-Queens** – Place N queens on a chessboard such that no two queens attack each other.
-	- **Maze Solver** – Explore paths in a maze and backtrack on dead ends.
-	- **Knight's Tour** – Visit all squares of a chessboard using valid knight moves.
-	- **Hamiltonian Path** – Visit every node in a graph exactly once.
-- **Greedy Algorithms** - greedy algorithms make the best local choice at each step, hoping to find the global optimum.
-	- **Dijkstra’s Algorithm** – Chooses the nearest unvisited node.
-	- **Huffman Coding** – Builds optimal prefix codes for data compression.
-	- **Kruskal’s Algorithm** – Adds the next lightest edge that doesn't form a cycle.
-	- **Prim’s Algorithm** – Adds the cheapest edge connected to the MST.
-	- **Ford-Fulkerson** – Finds max flow using augmenting paths (often with greedy BFS/DFS).
+### Sorting Algorithms
+
+| Algorithm      | Time Complexity | Description                                         |
+|----------------|-----------------|-----------------------------------------------------|
+| Bubble Sort    | O(n²)           | Repeatedly swaps adjacent elements if out of order |
+| Selection Sort | O(n²)           | Selects the minimum and moves it to the front      |
+| Insertion Sort | O(n²)           | Inserts each element into its correct position     |
+| Heap Sort      | O(n log n)      | Uses a heap to repeatedly extract the root         |
+| Quick Sort     | O(n log n) avg  | Partitions around pivot; sorts partitions recursively |
+| Merge Sort     | O(n log n)      | Divides array, sorts halves, and merges them       |
+
+---
+### Recursion
+
+- **Tail Recursion**: Recursive call is the final step (optimizable in some languages).
+- **Non-Tail Recursion**: Work is done after the recursive call.
+
+---
+### Tree Traversal Algorithms
+
+- **Pre-Order**: Root → Left → Right  
+- **In-Order**: Left → Root → Right (sorted for BST)  
+- **Post-Order**: Left → Right → Root  
+- **BFS (Level Order)**: Uses a queue to explore level-by-level  
+- **DFS**: Uses a stack or recursion to explore deeply
+
+---
+### Graph Algorithms
+
+- **BFS** – Explores neighbors level-by-level  
+- **DFS** – Explores depth before backtracking  
+- **Dijkstra’s Algorithm** – Shortest path with priority queue (no negative weights)  
+- **A\*** – Like Dijkstra, but uses a heuristic to guide the search  
+- **Bellman-Ford** – Handles negative weights; slower  
+- **Kruskal’s Algorithm** – Greedy MST using Union-Find  
+- **Prim’s Algorithm** – Greedy MST starting from a node  
+- **Ford-Fulkerson** – Max flow using augmenting paths (BFS/DFS)
+
+---
+
+### Search Algorithms
+
+| Algorithm      | Time Complexity | Description                                |
+|----------------|-----------------|--------------------------------------------|
+| Binary Search  | O(log n)        | Halves the search space (on sorted arrays) |
+
+---
+### Cache Eviction Policies
+
+| Policy | Description |
+|--------|-------------|
+| **LRU** (Least Recently Used) | Evicts the least recently accessed item |
+| **LFU** (Least Frequently Used) | Evicts the item used least often |
+| **MRU** (Most Recently Used) | Evicts the most recently accessed item |
+
+---
+### Backtracking Problems
+
+- **N-Queens** – Place queens so none attack each other  
+- **Maze Solver** – Explore paths and backtrack at dead ends  
+- **Knight’s Tour** – Visit all chessboard squares with knight moves  
+- **Hamiltonian Path** – Visit every vertex exactly once
+
+---
+### Greedy Algorithms
+
+- **Huffman Coding** – Builds optimal prefix codes for compression  
+- **Dijkstra’s Algorithm** – Greedy choice of nearest node  
+- **Kruskal’s & Prim’s MST** – Greedy edge selection  
+- **Ford-Fulkerson** – Greedy selection of augmenting paths
 
 ---
 ## Floating-point numbers
@@ -226,11 +262,13 @@ Bitwise operators are used to perform operations on individual bits of a number.
 
 In complexity theory, a Complexity Class is a set of problems with related complexity. These classes help scientists to groups problems based on how much time and space they require to solve problems and verify the solutions.
 
+---
 #### **Deterministic vs Non-Deterministic** 
 
 - **Deterministic** - at each step there's only one choice of what to do next. This is how real-world computers work.
--  **Non-deterministic** - at some steps when there's multiple options the machine magically picks the *right path* - the one that leads to the "yes" answer - if such a path exists.
+- **Non-deterministic** - at some steps when there's multiple options the machine magically picks the *right path* - the one that leads to the "yes" answer - if such a path exists.
 
+---
 #### **Complexity Classes** 
 
 - **P** - The P in the *P* class stands for Polynomial Time. It is the collection of decision problems that can be solved by a deterministic machine in polynomial time - `O(n^k)`
@@ -239,34 +277,237 @@ In complexity theory, a Complexity Class is a set of problems with related compl
 - **NP-complete** - NP-Complete is a subset of *NP* that represents the hardest problems in the complexity class.
 - **NP-hard** - At least as hard as the hardest problems in NP (could not be in NP itself i.e not verifiable in polynomial time).
 
+---
 ### **P = NP ?** 
 
 The P = NP is a very famous problem in CS that asks whether a problem that can be solved in polynomial time on a non-deterministic machine(i.e the problem is in *NP*) can also be solved in polynomial time on a deterministic machine (i.e the problem is in *P*). 
-	If it was proven that P=NP, it would revolutionize computing because cryptography and hashing would be easily crackable
+
+If it was proven that P=NP, it would revolutionize computing because cryptography and hashing would be easily crackable
 
 --- 
 ## Databases
 
-- **Locking** - Locks are used to prevent data from being modified by multiple processes at the same time. 
-- **ACID Model** - ACID is an acronym representing four key properties that guarantee reliable processing of database transactions. 
-	- **Atomicity** - ensures that a transaction is treated as a single, indivisible unit that either completes entirely or fails completely.
-	- **Consistency** - maintains the database in a valid state before and after the transaction.
-	- **Isolation** - ensures that concurrent transactions do not interfere with each other, appearing to execute sequentially.
-	- **Durability** - guarantees that once a transaction is committed, it remains so, even in the event of system failures.
-- **BASE Model** - emerged as a result of the rise in popularity of NoSQL databases. The *BASE Model* is often used in distributed systems where availability and partition tolerance are prioritized over strict consistency. It stands for:
-	- **B**asically **A**vailable — The system guarantees availability, even if not all data is consistent at all times.
-	- **S**oft state — The system's state can change over time, even without input, due to eventual consistency.
-	- **E**ventual consistency — The system will become consistent over time, but it does not guarantee immediate consistency after updates.
-- **CAP Theorem** -  It states that a distributed system can only guarantee two of the three:
-	- **Consistency:** All nodes show the same data.    
-	- **Availability:** Every request gets a response.
-	- **Partition Tolerance:** Operates despite network failures.
-- **Indexes** - Indexes create a separate structure that holds a reference to the actual data, allowing the database engine to find information without scanning the entire table which results in faster retrievals.
-- **Transactions** - a sequence of multiple operations performed on a database, and all served as a single logical unit of work — taking place wholly or not at all. Transactions adhere to ACID properties.
-- **Stored Procedures** - a group of SQL statements that accepts some input in the form of parameters and performs some task and may or may not returns a value. Think of them as reusable blocks of code.
-- **Database Replication** - the process of creating and maintaining multiple copies of the same data across different locations or nodes in a distributed system. It enhances data availability, reliability, and performance by ensuring that data remains accessible even if one or more nodes fail.
-- **Database Sharding** - a method where a database is split into smaller, more manageable parts (shards), which are distributed across multiple servers, enhancing search efficiency and overall performance.
-- **Database Federation** - database federation makes several distinct physical databases appear as one logical database to end-users. As a result different databases (even with different schemas or engines) are queried as if they are one.
+### Transactions
+
+- A **transaction** is a group of operations that execute as a single unit. Follows the **ACID** model:
+
+#### ACID Model
+
+| Property    | Description |
+|-------------|-------------|
+| **Atomicity**   | The transaction is all-or-nothing. |
+| **Consistency** | Database remains valid before and after. |
+| **Isolation**   | Transactions don't interfere with each other. |
+| **Durability**  | Committed changes persist even after failures. |
+
+---
+### BASE Model (for NoSQL/Distributed DBs)
+
+| Property              | Description |
+|-----------------------|-------------|
+| **Basically Available** | System always responds (even if data is stale). |
+| **Soft State**         | State can change over time, even without new input. |
+| **Eventual Consistency** | System becomes consistent *eventually*, but not immediately. |
+
+---
+### CAP Theorem
+
+> In distributed systems, you can only guarantee **two** of the three:
+
+| Property     | Meaning |
+|--------------|---------|
+| **Consistency** | All nodes see the same data. |
+| **Availability** | Every request gets a (non-error) response. |
+| **Partition Tolerance** | System continues to work during network partitions. |
+
+---
+### Data Access & Performance
+
+- **Locking** – Prevents concurrent modifications to the same data.
+- **Indexes** – Improves lookup speed by avoiding full-table scans but might make writes slower because they're saved into the database.
+- **Stored Procedures** – Reusable SQL blocks with optional inputs/outputs.
+
+---
+### Scalability & Distribution
+
+- **Replication** – Copies data across multiple nodes for availability & fault tolerance. Can be synchronous or asynchronous.
+- **Sharding** – Splits one DB into horizontal pieces (shards) stored on separate servers.
+- **Federation** – Treats multiple databases (possibly with different technologies) as one logical unit.
+
+---
+## System Design
+
+System Design is the process of defining the architecture, modules, interfaces, and data for a system to satisfy specified requirements.
+
+---
+### Horizontal vs Vertical Scaling
+
+- **Horizontal Scaling**: Adding more machines/servers to the system.  
+  ↳ Improves **resilience** and allows **independent failure**.
+
+- **Vertical Scaling**: Adding more resources (RAM, CPU, etc.) to a single server.  
+  ↳ Simpler but has **hardware limits** and **a single point of failure**.
 
 ---
 
+### Load Balancing vs Clustering
+
+- **Load Balancing** - Distributes network or application traffic across multiple servers.  
+- **Clustering** - A group of interconnected servers (nodes) working together to act as a single system. Enables *parallel processing* and *high availability*.
+- **Key Difference** - Clusters are **aware of each other** and cooperate; load-balanced servers are typically **independent**.
+
+---
+
+### Message Queues vs Message Brokers
+
+- **Message Queues** - simple systems that store and forward messages between a sender and a receiver, typically using **FIFO** (First In, First Out) ordering. 
+- **Message Brokers** - more advanced systems that route, transform, and manage messages between multiple applications or components.
+- **Examples**: RabbitMQ, Apache Kafka, Amazon SQS.
+
+---
+
+### Architectural Styles
+
+- **Client-Server**: Clients send requests to a central server for processing.  
+- **Monolithic**: All features tightly coupled in a single deployable unit.  
+- **Service-Oriented Architecture (SOA)**: Collection of interoperable services.
+- **Layered**: Organized into layers like presentation, business, and data.  
+- **Microservices**: Small, independent services that can be developed and deployed independently.  
+- **Event-Driven**: Components communicate by emitting and reacting to events.  
+- **Component-Based**: Built from reusable, encapsulated components.  
+- **Domain-Driven Design (DDD)**: Models software based on the core business domain.  
+- **Peer-to-Peer (P2P)**: Nodes act as both clients and servers.  
+- **Hexagonal (Ports and Adapters)**: Core logic is decoupled from external systems via interfaces.
+
+---
+
+## Security
+
+Web security refers to protective measures taken by developers to safeguard web applications from threats that could impact the business.
+
+---
+
+### Hashing, Encryption, and Encoding
+
+- **Hashing** — irreversible (one-way) function producing a fixed-length output called a hash, uniquely representing the input. E.g., SHA, MD5  
+- **Encryption** — reversible (two-way) function transforming input into ciphertext and back. E.g., AES, RSA  
+- **Encoding** — reversible transformation of data into a specified format. E.g., base64.
+
+---
+
+### Public-key Cryptography
+
+Also known as asymmetric cryptography. Uses a pair of keys — private and public.  
+
+Messages are signed using the **private key**, and authenticity can be verified with the **public key**. Without the private key, it is computationally infeasible to derive it from the public key.
+
+---
+
+### Secure Communication Protocols
+
+- **TLS/SSL (HTTPS)**: Protocols securing data transmission over networks via encryption.  
+- **SSH**: Secure Shell protocol for encrypted remote login and command execution.  
+- **OAuth / OpenID Connect**: Protocols for delegated authorization and authentication in modern web apps.
+
+---
+
+### Common Web Vulnerabilities
+
+- **SQL Injection**: Injecting malicious SQL to manipulate databases via input.  
+- **Cross-Site Scripting (XSS)**: Injecting malicious scripts into trusted websites, executing in other users’ browsers.  
+- **Cross-Site Request Forgery (CSRF)**: Forcing authenticated users to perform unintended actions.  
+- **Insecure Direct Object References (IDOR)**: Accessing unauthorized resources by manipulating IDs.  
+- **Security Misconfiguration**: Poor configuration of servers, frameworks, or databases leading to vulnerabilities.
+
+---
+## Processes and Threads
+
+**Process** is an instance of a program that is being executed.
+
+**Thread** is the smallest unit of execution within a process. Threads within the same process share memory and resources but can execute independently.
+
+---
+
+### Common Concepts
+
+- **Process Forking** – A way to create new processes from an existing process.
+- **Memory Management** – The process of allocating and deallocating memory.
+- **Garbage Collection** – Automatically detects and frees memory allocated to objects no longer in use.
+- **Reference Counting** – Tracks how many references point to a memory location to determine when it can be safely deallocated.
+- **Memory Pools** – Technique to automatically manage memory allocation based on application lifecycle (e.g., request or transaction).
+
+---
+
+### Lock, Mutex, Semaphore
+
+- **Lock** – Restricts access to a critical section to one thread at a time within the same process.
+- **Mutex** – A system-wide lock that can synchronize access across threads and processes.
+- **Semaphore** – Allows a limited number (`n`) of threads/processes to access a resource concurrently. Useful for managing resource pools.
+
+---
+
+### Concurrency and Parallelism
+
+- **Concurrency** – Managing multiple tasks at the same time (interleaving), not necessarily simultaneously. Ideal for I/O-bound operations.
+- **Parallelism** – Executing multiple tasks at the exact same time. Beneficial for CPU-bound computations.
+
+> A **concurrent program** can run on a single core using context switching, while a **parallel program** requires multiple cores or processors.
+
+---
+
+### CPU Scheduling
+
+CPU Scheduling is the process of selecting a process from the ready queue and allocating the CPU to it based on a scheduling algorithm.
+
+**Common Scheduling Algorithms:**
+
+- **Round Robin (RR):** Each process gets a fixed time slice (e.g., 10 ms). Preemptive.
+- **First Come First Serve (FCFS):** The earliest arriving process runs first. Non-preemptive.
+- **Shortest Job First (SJF):** The process with the shortest execution time is selected. Non-preemptive.
+- **Shortest Remaining Time First (SRTF):** Like SJF but preemptive, considering remaining time.
+- **Priority Scheduling:** The process with the highest priority runs first. Can be preemptive or non-preemptive.
+- **Lottery Scheduling:** Processes receive a chance to run based on randomly drawn tickets. Preemptive.
+
+---
+### Multithreading vs Multiprocessing
+
+- **Multithreading**: Multiple threads within the same process. Shared memory space. Lightweight. Best for **I/O-bound** tasks.
+- **Multiprocessing**: Multiple independent processes. Separate memory. More overhead. Best for **CPU-bound** tasks.
+
+> Threads are faster to create and communicate but risk shared state issues. Processes are isolated and safer but more resource-intensive.
+
+---
+## How Computers Work
+
+### CPU Execution Cycle
+
+The CPU runs programs by repeatedly performing the **fetch-decode-execute** cycle:
+
+  1. **Fetch**: Retrieve the next instruction from memory.
+  2. **Decode**: Interpret the instruction.
+  3. **Execute**: Perform the required operation. 
+  
+  Modern CPUs use **pipelining** and **caches** to speed up execution.
+
+---
+### Registers and Memory
+
+- **Registers**: Small, fast storage inside the CPU holding instructions or data currently in use.
+- **RAM (Random Access Memory)**: Primary memory that stores programs and data for quick access by the CPU.
+- **Secondary Storage**: Persistent storage like hard drives or SSDs, slower but retains data when powered off.
+- **Memory hierarchy**: (Registers > Cache > RAM > Secondary Storage) balances speed and capacity for efficient data access.
+
+---
+### CPU Cache
+
+- Small, very fast memory located close to the CPU cores.
+- Stores frequently accessed data to reduce time spent fetching from RAM.
+
+---
+### Binary and Computation
+
+- Computers represent all data in **binary** (0s and 1s), reflecting transistor states (ON/OFF).
+- Logic gates (AND, OR, NOT) manipulate binary data to perform calculations.
+- Complex numbers and decimals use **floating-point representation**.
+
+---
