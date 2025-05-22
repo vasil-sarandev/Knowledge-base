@@ -65,14 +65,10 @@ A hierarchical data structure consisting of a collection of nodes such that each
 
 #### Binary Search Tree (BST)
 
+Every node is bigger than its left subtree and smaller than its right subtree. A BST can be generated from any collection of numbers and its layout depends on the order of insertion.
+
 - Left < Node < Right  
 - Avg search/insert/delete: **O(log n)**
-
-#### Heap
-
-- Complete binary tree with heap property.
-	- **Min Heap**: every node is smaller than its children with root being the smallest.
-	- **Max Heap**: every node is bigger than its children with root being the biggest.
 
 #### Special Tree Types
 | Type                 | Notes                                                  |
@@ -81,7 +77,15 @@ A hierarchical data structure consisting of a collection of nodes such that each
 | Complete Binary Tree | All levels filled except possibly last (left to right) |
 | Balanced Tree        | Height balanced (e.g. AVL, Red-Black Trees)            |
 |                      |                                                        |
-#### Balanced Search Trees (Self-Balancing)
+#### Heap
+
+- Complete binary tree with heap property.
+	- **Min Heap**: every node is smaller than its children with root being the smallest.
+	- **Max Heap**: every node is bigger than its children with root being the biggest.
+
+#### Balanced Binary Search Trees (Self-Balancing)
+
+These are some of the types of trees that exist to keep a BST balanced which helps with keeping the time complexity of operations closer to logarithmic `O(log n)` rather than linear `O(n)`.
 
 | Type      | Characteristics                                                 |
 | --------- | --------------------------------------------------------------- |
@@ -167,11 +171,35 @@ Asymptotic notation is used to describe the efficiency of an algorithm as the in
 ---
 ### Tree Traversal Algorithms
 
+- **In-Order**: Left → Root → Right (gives us the sorted array when traversing a BST)  
 - **Pre-Order**: Root → Left → Right  
-- **In-Order**: Left → Root → Right (sorted for BST)  
 - **Post-Order**: Left → Right → Root  
 - **BFS (Level Order)**: Uses a queue to explore level-by-level  
-- **DFS**: Uses a stack or recursion to explore deeply
+- **DFS**: Uses a stack or recursion to explore deeply. Can be implemented with In-Order, Post-Order, or Pre-Order traversal.
+
+```JAVASCRIPT
+
+const inOrder = (node) => {
+	if (node === null) return;
+    inOrder(node.left)     ← go left
+    visit(node)            ← ADD to array (when we are done with left subtree)
+    inOrder(node.right)    ← go right
+}
+
+const preOrder = (node) => {
+	if (node === null) return;
+    visit(node)             ← ADD to array here
+    preOrder(node.left)     ← then go left
+    preOrder(node.right)    ← then go right
+}
+
+const postOrder = (node) => {
+	if (node === null) return;
+    postOrder(node.left)     ← go left
+    postOrder(node.right)    ← go right
+    visit(node)             ← ADD to array here
+}
+```
 
 ---
 ### Graph Algorithms

@@ -36,6 +36,7 @@ It is much less efficient on large lists than more advanced algorithms such as q
 <div style="text-align:center">
 	<img src="./assets/insertion-sort.gif"/>
 </div>
+
 ### Heap Sort
 
 Heap Sort is an efficient, comparison-based sorting algorithm that reorganizes an input array into a heap (a data structure where each node is greater than its children) and then repeatedly removes the largest node from that heap, placing it at the end of the array.
