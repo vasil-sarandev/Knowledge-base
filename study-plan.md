@@ -5,27 +5,22 @@
 ### Topics
 
 1. Wrap up backend software engineering [v]
-2. Computer Science
+2. Computer Science [v]
 3. System Design
-4. Basic Devops
-5. JavaScript
-6. TypeScript
-7. NodeJS
-8. SQL
-9. PostgreSQL
-10. MongoDB
-11. Redis
-12. Docker
-13. Kubernetes
-14. Message brokers
+4. DevOps
+5. NodeJS
+6. MongoDB
+7. Redis
+8. Docker
+9. Kubernetes
+10. Message brokers
 
 ### Cheatsheets
 
  - Backend-Software Engineering
  - CS
- - DS&A
  - System Design
- - Basic Devops
+ - DevOps
 
 ### Exercises / projects
 
@@ -50,7 +45,6 @@ Make sure to include microservices architecture, an ORM and message brokers in t
 5. Springboot
 6. Golang
 7. .NET
-8. React
 ### Exercises / projects
 
 By this point You should be very confident in your understanding of the list of technologies & languages and it's now time to expand your practical skillset with them.
