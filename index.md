@@ -4,11 +4,10 @@ This repository contains a centralized place of storage for my notes regarding d
 
 ## Topics
 
-- [Computer Science](topics/computer-science/computer-science.md)
-- [Data Structures and Algorithms](data-structures-and-algorithms.md)
-- [Software Design and Architecture](topics/software-design-and-architecture/software-design-and-architecture.md)
+- [Computer Science](computer-science.md)
+- [Software Design and Architecture](software-design-and-architecture.md)
 - [System Design](system-design.md)
-- [Backend Software Engineering](topics/backend-software-engineering/backend-software-engineering.md)
+- [Backend Software Engineering](backend-software-engineering.md)
 
 ## Languages
 
