@@ -1,5 +1,6 @@
 # Software Design and Architecture
 
+---
 ## Programming Paradigms
 
 A programming paradigm is a fundamental approach to solving problems using a programming language.
@@ -19,9 +20,8 @@ Describes the _what_ of computation without specifying _how_ to execute it.
 - **Functional programming**: Emphasizes pure functions and immutable data.
 - **Logic programming**: Describes logic through declarations and relationships.
 
+---
 ## Object-Oriented Programming
-
-OOP is based on “objects,” instances of classes.
 
 ### Primary Principles
 
@@ -40,9 +40,8 @@ OOP is based on “objects,” instances of classes.
 - **Scope Visibility**: Determines access to variables and methods (public, private, protected).
 - **Interfaces**: Contracts for classes to implement.
 
+---
 ## Software Design Principles
-
-These principles guide software development, ensuring maintainability, scalability, and flexibility.
 
 ### SOLID Principles
 
@@ -60,9 +59,8 @@ These principles guide software development, ensuring maintainability, scalabili
 - **KISS (Keep It Simple, Stupid)**: Keep systems simple and easy to understand.
 - **Hollywood Principle**: "Don’t call us, we’ll call you." High-level components control flow.
 
+---
 ## Software Design Patterns
-
-Design patterns are reusable solutions to common software development problems.
 
 ### Creational Patterns
 
@@ -90,8 +88,8 @@ Design patterns are reusable solutions to common software development problems.
 - **Command**: Encapsulates requests as objects.
 - **State**: Changes behavior based on an object's state.
 - **Visitor**: Operates on a collection of objects without modifying their classes.
-    
 
+---
 ## Distributed Systems
 
 Distributed systems consist of components spread across multiple machines, working together to achieve a common goal.
@@ -124,6 +122,7 @@ Distributed systems consist of components spread across multiple machines, worki
 
 Asynchronous communication between system components, typically implemented with message queues (e.g., Kafka, RabbitMQ).
 
+---
 ## Architectural Principles
 
 These principles guide the design of maintainable and scalable software architectures.
@@ -135,6 +134,7 @@ These principles guide the design of maintainable and scalable software architec
 - **Modularity**: Reduces coupling by splitting systems into modules.
 - **Interoperability**: Ensures systems can communicate with others.
 
+---
 ## Architectural Styles
 
 Architectural styles define the overall organization of a software system.
@@ -150,12 +150,14 @@ Architectural styles define the overall organization of a software system.
 - **Peer-to-Peer**: Nodes act as both clients and servers.
 - **Hexagonal**: Loosely coupled components that interact with their environment through ports and adapters.
 
+---
 ## Architectural Patterns
 
 Proven solutions for specific software system designs.
 
 - **CQRS** (Command Query Responsibility Segregation): Separates reading and writing of data to scale them independently.
 - **Message Queues**: Decouples components using asynchronous communication (e.g., Kafka, RabbitMQ).
+- **Reverse Proxy**: A reverse proxy is a Web Server that sits in front of one or more backend servers or services and intercepts client requests before they reach them. It's responsible for routing, load balancing, and caching.
 - **Event Sourcing**: Stores changes as a series of events.
 - **Saga**: Manages distributed transactions in microservices.
 - **Circuit Breaker**: Prevents repeated failures from cascading.
@@ -163,6 +165,7 @@ Proven solutions for specific software system designs.
 - **Microkernel**: Minimizes the core system and moves functionality to user mode.
 - **Blackboard**: Uses a centralized repository for information sharing.
 
+---
 ## Enterprise Patterns
 
 Common patterns in large, complex enterprise systems.
@@ -176,3 +179,5 @@ Common patterns in large, complex enterprise systems.
 - **Entities**: Objects with a unique identity and lifecycle.
 - **ORMs**: Maps object-oriented models to relational databases.
 - **Use Cases**: Represents functional requirements of the system.
+
+---

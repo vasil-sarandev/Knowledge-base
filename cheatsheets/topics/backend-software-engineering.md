@@ -1,6 +1,7 @@
-## Backend Software Engineering Reference
+# Backend Software Engineering
 
-### Internet & HTTP
+---
+## Internet & HTTP
 
 The Internet is a global network that uses TCP/IP protocols for communication.
 
@@ -10,8 +11,7 @@ The Internet is a global network that uses TCP/IP protocols for communication.
 - **Status Codes:** `1xx` (Informational), `2xx` (Success), `3xx` (Redirection), `4xx` (Client Error), `5xx` (Server Error)
 
 ---
-
-### Hosting & DNS
+## Hosting & DNS
 
 **Hosting** provides server resources to store and deliver applications over the internet:
 
@@ -24,23 +24,23 @@ The Internet is a global network that uses TCP/IP protocols for communication.
 
 ---
 
-### Databases
+## Databases
 
-#### Relational Databases
+### Relational Databases
 
 Organize data in structured tables with schemas, using:
 
 - **Primary & Foreign Keys** for integrity
 - **ACID compliance** for reliable transactions
 
-#### ACID Properties
+### ACID Properties
 
 - **Atomicity** - ensures that a transaction is treated as a single, indivisible unit that either completes entirely or fails completely. 
 - **Consistency** - maintains the database in a valid state before and after the transaction. 
 - **Isolation** - ensures that concurrent transactions do not interfere with each other, appearing to execute sequentially. 
 - **Durability** - guarantees that once a transaction is committed, it remains so, even in the event of system failures.
 
-#### Database Normalization
+### Database Normalization
 
 Improves integrity and reduces redundancy:
 
@@ -49,7 +49,7 @@ Improves integrity and reduces redundancy:
 - **3NF:** No transitive dependencies
 - **4NF+:** Advanced refinements
 
-#### NoSQL Databases
+### NoSQL Databases
 
 NoSQL databases are a category of database management systems designed for handling unstructured, semi-structured, or rapidly changing data.
 
@@ -58,20 +58,20 @@ NoSQL databases are a category of database management systems designed for handl
 - **Column:** Columnar storage (e.g., Cassandra)
 - **Graph:** Relationship-focused (e.g., Neo4j)
 
-#### Scaling Databases
+### Scaling Databases
 
 - **Vertical Scaling** - Adding more resources (CPU, RAM, etc.) to a single server to handle increased load. 
 - **Horizontal Scaling** - Adding more servers to handle the load. This can be done through: 
 	- **Sharding**: A method where a database is split into smaller, more manageable parts (shards), which are distributed across multiple servers, enhancing search efficiency and overall performance. 
 	- **Read Replicas**: A form of horizontal scaling where copies of a primary database are made. These replicas handle read traffic, distributing the load, and increasing the system’s capacity to handle read requests. 
-	
-#### Eventual Consistency 
+
+### Eventual Consistency 
 
 In distributed databases, achieving **strong consistency** (where all nodes have the same data at any point in time) can be challenging, especially with horizontal scaling. Instead, many NoSQL databases (and even some relational systems in distributed environments) follow the principle of **eventual consistency**. 
 
 **Eventual Consistency** means that while updates to the database may not be immediately reflected across all nodes, the system will eventually converge to a consistent state. This trade-off allows for higher availability and partition tolerance, especially in large-scale distributed systems.
 
-#### CAP Theorem
+### CAP Theorem
 
 The CAP Theorem is a fundamental principle in distributed database systems. It states that a distributed system can only guarantee two of the three: 
 
@@ -79,17 +79,16 @@ The CAP Theorem is a fundamental principle in distributed database systems. It s
 - **Availability:** Every request gets a response. 
 - **Partition Tolerance:** Operates despite network failures.
 
-#### ORM (Object-Relational Mapping)
+### ORM (Object-Relational Mapping)
 
 Maps DB tables to classes (e.g., Sequelize, Hibernate, TypeORM) for easier data manipulation.
 
-#### Migrations
+### Migrations
 
 Version-controlled schema changes using tools like TypeORM, Flyway, or Liquibase.
 
 ---
-
-### APIs
+## APIs
 
 APIs allow software components to communicate:
 
@@ -99,8 +98,7 @@ APIs allow software components to communicate:
 - **OpenAPI (Swagger):** Standardized API documentation.
 
 ---
-
-### Authentication & Authorization
+## Authentication & Authorization
 
 **Authentication**: Proves identity (e.g., JWT, sessions)
 
@@ -114,14 +112,14 @@ APIs allow software components to communicate:
 
 ---
 
-### Web Security
+## Web Security
 
 **Principles:** Data confidentiality, integrity, availability
 
 - **Encryption:** TLS/SSL
 - **Input Validation:** Prevent SQLi, XSS, CSRF
 
-#### Hashing, Encryption, Encoding
+### Hashing, Encryption, Encoding
 
 - **Hashing:** One-way (e.g., bcrypt)
 - **Encryption:** Two-way (e.g., AES)
@@ -129,7 +127,7 @@ APIs allow software components to communicate:
 
 ---
 
-### Caching
+## Caching
 
 Stores frequently accessed data for speed:
 
@@ -139,7 +137,7 @@ Stores frequently accessed data for speed:
 
 ---
 
-### CI/CD & Testing
+## CI/CD & Testing
 
 Automates build and deployment:
 
@@ -148,14 +146,14 @@ Automates build and deployment:
 
 ---
 
-### Containers & Virtualization
+## Containers & Virtualization
 
 - **Virtualization:** Creates separate virtual machines (VMs), each with its own operating system, running on a hypervisor. This provides strong isolation but consumes more resources. 
 - **Containers (Docker):** Uses a shared operating system kernel to create isolated environments (containers) for applications. Containers are lighter, start faster, and use fewer resources than VMs. They’re ideal for microservices architectures and rapid deployment.
 - **Orchestration (Kubernetes):** Manages containerized applications.
 ---
 
-### Web Servers
+## Web Servers
 
 Serve and process HTTP content:
 
@@ -166,7 +164,7 @@ Serve and process HTTP content:
 
 ---
 
-### Real-Time Data
+## Real-Time Data
 
 Deliver low-latency data to clients:
 
@@ -177,7 +175,7 @@ Deliver low-latency data to clients:
 
 ---
 
-### Message Brokers
+## Message Queues and Brokers
 
 Message brokers are intermediaries that facilitate communication between distributed systems or components by receiving, routing, and delivering messages. 
 
@@ -187,7 +185,7 @@ They enable asynchronous message passing, decoupling producers (senders) from co
 
 ---
 
-### Observability
+## Observability
 
 Ability to infer internal system state from outputs:
 

@@ -1,5 +1,6 @@
 # Computer Science
 
+---
 ## Data Structures 
 
 ### Arrays
@@ -10,7 +11,6 @@ Store elements in contiguous memory locations.
 - Slow insertions/deletions (except at end): **O(n)**.
 - Use when frequent indexing is required.
 
----
 ### LinkedLists
 
 Stores its items in "containers". The list has a link to the first container and each container has a link to the next container in the list.
@@ -23,7 +23,6 @@ Stores its items in "containers". The list has a link to the first container and
 - Slow search: **O(n)**.
 - Use when frequent insertions/deletions are needed.
 
----
 ### Stack
 
  A linear collection of items where items are inserted and removed in a particular order (LIFO - Last In, First Out).
@@ -35,7 +34,6 @@ Stores its items in "containers". The list has a link to the first container and
 - Time Complexity: **O(1)** for all operations.
 - Use for: expression parsing, undo operations, backtracking.
 
----
 ### Queue
 
 A linear collection of items where items are inserted and removed in a particular order (FIFO - First in, First Out).
@@ -48,7 +46,6 @@ A linear collection of items where items are inserted and removed in a particula
 - Variants: Circular Queue, Dequeue, Priority Queue.
 - Use for: task scheduling, BFS traversal.
 
----
 ### Hash Map / Hash Table
 
 `Hash Table`, `Map`, `HashMap`, `Dictionary` or `Associative` are all the names of the same data structure.
@@ -58,7 +55,6 @@ A linear collection of items where items are inserted and removed in a particula
 - Worst case (with collisions): **O(n)**.
 - Use for: fast lookups, caching, counting frequencies.
 
----
 ### Trees
 
 A hierarchical data structure consisting of a collection of nodes such that each node of the tree stores a value and a list of references to other nodes (the “children”).
@@ -98,7 +94,6 @@ These are some of the types of trees that exist to keep a BST balanced which hel
 
 A tree-like data structure that can be used to store strings. The idea is to store the characters of the string in such a way that each node of the tree represents a single character and each vertex represent a single word or a prefix.
 
----
 ### Graphs
 
 Non-linear data structures made up of a finite number of nodes or vertices and the edges that connect them. 
@@ -111,7 +106,6 @@ Non-linear data structures made up of a finite number of nodes or vertices and t
 	- **Adjacency List** - array of lists (space-efficient)
 - Use for: pathfinding (Dijkstra, A*), network modeling, dependency resolution
 
----
 ### Time Complexity Summary
 
 | Data Structure | Access   | Search   | Insertion | Deletion |
@@ -129,14 +123,12 @@ Non-linear data structures made up of a finite number of nodes or vertices and t
 
 Asymptotic notation is used to describe the efficiency of an algorithm as the input size grows. It helps compare algorithms based on their **growth rate**, abstracting away constants and lower-order terms.
 
----
 ### **Notations** 
 
 - **Big O Notation (`O`)**  - describes the **upper bound** of an algorithm's running time. It tells us the **worst-case** scenario as input size `n` grows.
 - **Big Omega Notation (`Ω`)** - describes the **lower bound**, i.e., the **best-case** performance of an algorithm.
 - **Big Theta Notation (`Θ`)**  - describes the **tight bound**. It means the algorithm’s runtime is both **upper and lower bounded** by the same function — i.e., it always runs in Θ(f(n)) time.
 
----
 ### Common Time Complexities
 
 | Name             | Complexity | Description                                                                                                                                               |
@@ -153,22 +145,20 @@ Asymptotic notation is used to describe the efficiency of an algorithm as the in
 
 ### Sorting Algorithms
 
-| Algorithm      | Time Complexity | Description                                         |
-|----------------|-----------------|-----------------------------------------------------|
-| Bubble Sort    | O(n²)           | Repeatedly swaps adjacent elements if out of order |
-| Selection Sort | O(n²)           | Selects the minimum and moves it to the front      |
-| Insertion Sort | O(n²)           | Inserts each element into its correct position     |
-| Heap Sort      | O(n log n)      | Uses a heap to repeatedly extract the root         |
+| Algorithm      | Time Complexity | Description                                           |
+| -------------- | --------------- | ----------------------------------------------------- |
+| Bubble Sort    | O(n²)           | Repeatedly swaps adjacent elements if out of order    |
+| Selection Sort | O(n²)           | Selects the minimum and moves it to the front         |
+| Insertion Sort | O(n²)           | Inserts each element into its correct position        |
+| Heap Sort      | O(n log n)      | Uses a heap to repeatedly extract the root            |
 | Quick Sort     | O(n log n) avg  | Partitions around pivot; sorts partitions recursively |
-| Merge Sort     | O(n log n)      | Divides array, sorts halves, and merges them       |
+| Merge Sort     | O(n log n)      | Divides array, sorts halves, and merges them          |
 
----
 ### Recursion
 
 - **Tail Recursion**: Recursive call is the final step (optimizable in some languages).
 - **Non-Tail Recursion**: Work is done after the recursive call.
 
----
 ### Tree Traversal Algorithms
 
 - **In-Order**: Left → Root → Right (gives us the sorted array when traversing a BST)  
@@ -201,7 +191,6 @@ const postOrder = (node) => {
 }
 ```
 
----
 ### Graph Algorithms
 
 - **BFS** – Explores neighbors level-by-level  
@@ -213,15 +202,12 @@ const postOrder = (node) => {
 - **Prim’s Algorithm** – Greedy MST starting from a node  
 - **Ford-Fulkerson** – Max flow using augmenting paths (BFS/DFS)
 
----
-
 ### Search Algorithms
 
-| Algorithm      | Time Complexity | Description                                |
-|----------------|-----------------|--------------------------------------------|
-| Binary Search  | O(log n)        | Halves the search space (on sorted arrays) |
+| Algorithm     | Time Complexity | Description                                |
+| ------------- | --------------- | ------------------------------------------ |
+| Binary Search | O(log n)        | Halves the search space (on sorted arrays) |
 
----
 ### Cache Eviction Policies
 
 | Policy | Description |
@@ -230,7 +216,6 @@ const postOrder = (node) => {
 | **LFU** (Least Frequently Used) | Evicts the item used least often |
 | **MRU** (Most Recently Used) | Evicts the most recently accessed item |
 
----
 ### Backtracking Problems
 
 - **N-Queens** – Place queens so none attack each other  
@@ -238,7 +223,6 @@ const postOrder = (node) => {
 - **Knight’s Tour** – Visit all chessboard squares with knight moves  
 - **Hamiltonian Path** – Visit every vertex exactly once
 
----
 ### Greedy Algorithms
 
 - **Huffman Coding** – Builds optimal prefix codes for compression  
@@ -290,14 +274,12 @@ Bitwise operators are used to perform operations on individual bits of a number.
 
 In complexity theory, a Complexity Class is a set of problems with related complexity. These classes help scientists to groups problems based on how much time and space they require to solve problems and verify the solutions.
 
----
-#### **Deterministic vs Non-Deterministic** 
+### **Deterministic vs Non-Deterministic** 
 
 - **Deterministic** - at each step there's only one choice of what to do next. This is how real-world computers work.
 - **Non-deterministic** - at some steps when there's multiple options the machine magically picks the *right path* - the one that leads to the "yes" answer - if such a path exists.
 
----
-#### **Complexity Classes** 
+### **Complexity Classes** 
 
 - **P** - The P in the *P* class stands for Polynomial Time. It is the collection of decision problems that can be solved by a deterministic machine in polynomial time - `O(n^k)`
 - **NP** - The NP in NP class stands for Non-deterministic Polynomial Time. It is the collection of decision problems that can be solved by a non-deterministic machine in polynomial time. Technically covers problems that can easily be verified in polynomial time but finding the solution for them might take a lot longer.
@@ -305,7 +287,6 @@ In complexity theory, a Complexity Class is a set of problems with related compl
 - **NP-complete** - NP-Complete is a subset of *NP* that represents the hardest problems in the complexity class.
 - **NP-hard** - At least as hard as the hardest problems in NP (could not be in NP itself i.e not verifiable in polynomial time).
 
----
 ### **P = NP ?** 
 
 The P = NP is a very famous problem in CS that asks whether a problem that can be solved in polynomial time on a non-deterministic machine(i.e the problem is in *NP*) can also be solved in polynomial time on a deterministic machine (i.e the problem is in *P*). 
@@ -328,7 +309,6 @@ If it was proven that P=NP, it would revolutionize computing because cryptograph
 | **Isolation**   | Transactions don't interfere with each other. |
 | **Durability**  | Committed changes persist even after failures. |
 
----
 ### BASE Model (for NoSQL/Distributed DBs)
 
 | Property              | Description |
@@ -337,7 +317,6 @@ If it was proven that P=NP, it would revolutionize computing because cryptograph
 | **Soft State**         | State can change over time, even without new input. |
 | **Eventual Consistency** | System becomes consistent *eventually*, but not immediately. |
 
----
 ### CAP Theorem
 
 > In distributed systems, you can only guarantee **two** of the three:
@@ -348,26 +327,22 @@ If it was proven that P=NP, it would revolutionize computing because cryptograph
 | **Availability** | Every request gets a (non-error) response. |
 | **Partition Tolerance** | System continues to work during network partitions. |
 
----
 ### Data Access & Performance
 
 - **Locking** – Prevents concurrent modifications to the same data.
 - **Indexes** – Improves lookup speed by avoiding full-table scans but might make writes slower because they're saved into the database.
 - **Stored Procedures** – Reusable SQL blocks with optional inputs/outputs.
 
----
 ### Scalability & Distribution
 
 - **Replication** – Copies data across multiple nodes for availability & fault tolerance. Can be synchronous or asynchronous.
 - **Sharding** – Splits one DB into horizontal pieces (shards) stored on separate servers.
 - **Federation** – Treats multiple databases (possibly with different technologies) as one logical unit.
 
----
 ## System Design
 
 System Design is the process of defining the architecture, modules, interfaces, and data for a system to satisfy specified requirements.
 
----
 ### Horizontal vs Vertical Scaling
 
 - **Horizontal Scaling**: Adding more machines/servers to the system.  
@@ -376,23 +351,17 @@ System Design is the process of defining the architecture, modules, interfaces, 
 - **Vertical Scaling**: Adding more resources (RAM, CPU, etc.) to a single server.  
   ↳ Simpler but has **hardware limits** and **a single point of failure**.
 
----
-
 ### Load Balancing vs Clustering
 
 - **Load Balancing** - Distributes network or application traffic across multiple servers.  
 - **Clustering** - A group of interconnected servers (nodes) working together to act as a single system. Enables *parallel processing* and *high availability*.
 - **Key Difference** - Clusters are **aware of each other** and cooperate; load-balanced servers are typically **independent**.
 
----
-
 ### Message Queues vs Message Brokers
 
 - **Message Queues** - simple systems that store and forward messages between a sender and a receiver, typically using **FIFO** (First In, First Out) ordering. 
 - **Message Brokers** - more advanced systems that route, transform, and manage messages between multiple applications or components.
 - **Examples**: RabbitMQ, Apache Kafka, Amazon SQS.
-
----
 
 ### Architectural Styles
 
@@ -408,12 +377,9 @@ System Design is the process of defining the architecture, modules, interfaces, 
 - **Hexagonal (Ports and Adapters)**: Core logic is decoupled from external systems via interfaces.
 
 ---
-
 ## Security
 
 Web security refers to protective measures taken by developers to safeguard web applications from threats that could impact the business.
-
----
 
 ### Hashing, Encryption, and Encoding
 
@@ -421,23 +387,17 @@ Web security refers to protective measures taken by developers to safeguard web 
 - **Encryption** — reversible (two-way) function transforming input into ciphertext and back. E.g., AES, RSA  
 - **Encoding** — reversible transformation of data into a specified format. E.g., base64.
 
----
-
 ### Public-key Cryptography
 
 Also known as asymmetric cryptography. Uses a pair of keys — private and public.  
 
 Messages are signed using the **private key**, and authenticity can be verified with the **public key**. Without the private key, it is computationally infeasible to derive it from the public key.
 
----
-
 ### Secure Communication Protocols
 
 - **TLS/SSL (HTTPS)**: Protocols securing data transmission over networks via encryption.  
 - **SSH**: Secure Shell protocol for encrypted remote login and command execution.  
 - **OAuth / OpenID Connect**: Protocols for delegated authorization and authentication in modern web apps.
-
----
 
 ### Common Web Vulnerabilities
 
@@ -454,8 +414,6 @@ Messages are signed using the **private key**, and authenticity can be verified 
 
 **Thread** is the smallest unit of execution within a process. Threads within the same process share memory and resources but can execute independently.
 
----
-
 ### Common Concepts
 
 - **Process Forking** – A way to create new processes from an existing process.
@@ -464,15 +422,11 @@ Messages are signed using the **private key**, and authenticity can be verified 
 - **Reference Counting** – Tracks how many references point to a memory location to determine when it can be safely deallocated.
 - **Memory Pools** – Technique to automatically manage memory allocation based on application lifecycle (e.g., request or transaction).
 
----
-
 ### Lock, Mutex, Semaphore
 
 - **Lock** – Restricts access to a critical section to one thread at a time within the same process.
 - **Mutex** – A system-wide lock that can synchronize access across threads and processes.
 - **Semaphore** – Allows a limited number (`n`) of threads/processes to access a resource concurrently. Useful for managing resource pools.
-
----
 
 ### Concurrency and Parallelism
 
@@ -480,8 +434,6 @@ Messages are signed using the **private key**, and authenticity can be verified 
 - **Parallelism** – Executing multiple tasks at the exact same time. Beneficial for CPU-bound computations.
 
 > A **concurrent program** can run on a single core using context switching, while a **parallel program** requires multiple cores or processors.
-
----
 
 ### CPU Scheduling
 
@@ -496,7 +448,6 @@ CPU Scheduling is the process of selecting a process from the ready queue and al
 - **Priority Scheduling:** The process with the highest priority runs first. Can be preemptive or non-preemptive.
 - **Lottery Scheduling:** Processes receive a chance to run based on randomly drawn tickets. Preemptive.
 
----
 ### Multithreading vs Multiprocessing
 
 - **Multithreading**: Multiple threads within the same process. Shared memory space. Lightweight. Best for **I/O-bound** tasks.

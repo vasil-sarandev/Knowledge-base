@@ -2,7 +2,6 @@
 # Architectural Patterns
 
 Architectural patterns are a set of solutions that have been proven to work well for specific types of software systems. They provide a common vocabulary and set of best practices for designing and building software systems, and can help developers make better design decisions.
-
 ## Linked Materials
 
 - [CQRS (Command Query Responsibility Segregation)](cqrs.md)
