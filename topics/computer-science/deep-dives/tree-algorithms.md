@@ -2,6 +2,8 @@
 
 # Tree Algorithms
 
+#deep-dive
+
 Tree algorithms operate on hierarchical, non-linear data structures. They enable efficient traversal, search, and manipulation of nodes using recursive or iterative strategies, forming the basis for many graph, parsing, and indexing problems.
 
 ---

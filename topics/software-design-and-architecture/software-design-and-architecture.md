@@ -1,5 +1,7 @@
 # Software Design and Architecture
 
+#topic
+
 ---
 ## Cheatsheet
 
@@ -8,7 +10,7 @@
 ---
 ## Deep Dive Topics
 
-- [Software Design Patterns](topics/software-design-and-architecture/deep-dives/software-design-patterns/index.md)
+- [Software Design Patterns](software-design-patterns.md)
 
 ---
 ## Resources

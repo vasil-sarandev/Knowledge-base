@@ -2,6 +2,8 @@
 
 # Graph Algorithms
 
+#deep-dive
+
 Graph algorithms operate on graph data structures to solve problems involving relationships and connectivity. They enable efficient traversal, pathfinding, and cycle detection across nodes and edges, forming the core of network analysis, routing, and optimization tasks.
 
 ---

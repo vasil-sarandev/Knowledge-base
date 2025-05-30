@@ -1,13 +1,20 @@
-# System Design Knowledge Base
+# System Design
 
-This is my collection of notes regarding System Design
+#topic 
 
-## Materials
+---
+## Cheatsheet
 
-1. [Data Structures](01-data-structures.md)
+- cheatsheet
 
+---
+## Deep Dive Topics
+
+- topic1
+
+---
 ## Resources
 
-- https://github.com/donnemartin/system-design-primer
-
-
+- [System Design roadmap - roadmap.sh](https://roadmap.sh/system-design)(copied locally in /assets)
+- https://www.hiredintech.com/system-design/ (System Design Interview guide, **this one is pretty great.**)
+- https://github.com/donnemartin/system-design-primer (System Design Primer)

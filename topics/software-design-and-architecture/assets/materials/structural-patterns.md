@@ -1,4 +1,4 @@
-[Back to Software Design Patterns](topics/software-design-and-architecture/deep-dives/software-design-patterns/index.md)
+[Back to Software Design Patterns](software-design-patterns.md)
 
 # Structural Design Patterns
 
