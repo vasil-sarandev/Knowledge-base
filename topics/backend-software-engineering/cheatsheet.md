@@ -23,24 +23,25 @@ The Internet is a global network that uses TCP/IP protocols for communication.
 **DNS (Domain Name System):** Translates domain names into IP addresses.
 
 ---
-
 ## Databases
 
 ### Relational Databases
 
-Organize data in structured tables with schemas, using:
+Organize data in structured tables with schemas (defined columns and data types), using **Primary & Foreign Keys, and Constraints** for integrity.
 
-- **Primary & Foreign Keys** for integrity
-- **ACID compliance** for reliable transactions
+#### Transactions
 
-### ACID Properties
+A **transaction** is a group of operations that execute as a single unit. Follows the **ACID** model.
 
-- **Atomicity** - ensures that a transaction is treated as a single, indivisible unit that either completes entirely or fails completely. 
-- **Consistency** - maintains the database in a valid state before and after the transaction. 
-- **Isolation** - ensures that concurrent transactions do not interfere with each other, appearing to execute sequentially. 
-- **Durability** - guarantees that once a transaction is committed, it remains so, even in the event of system failures.
+#### ACID Model
 
-### Database Normalization
+| Property        | Description                                    |
+| --------------- | ---------------------------------------------- |
+| **Atomicity**   | The transaction is all-or-nothing.             |
+| **Consistency** | Database remains valid before and after.       |
+| **Isolation**   | Transactions don't interfere with each other.  |
+| **Durability**  | Committed changes persist even after failures. |
+#### Database Normalization
 
 Improves integrity and reduces redundancy:
 
@@ -49,14 +50,11 @@ Improves integrity and reduces redundancy:
 - **3NF:** No transitive dependencies
 - **4NF+:** Advanced refinements
 
-### NoSQL Databases
+#### Data Access & Performance
 
-NoSQL databases are a category of database management systems designed for handling unstructured, semi-structured, or rapidly changing data.
-
-- **Document:** JSON/BSON/XML (e.g., MongoDB)
-- **Key-Value:** Fast lookups (e.g., Redis)
-- **Column:** Columnar storage (e.g., Cassandra)
-- **Graph:** Relationship-focused (e.g., Neo4j)
+- **Locking** – Prevents concurrent modifications to the same data.
+- **Indexes** – Indexes improve lookup speed by avoiding full-table scans, but slow down writes because indexes must also be updated.
+- **Stored Procedures** – Reusable SQL blocks with optional inputs/outputs.
 
 ### Scaling Databases
 
@@ -64,20 +62,53 @@ NoSQL databases are a category of database management systems designed for handl
 - **Horizontal Scaling** - Adding more servers to handle the load. This can be done through: 
 	- **Sharding**: A method where a database is split into smaller, more manageable parts (shards), which are distributed across multiple servers, enhancing search efficiency and overall performance. 
 	- **Read Replicas**: A form of horizontal scaling where copies of a primary database are made. These replicas handle read traffic, distributing the load, and increasing the system’s capacity to handle read requests. 
-
-### Eventual Consistency 
-
-In distributed databases, achieving **strong consistency** (where all nodes have the same data at any point in time) can be challenging, especially with horizontal scaling. Instead, many NoSQL databases (and even some relational systems in distributed environments) follow the principle of **eventual consistency**. 
-
-**Eventual Consistency** means that while updates to the database may not be immediately reflected across all nodes, the system will eventually converge to a consistent state. This trade-off allows for higher availability and partition tolerance, especially in large-scale distributed systems.
+- **Database Federation** - Treating multiple databases (possibly with different engines too) as a single database.
+- **Database Partitioning** - Divides data within a single database.
 
 ### CAP Theorem
 
-The CAP Theorem is a fundamental principle in distributed database systems. It states that a distributed system can only guarantee two of the three: 
+> In distributed systems, you can only guarantee **two** of the three:
 
-- **Consistency:** All nodes show the same data. 
-- **Availability:** Every request gets a response. 
-- **Partition Tolerance:** Operates despite network failures.
+| Property                | Meaning                                             |
+| ----------------------- | --------------------------------------------------- |
+| **Consistency**         | All nodes see the same data.                        |
+| **Availability**        | Every request gets a (non-error) response.          |
+| **Partition Tolerance** | System continues to work during network partitions. |
+
+### NoSQL Databases
+
+NoSQL databases are a category of database management systems designed for handling unstructured, semi-structured, or rapidly changing data.
+
+- **Features** 
+	- **Flexible schemas** (good for fast-evolving applications)    
+	- **Horizontal scalability** (better for large-scale systems)
+	- Optimized for **read/write performance** and **availability**
+	- Often support **eventual consistency** over strong consistency
+- **Types of NoSQL databases**
+	- **Key-Value stores** - A key-value store generally allows for `O(1)` reads and writes and is often backed by memory or SSD; e.g: *Redis*, *DynamoDB*
+	- **Document databases** - Instead of storing data in fixed rows and columns, the data is stored in documents. e.g: *MongoDB*, *CouchDB*
+	- **Wide-column**: each row can have a different set of columns. e.g *Apache Cassandra*
+	- **Graph**: used for data with complex relationships - like Social Media. e.g *Neo4j*, *ArangoDB*
+
+#### BASE Model (for NoSQL/Distributed DBs)
+
+| Property                 | Description                                                  |
+| ------------------------ | ------------------------------------------------------------ |
+| **Basically Available**  | System always responds (even if data is stale).              |
+| **Soft State**           | State can change over time, even without new input.          |
+| **Eventual Consistency** | System becomes consistent *eventually*, but not immediately. |
+
+### How to choose whether to use SQL or NoSQL database:
+
+- **SQL database**
+	- The application needs **reliable transactions** (e.g. banking, e-commerce checkout)
+	- Relationships between entities are complex (foreign keys, joins)
+	- There's a need for strict data validation and integrity
+- **NoSQL database**
+	- Schema is dynamic or **changes frequently**
+	- **Speed and availability are prioritized over consistency**
+	- Relationships between data are simple or irrelevant
+	- You need to handle **big data / high-throughput workloads**
 
 ### ORM (Object-Relational Mapping)
 
@@ -111,32 +142,46 @@ APIs allow software components to communicate:
 - **Cookies / Session-based Authentication** - Server-managed authentication. When a user logs in, the server creates a session and sends a unique identifier (session ID) to the client as a cookie. This cookie is then sent with every subsequent request, allowing the server to identify and authenticate the user.
 
 ---
-
 ## Web Security
 
-**Principles:** Data confidentiality, integrity, availability
+Web security refers to protective measures taken by developers to safeguard web applications from threats that could impact the business.
 
-- **Encryption:** TLS/SSL
-- **Input Validation:** Prevent SQLi, XSS, CSRF
+### Hashing, Encryption, and Encoding
 
-### Hashing, Encryption, Encoding
+- **Hashing** — irreversible (one-way) function producing a fixed-length output called a hash, uniquely representing the input. E.g., SHA, MD5  
+- **Encryption** — reversible (two-way) function transforming input into ciphertext and back. E.g., AES, RSA  
+- **Encoding** — reversible transformation of data into a specified format. E.g., base64.
 
-- **Hashing:** One-way (e.g., bcrypt)
-- **Encryption:** Two-way (e.g., AES)
-- **Encoding:** Format conversion (e.g., Base64)
+### Public-key Cryptography
+
+Also known as asymmetric cryptography. Uses a pair of keys — private and public.  
+
+Messages are signed using the **private key**, and authenticity can be verified with the **public key**. Without the private key, it is computationally infeasible to derive it from the public key.
+
+### Secure Communication Protocols
+
+- **TLS/SSL (HTTPS)**: Protocols securing data transmission over networks via encryption.  
+- **SSH**: Secure Shell protocol for encrypted remote login and command execution.  
+- **OAuth / OpenID Connect**: Protocols for delegated authorization and authentication in modern web apps.
+
+### Common Web Vulnerabilities
+
+- **SQL Injection**: Injecting malicious SQL to manipulate databases via input.  
+- **Cross-Site Scripting (XSS)**: Injecting malicious scripts into trusted websites, executing in other users’ browsers.  
+- **Cross-Site Request Forgery (CSRF)**: Forcing authenticated users to perform unintended actions.  
+- **Insecure Direct Object References (IDOR)**: Accessing unauthorized resources by manipulating IDs.  
+- **Security Misconfiguration**: Poor configuration of servers, frameworks, or databases leading to vulnerabilities.
 
 ---
-
 ## Caching
 
 Stores frequently accessed data for speed:
 
 - **Client-side:** Browser cache
-- **Server-side:** In-memory cache
+- **Server-side:** In-memory cache (e.g *Redis*)
 - **CDNs:** Edge delivery and protection
 
 ---
-
 ## CI/CD & Testing
 
 Automates build and deployment:
@@ -145,14 +190,13 @@ Automates build and deployment:
 - **Tests:** Unit, Integration, Functional
 
 ---
-
 ## Containers & Virtualization
 
 - **Virtualization:** Creates separate virtual machines (VMs), each with its own operating system, running on a hypervisor. This provides strong isolation but consumes more resources. 
 - **Containers (Docker):** Uses a shared operating system kernel to create isolated environments (containers) for applications. Containers are lighter, start faster, and use fewer resources than VMs. They’re ideal for microservices architectures and rapid deployment.
 - **Orchestration (Kubernetes):** Manages containerized applications.
----
 
+---
 ## Web Servers
 
 Serve and process HTTP content:
@@ -163,7 +207,6 @@ Serve and process HTTP content:
 **Popular Servers:** Nginx, Apache, IIS
 
 ---
-
 ## Real-Time Data
 
 Deliver low-latency data to clients:
@@ -174,17 +217,6 @@ Deliver low-latency data to clients:
 - **Short Polling:** Periodic checks
 
 ---
-
-## Message Queues and Brokers
-
-Message brokers are intermediaries that facilitate communication between distributed systems or components by receiving, routing, and delivering messages. 
-
-They enable asynchronous message passing, decoupling producers (senders) from consumers (receivers), which improves scalability and flexibility. - 
-
-**Message Brokers:** Kafka, RabbitMQ, Azure Service Bus.
-
----
-
 ## Observability
 
 Ability to infer internal system state from outputs:

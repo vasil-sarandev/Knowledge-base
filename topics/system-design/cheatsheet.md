@@ -25,8 +25,19 @@ In software engineering, system design is a phase in the software development pr
 Resiliency is the ability of a system to gracefully handle and recover from failures, both inadvertent and malicious.
 
 ---
+## Distributed Systems
 
-## CAP Theorem
+Distributed systems consist of components spread across multiple machines, working together to achieve a common goal.
+
+### Horizontal vs Vertical Scaling
+
+- **Horizontal Scaling**: Adding more machines/servers to the system.  
+  ↳ Improves **resilience** and allows **independent failure**.
+
+- **Vertical Scaling**: Adding more resources (RAM, CPU, etc.) to a single server.  
+  ↳ Simpler but has **hardware limits** and **a single point of failure**.
+
+### CAP Theorem
 
 According to the CAP theorem, in a distributed system, you can only support two of the following guarantees:
 
@@ -34,18 +45,32 @@ According to the CAP theorem, in a distributed system, you can only support two 
 - **Availability** - Every request receives a response, without guarantee that it contains the most recent version of the information
 - **Partition Tolerance** - The system continues to operate despite arbitrary partitioning due to network failures
 
----
+### Consistency Models
 
-## Consistency Patterns
-
-Consistency patterns refer to the ways in which data is stored and managed in a distributed system, and how that data is made available to users and applications. There are three main types of consistency patterns:
+Consistency Models refer to the ways in which data is stored and managed in a distributed system, and how that data is made available to users and applications. There are three main types of consistency patterns:
 
  - **Strong Consistency** - After an update is made to the data, it will be immediately visible to any subsequent read operations. The data is replicated in a synchronous manner, ensuring that all copies of the data are updated at the same time.
  - **Eventual Consistency** - After an update is made to the data, it will be eventually visible to any subsequent read operations. The data is replicated in an asynchronous manner, ensuring that all copies of the data are eventually updated.
  - **Weak Consistency** - After an update is made to the data, it is not guaranteed that any subsequent read operation will immediately reflect the changes made. The read may or may not see the recent write.
 
----
+### Fault Tolerance
 
+- **Leader Election**: Ensures coordination in distributed environments.
+- **Circuit Breaker Pattern**: Prevents cascading failures in microservices.
+- **Retries & Exponential Backoff**: Gracefully handles transient failures.
+
+### Messaging
+
+Message Queues and Brokers are intermediaries that enable **asynchronous communication** between distributed system components, decoupling producers (senders) from consumers (receivers) to improve scalability, reliability, and flexibility.
+
+- **Message Queues**  
+    Store messages temporarily until consumers retrieve them, often following **FIFO** (First In, First Out) order. They provide reliable delivery with features like acknowledgment and retry. Commonly used for task queues, load leveling, and buffering.
+- **Message Brokers**  
+    More advanced middleware that routes, transforms, filters, and manages messages across multiple producers and consumers. They support complex messaging patterns like **pub/sub**, topic routing, and message filtering.
+
+**Examples:** RabbitMQ, Apache Kafka, Amazon SQS, Azure Service Bus.
+
+---
 ## Availability Patterns
 
 Availability is measured as a percentage of uptime, and defines the proportion of time that a system is functional and working. Availability is affected by system errors, infrastructure problems, malicious attacks, and system load
@@ -65,7 +90,6 @@ Failover is an availability pattern that is used to ensure that a system can con
 - **Active-Active Fail-Over** - In active-active, both servers are managing traffic, spreading the load between them.
 
 ---
-
 ## Background Jobs
 
 Background jobs in system design refer to tasks that are executed in the background, independently of the main execution flow of the system. These tasks are typically initiated by the system itself, rather than by a user or another external agent. 
@@ -78,7 +102,6 @@ They can be *Event* or *Schedule Driven*. Use cases include:
 - Performing long-running computations: such as machine learning or data analysis.
 
 ---
-
 ## Content Delivery Networks
 
 A content delivery network (CDN) is a globally distributed network of proxy servers, serving content from locations closer to the user.
@@ -112,7 +135,6 @@ Some of the benefits a Reverse Proxy provides are:
 While they serve similar purposes, Load Balancers are most commonly deployed when a site needs multiple servers because the volume of requests is too much for a single server to handle efficiently. Reverse Proxies often make sense be deployed even with a single server so they can serve as the application's "public face".
 
 ---
-
 ## Service Discovery and Service Mesh
 
 ### Service Discovery
@@ -128,6 +150,4 @@ A service consumer communicates with the "Web" service via a unique DNS entry pr
 The service mesh serves as a powerful design pattern that abstracts the underlying network infrastructure, providing a standardized solution by deploying sidecar proxies alongside your services. These proxies, often leveraging technologies like the Envoy proxy, handle critical networking tasks, security enforcement, and observability.
 
 ---
-
-## Databases
 

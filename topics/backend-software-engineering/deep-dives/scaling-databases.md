@@ -9,17 +9,6 @@ Scaling databases is the process of adapting them to handle more data and users 
 It’s achieved by either upgrading existing hardware (vertical scaling) or adding more servers (horizontal scaling).
 
 ---
-## CAP Theorem
-
-It states that in a distributed system, it’s impossible to simultaneously guarantee all three of the following properties: 
-
-- **Consistency** - all nodes see the same data at the same time
-- **Availability** - every request receives a response, without guarantee that it contains the most recent version of the data)
-- **Partition tolerance** - the system continues to operate despite network failures between nodes.
-
-According to the theorem, a distributed system can only strongly provide two of these three guarantees at any given time. 
-
----
 ## Database Indexes
 
 Database indexes are data structures that improve the speed of data retrieval operations in a database management system. They work similarly to book indexes, providing a quick way to look up information based on specific columns or sets of columns.
@@ -31,7 +20,6 @@ While indexes significantly enhance query performance, especially for large data
 ---
 ## Strategies for Scaling Databases
 
----
 ### Caching
 
 Caching is a technique used to store frequently accessed data in memory, making subsequent access to that data faster. It’s a common strategy used to improve the performance of a database system by reducing the need to access the underlying database.
@@ -43,7 +31,6 @@ Use cases:
 - **Expensive Computations**: If the application performs complex queries or computations that take a long time to complete, we can cache the results to speed up subsequent requests.
 - **Rate Limiting**: If you need to limit the number of requests to your database to prevent overloading it, caching can help by reducing the number of direct database accesses.
 
----
 ### Vertical Scaling
 
 Vertical scaling is often called “scaling up”. It’s the process of upgrading the hardware of your existing server. i.e., more CPU, RAM, Storage etc. Vertical scaling is a straightforward and quick approach, especially using cloud-based database services.
@@ -54,7 +41,6 @@ Use cases:
 - **Database Servers**: Databases often benefit from vertical scaling because they require fast access to data, which can be more efficiently achieved on a single powerful server.
 - **Temporary Scaling**: Vertical scaling can be a good option when you need to quickly handle a temporary spike in traffic or load.
 
----
 ### Read Replicas (Horizontal Scaling)
 
 Read replicas are a form of horizontal scaling where you create one or more copies of your primary database. These replicas are kept in sync with the primary database and can handle read traffic, thereby distributing the load, and increasing the system’s capacity to handle read requests.
@@ -69,7 +55,6 @@ Use cases:
 - **Database Backups**: You can use a read replica to take backups of your data. This way, your backup operations won’t impact the performance of your primary database.
 - **Failover Support**: In case your primary database fails, a read replica can be promoted to become the new primary database, providing high availability.
 
----
 ### Sharding (Horizontal Scaling)
 
 Relational databases slow down as the volume of records in a table increases. Searching for an item in such a large table, especially without indexing, becomes progressively slower as the data size expands. This often leads to performance bottlenecks as the database grows.

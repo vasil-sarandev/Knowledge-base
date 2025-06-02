@@ -95,39 +95,6 @@ const doubled = [1,2,3,4].map(x => x*2);
 - **Visitor**: Operates on a collection of objects without modifying their classes.
 
 ---
-## Distributed Systems
-
-Distributed systems consist of components spread across multiple machines, working together to achieve a common goal.
-
-### Characteristics
-
-- **Scalability**: Ability to handle increased workload by adding nodes.
-- **Fault Tolerance**: System remains operational despite failures.
-- **Concurrency**: Multiple components operate simultaneously.
-- **Decentralization**: No central point of failure.
-
-### Data Management
-
-- **Replication**: Distributes data across multiple nodes for availability.
-- **Sharding**: Divides data across multiple databases.
-- **Partitioning**: Divides data within a single database.
-
-### Consistency Models
-
-- **Eventual Consistency**: Data across nodes may be temporarily out of sync.
-- **Strong Consistency**: Guarantees that all nodes have the same data.
-
-### Fault Tolerance
-
-- **Leader Election**: Ensures coordination in distributed environments.
-- **Circuit Breaker Pattern**: Prevents cascading failures in microservices.
-- **Retries & Exponential Backoff**: Gracefully handles transient failures.
-
-### Messaging
-
-Asynchronous communication between system components, typically implemented with message queues (e.g., Kafka, RabbitMQ).
-
----
 ## Architectural Principles
 
 These principles guide the design of maintainable and scalable software architectures.
