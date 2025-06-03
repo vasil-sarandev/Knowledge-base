@@ -109,6 +109,7 @@ NoSQL databases are a category of database management systems designed for handl
 	- **Speed and availability are prioritized over consistency**
 	- Relationships between data are simple or irrelevant
 	- You need to handle **big data / high-throughput workloads**
+	- You need to scale horizontally (which is native to MongoDB for example)
 
 ### ORM (Object-Relational Mapping)
 
@@ -141,7 +142,9 @@ APIs allow software components to communicate:
 - **Token-based authentication** - Token-based authentication is a protocol which allows users to verify their identity, and in return receive a unique access token. JWT is the most popular implementation of token-based authentication nowadays. 
 - **Cookies / Session-based Authentication** - Server-managed authentication. When a user logs in, the server creates a session and sends a unique identifier (session ID) to the client as a cookie. This cookie is then sent with every subsequent request, allowing the server to identify and authenticate the user.
 
+
 ---
+
 ## Web Security
 
 Web security refers to protective measures taken by developers to safeguard web applications from threats that could impact the business.
@@ -175,11 +178,7 @@ Messages are signed using the **private key**, and authenticity can be verified 
 ---
 ## Caching
 
-Stores frequently accessed data for speed:
-
-- **Client-side:** Browser cache
-- **Server-side:** In-memory cache (e.g *Redis*)
-- **CDNs:** Edge delivery and protection
+[System Design Topic - Caching](topics/system-design/cheatsheet.md#Caching)
 
 ---
 ## CI/CD & Testing

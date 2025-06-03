@@ -20,7 +20,7 @@ In software engineering, system design is a phase in the software development pr
 - **Availability** refers to the ability of a system to provide its services to clients even in the presence of failures.
 - **Consistency** refers to the property that all clients see the same data at the same time.
 
-### Reliability
+### Resiliency
 
 Resiliency is the ability of a system to gracefully handle and recover from failures, both inadvertent and malicious.
 
@@ -69,6 +69,39 @@ Message Queues and Brokers are intermediaries that enable **asynchronous communi
     More advanced middleware that routes, transforms, filters, and manages messages across multiple producers and consumers. They support complex messaging patterns like **pub/sub**, topic routing, and message filtering.
 
 **Examples:** RabbitMQ, Apache Kafka, Amazon SQS, Azure Service Bus.
+
+---
+## Databases
+
+[Backend Software Engineering Topic - Databases](topics/backend-software-engineering/cheatsheet.md#Databases)
+
+---
+
+## Caching
+
+Stores frequently accessed data to reduce latency and database load.
+
+### Types
+
+- **Client-side:** Browser cache, service workers  
+- **Server-side:** In-memory stores (e.g. **Redis**, **Memcached**)  
+- **CDNs (Content Delivery Networks):** Cache static assets closer to users at the edge  
+
+### Strategies
+
+- **Cache-aside (Lazy Loading):**  App checks cache first. On miss, fetches from DB, updates cache.  E.g. Redis, Memcached.
+- **Write-through:**  Writes go to cache **and** database at the same time.  
+- **Write-behind**: Writes go to cache first, then asynchronously to DB. 
+- **Refresh-ahead**:  Cache refreshes entries **before** they expire if accessed recently.  
+
+### Eviction Policies
+
+When the cache is full, older items are evicted based on policy:
+
+- **LRU (Least Recently Used):**  Removes items that haven’t been used for the longest time.  
+- **LFU (Least Frequently Used):**  Removes items used the least often.  
+- **MRU (Most Recently Used):** Removed the item that was most recently used.
+- **TTL (Time To Live):**  Items expire automatically after a set time. 
 
 ---
 ## Availability Patterns
@@ -150,4 +183,31 @@ A service consumer communicates with the "Web" service via a unique DNS entry pr
 The service mesh serves as a powerful design pattern that abstracts the underlying network infrastructure, providing a standardized solution by deploying sidecar proxies alongside your services. These proxies, often leveraging technologies like the Envoy proxy, handle critical networking tasks, security enforcement, and observability.
 
 ---
+## Idempotent Operations
+
+Idempotent operations are operations that can be applied multiple times without changing the result beyond the initial application.
+
+Many queueing systems guarantee _at least once_ message delivery or processing. Designing the operations that a task queue executes to be idempotent allows one to use a queueing system that has accepted this design trade-off.
+
+---
+## Communication
+
+Network protocols are a key part of systems today, as no system can exist in isolation - they all need to communicate with each other.
+
+- **HTTP**
+	HTTP is a method for encoding and transporting data between a client and a server. It is a request/response protocol: clients issue requests and servers issue responses with relevant content and completion status info about the request.
+- **TCP**
+	TCP is a connection-oriented protocol over an IP network. Connection is established and terminated using a handshake. All packets sent are guaranteed to reach the destination in the original order and without corruption.
+- **UDP**
+	UDP is connectionless. Datagrams (analogous to packets) are guaranteed only at the datagram level. Datagrams might reach their destination out of order or not at all. UDP does not support congestion control. Without the guarantees that TCP support, UDP is generally more efficient and often used in scenarios where **low latency** is critical, like video streaming, gaming, or DNS queries.
+- **RPC (Remote Procedure Call)**
+	RPC is a Request-Response Protocol. In an RPC, a client causes a procedure to execute on a different address space, usually a remote server. The procedure is coded as if it were a local procedure call, abstracting away the details of how to communicate with the server from the client program.
+- **gPRC** 
+	gRPC is a high-performance, open-source RPC framework developed by Google. It uses HTTP/2 as transport and Protocol Buffers for serialization, enabling efficient and strongly-typed communication. gRPC supports unary and streaming calls (both client and server streaming), making it very suitable for microservices communication and real-time applications.
+- **REST**
+	REST is an architectural style enforcing a client/server model where the client acts on a set of resources managed by the server. The server provides a representation of resources and actions that can either manipulate or get a new representation of resources. All communication must be stateless and cacheable. The HTTP methods are typically mapped to CRUD operations and JSON or XML is used for payloads.
+- **GraphQL** 
+	GraphQL is a query language and runtime for building APIs. It allows clients to define the structure of the data they need and the server will return exactly that. This is in contrast to traditional REST APIs, where the server exposes a fixed set of endpoints and the client must work with the data as it is returned.
+- **Message Queues / Message Brokers** 
+
 
