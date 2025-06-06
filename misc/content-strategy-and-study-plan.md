@@ -3,18 +3,15 @@
 ## Fundamental Topics
 Examples: Algorithms, System Design, Networking, Databases, Design Principles
 
-- **Knowledge Base:** ✔ Yes — deep, structured notes for long-term understanding
+- **Knowledge Base:** Up to your discretion. — deep, structured notes for long-term understanding
 - **Cheatsheet:** ✔ Yes — quick reference for review and interviews
-
-> 📌 These are foundational and stable over time. Worth investing in deeply.
 
 ---
 
 ## Technologies
 Examples: GraphQL, Docker, Redis, Kafka, MongoDB, NodeJS
 
-- **Knowledge Base:** ❌ 
-- **Cheatsheet:** ✳ Yes — small and focused
+- **Cheatsheet:** ✔ Yes — small and focused
   - Key commands
   - Core concepts and configurations
   - Gotchas or common issues
@@ -24,7 +21,6 @@ Examples: GraphQL, Docker, Redis, Kafka, MongoDB, NodeJS
 ## Programming Languages
 
 ### For New or Less Familiar Languages
-- **Knowledge Base:** ✔ Yes — syntax, idioms, type system, runtime behavior
 - **Cheatsheet:** ✔ Yes — core patterns and quick recall
 
 ---
@@ -46,12 +42,6 @@ Examples: GraphQL, Docker, Redis, Kafka, MongoDB, NodeJS
 9. Kubernetes
 10. Message brokers
 
-### Cheatsheets
-
- - Backend-Software Engineering
- - CS
- - System Design
- - DevOps
 
 ### Exercises / projects
 
@@ -69,13 +59,16 @@ Make sure to include microservices architecture, an ORM and message brokers in t
 
 ### Topics
 
-1. Graphql
-2. AWS
-3. Terraform
-4. Java
-5. Springboot
-6. Golang
-7. .NET
+- First iteration before building
+	1. Golang
+	2. SQL & PostgreSQL
+	3. Graphql
+	4. AWS
+	5. Terraform
+- Post-first iteration
+	1. Java
+	2. Springboot
+	3. .NET
 ### Exercises / projects
 
 By this point You should be very confident in your understanding of the list of technologies & languages and it's now time to expand your practical skillset with them.

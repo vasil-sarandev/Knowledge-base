@@ -13,6 +13,12 @@ This repository contains a centralized place of storage for my notes regarding d
 
 - [SQL (Structured Query Language)](structured-query-language.md)
 
+## Books
+
+- Designing Data Intensive Applications
+- Designing Distributed Systems
+- System Design Interview
+
 
 ## Resources
 

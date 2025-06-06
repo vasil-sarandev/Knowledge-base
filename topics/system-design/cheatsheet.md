@@ -210,4 +210,31 @@ Network protocols are a key part of systems today, as no system can exist in iso
 	GraphQL is a query language and runtime for building APIs. It allows clients to define the structure of the data they need and the server will return exactly that. This is in contrast to traditional REST APIs, where the server exposes a fixed set of endpoints and the client must work with the data as it is returned.
 - **Message Queues / Message Brokers** 
 
+---
+## Performance Antipatterns
 
+Performance antipatterns in system design refer to common mistakes or suboptimal practices that can lead to poor performance in a system.
+
+- **Improper instantiation** - Classes that are supposed to only be instantiated once are created on demand.
+- **Monolithic Persistence** - The use of a single, monolithic database to store all of the data for an application or system. This approach can be used for simple, small-scale systems but as the system grows and evolves it can become a bottleneck, resulting in poor scalability, limited flexibility, and increased complexity. Solve with Microservices, Sharding, and noSQL databases.
+- **Noisy Neighbour** - A situation in which one or more components of a system are utilizing a disproportionate amount of shared resources, leading to resource contention and reduced performance for other components.
+- **Synchronous I/O** - A synchronous I/O operation blocks the calling thread while the I/O completes. The calling thread enters a wait state and is unable to perform useful work during this interval, wasting processing resources.
+- **Extraneous Fetching** - Retrieving more data than is needed for a specific task or operation.
+- **Busy Database** - When a database is not properly optimized for the workload it is handling. This can lead to Performance degradation, Increased resource utilization, Deadlocks and contention.
+- **Chatty I/O** - The cumulative effect of a large number of I/O requests can have a significant impact on performance and responsiveness. e.dg - reading and writing individual records to a database as distinct requests.
+- **Retry Storm** - A situation in which a large number of retries are triggered in a short period of time, leading to a significant increase in traffic and resource usage.
+- **No caching** - When a cloud application that handles many concurrent requests, repeatedly fetches the same data. This can reduce performance and scalability.
+
+---
+## Monitoring
+
+- **Health Monitoring** - A system is healthy if it is running and capable of processing requests. The purpose of health monitoring is to generate a snapshot of the current health of the system so that you can verify that all components of the system are functioning as expected. 
+- **Availability Monitoring** - Availability monitoring is concerned with tracking the availability of the system and its components to generate statistics about the uptime of the system. 
+- **Performance Monitoring** - As the system is placed under more and more stress, performance degradation is likely. Frequently, component failure is preceded by a decrease in performance, so it's important to monitor performance.
+- **Security Monitoring** - All commercial systems that include sensitive data must implement a security structure. The complexity of the security mechanism is usually a function of the sensitivity of the data.
+- **Usage Monitoring** - Usage monitoring tracks how the features and components of an application are used.
+- **Instrumentation** - Instrumentation is a critical part of the monitoring process. You can make meaningful decisions about the performance and health of a system only if you first capture the data that enables you to make these decisions. The information that you gather by using instrumentation should be sufficient to enable you to assess performance and diagnose problems. 
+- **Common Tools**
+	- Open Telemetry - Instrumentation
+	- Prometheus + Grafana - Health, Availability & Performance Monitoring
+	- DataDog / NewRelic - Health, Availability & Performance Monitoring

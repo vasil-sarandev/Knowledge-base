@@ -144,7 +144,21 @@ APIs allow software components to communicate:
 
 
 ---
+## Distributed Systems
 
+[System Design Topic - Distributed Systems](topics/system-design/cheatsheet.md#Distributed%20Systems)
+
+---
+## Architectural Styles 
+
+[Software Design and Architecture Topic - Architectural Styles](topics/software-design-and-architecture/cheatsheet.md#Architectural%20Styles)
+
+---
+## Object-Oriented Programming
+
+[Software Design and Architecture Topic - OOP](topics/software-design-and-architecture/cheatsheet.md#Object-Oriented%20Programming)
+
+---
 ## Web Security
 
 Web security refers to protective measures taken by developers to safeguard web applications from threats that could impact the business.
