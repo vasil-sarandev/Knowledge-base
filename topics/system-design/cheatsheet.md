@@ -238,3 +238,21 @@ Performance antipatterns in system design refer to common mistakes or suboptimal
 	- Open Telemetry - Instrumentation
 	- Prometheus + Grafana - Health, Availability & Performance Monitoring
 	- DataDog / NewRelic - Health, Availability & Performance Monitoring
+
+---
+## Messaging Design Patterns
+
+
+- **Sequential Convoy** - A pattern that allows for the execution of a series of tasks, or convoy, in a specific order. This pattern can be used to ensure that a set of dependent tasks are executed in the correct order and to handle errors or failures during the execution of the tasks.
+- **Scheduler-Agent-Supervisor** - Coordinate a set of distributed actions as a single operation. If any of the actions fail, try to handle the failures transparently, or else undo the work that was performed, so the entire operation succeeds or fails as a whole.
+- **Pub/sub (publish-subscribe) pattern** - Enable an application to announce events to multiple interested consumers asynchronously, without coupling the senders to the receivers. This is the opposite of Message Queues where a message is consumed only by a single subscriber. Popular Message Queues / Brokers offer implementations for pub/sub.
+- **Priority Queue** - Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority.
+- **Pipes and Filters** - Decompose a task that performs complex processing into a series of separate elements that can be reused. This can improve performance, scalability, and reusability by allowing task elements that perform the processing to be deployed and scaled independently. E.g - CI/CD : lint, test, build, deploy, ...
+- **Choreography** - Each service listens for and reacts to events on a shared message bus, then emits new events without a central coordinator. Services coordinate indirectly through event chains, enabling loose coupling but requiring careful design to manage flow, errors, and dependencies.
+- **Claim-Check pattern** - In order to not overload our messaging service / queue, messages should be kept small. If we need to include large data, we can replace it with a claim-check token that allows another service to retrieve the large data from a data store, instead of sending it to the message queue.
+
+---
+## Design & Implementation 
+
+
+
