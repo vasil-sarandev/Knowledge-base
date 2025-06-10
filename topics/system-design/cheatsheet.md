@@ -215,25 +215,40 @@ Network protocols are a key part of systems today, as no system can exist in iso
 
 Performance antipatterns in system design refer to common mistakes or suboptimal practices that can lead to poor performance in a system.
 
-- **Improper instantiation** - Classes that are supposed to only be instantiated once are created on demand.
-- **Monolithic Persistence** - The use of a single, monolithic database to store all of the data for an application or system. This approach can be used for simple, small-scale systems but as the system grows and evolves it can become a bottleneck, resulting in poor scalability, limited flexibility, and increased complexity. Solve with Microservices, Sharding, and noSQL databases.
-- **Noisy Neighbour** - A situation in which one or more components of a system are utilizing a disproportionate amount of shared resources, leading to resource contention and reduced performance for other components.
-- **Synchronous I/O** - A synchronous I/O operation blocks the calling thread while the I/O completes. The calling thread enters a wait state and is unable to perform useful work during this interval, wasting processing resources.
-- **Extraneous Fetching** - Retrieving more data than is needed for a specific task or operation.
-- **Busy Database** - When a database is not properly optimized for the workload it is handling. This can lead to Performance degradation, Increased resource utilization, Deadlocks and contention.
-- **Chatty I/O** - The cumulative effect of a large number of I/O requests can have a significant impact on performance and responsiveness. e.dg - reading and writing individual records to a database as distinct requests.
-- **Retry Storm** - A situation in which a large number of retries are triggered in a short period of time, leading to a significant increase in traffic and resource usage.
-- **No caching** - When a cloud application that handles many concurrent requests, repeatedly fetches the same data. This can reduce performance and scalability.
+- **Improper instantiation** 
+	Classes that are supposed to only be instantiated once are created on demand.
+- **Monolithic Persistence** 
+	The use of a single, monolithic database to store all of the data for an application or system. This approach can be used for simple, small-scale systems but as the system grows and evolves it can become a bottleneck, resulting in poor scalability, limited flexibility, and increased complexity. Solve with Microservices, Sharding, and noSQL databases.
+- **Noisy Neighbour** 
+	A situation in which one or more components of a system are utilizing a disproportionate amount of shared resources, leading to resource contention and reduced performance for other components.
+- **Synchronous I/O** 
+	A synchronous I/O operation blocks the calling thread while the I/O completes. The calling thread enters a wait state and is unable to perform useful work during this interval, wasting processing resources.
+- **Extraneous Fetching** 
+	Retrieving more data than is needed for a specific task or operation.
+- **Busy Database**
+	When a database is not properly optimized for the workload it is handling. This can lead to Performance degradation, Increased resource utilization, Deadlocks and contention.
+- **Chatty I/O**
+	The cumulative effect of a large number of I/O requests can have a significant impact on performance and responsiveness. e.dg - reading and writing individual records to a database as distinct requests.
+- **Retry Storm**
+	A situation in which a large number of retries are triggered in a short period of time, leading to a significant increase in traffic and resource usage.
+- **No caching** 
+	When a cloud application that handles many concurrent requests, repeatedly fetches the same data. This can reduce performance and scalability.
 
 ---
 ## Monitoring
 
-- **Health Monitoring** - A system is healthy if it is running and capable of processing requests. The purpose of health monitoring is to generate a snapshot of the current health of the system so that you can verify that all components of the system are functioning as expected. 
-- **Availability Monitoring** - Availability monitoring is concerned with tracking the availability of the system and its components to generate statistics about the uptime of the system. 
-- **Performance Monitoring** - As the system is placed under more and more stress, performance degradation is likely. Frequently, component failure is preceded by a decrease in performance, so it's important to monitor performance.
-- **Security Monitoring** - All commercial systems that include sensitive data must implement a security structure. The complexity of the security mechanism is usually a function of the sensitivity of the data.
-- **Usage Monitoring** - Usage monitoring tracks how the features and components of an application are used.
-- **Instrumentation** - Instrumentation is a critical part of the monitoring process. You can make meaningful decisions about the performance and health of a system only if you first capture the data that enables you to make these decisions. The information that you gather by using instrumentation should be sufficient to enable you to assess performance and diagnose problems. 
+- **Health Monitoring** 
+	A system is healthy if it is running and capable of processing requests. The purpose of health monitoring is to generate a snapshot of the current health of the system so that you can verify that all components of the system are functioning as expected. 
+- **Availability Monitoring** 
+	Availability monitoring is concerned with tracking the availability of the system and its components to generate statistics about the uptime of the system. 
+- **Performance Monitoring** 
+	As the system is placed under more and more stress, performance degradation is likely. Frequently, component failure is preceded by a decrease in performance, so it's important to monitor performance.
+- **Security Monitoring** 
+	All commercial systems that include sensitive data must implement a security structure. The complexity of the security mechanism is usually a function of the sensitivity of the data.
+- **Usage Monitoring** 
+	Usage monitoring tracks how the features and components of an application are used.
+- **Instrumentation** 
+	Instrumentation is a critical part of the monitoring process. You can make meaningful decisions about the performance and health of a system only if you first capture the data that enables you to make these decisions. The information that you gather by using instrumentation should be sufficient to enable you to assess performance and diagnose problems. 
 - **Common Tools**
 	- Open Telemetry - Instrumentation
 	- Prometheus + Grafana - Health, Availability & Performance Monitoring
@@ -242,17 +257,45 @@ Performance antipatterns in system design refer to common mistakes or suboptimal
 ---
 ## Messaging Design Patterns
 
-
-- **Sequential Convoy** - A pattern that allows for the execution of a series of tasks, or convoy, in a specific order. This pattern can be used to ensure that a set of dependent tasks are executed in the correct order and to handle errors or failures during the execution of the tasks.
-- **Scheduler-Agent-Supervisor** - Coordinate a set of distributed actions as a single operation. If any of the actions fail, try to handle the failures transparently, or else undo the work that was performed, so the entire operation succeeds or fails as a whole.
-- **Pub/sub (publish-subscribe) pattern** - Enable an application to announce events to multiple interested consumers asynchronously, without coupling the senders to the receivers. This is the opposite of Message Queues where a message is consumed only by a single subscriber. Popular Message Queues / Brokers offer implementations for pub/sub.
-- **Priority Queue** - Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority.
-- **Pipes and Filters** - Decompose a task that performs complex processing into a series of separate elements that can be reused. This can improve performance, scalability, and reusability by allowing task elements that perform the processing to be deployed and scaled independently. E.g - CI/CD : lint, test, build, deploy, ...
-- **Choreography** - Each service listens for and reacts to events on a shared message bus, then emits new events without a central coordinator. Services coordinate indirectly through event chains, enabling loose coupling but requiring careful design to manage flow, errors, and dependencies.
-- **Claim-Check pattern** - In order to not overload our messaging service / queue, messages should be kept small. If we need to include large data, we can replace it with a claim-check token that allows another service to retrieve the large data from a data store, instead of sending it to the message queue.
+ **Sequential Convoy** 
+	A pattern that allows for the execution of a series of tasks, or convoy, in a specific order. This pattern can be used to ensure that a set of dependent tasks are executed in the correct order and to handle errors or failures during the execution of the tasks.
+- **Scheduler-Agent-Supervisor** 
+	Coordinate a set of distributed actions as a single operation. If any of the actions fail, try to handle the failures transparently, or else undo the work that was performed, so the entire operation succeeds or fails as a whole.
+- **Pub/sub (publish-subscribe) pattern** 
+	Enable an application to announce events to multiple interested consumers asynchronously, without coupling the senders to the receivers. This is the opposite of Message Queues where a message is consumed only by a single subscriber. Popular Message Queues / Brokers offer implementations for pub/sub.
+- **Priority Queue** 
+	Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority.
+- **Pipes and Filters** 
+	Decompose a task that performs complex processing into a series of separate elements that can be reused. This can improve performance, scalability, and reusability by allowing task elements that perform the processing to be deployed and scaled independently. E.g - CI/CD : lint, test, build, deploy, ...
+- **Choreography**
+	Each service listens for and reacts to events on a shared message bus, then emits new events without a central coordinator. Services coordinate indirectly through event chains, enabling loose coupling but requiring careful design to manage flow, errors, and dependencies.
+- **Claim-Check pattern**
+	In order to not overload our messaging service / queue, messages should be kept small. If we need to include large data, we can replace it with a claim-check token that allows another service to retrieve the large data from a data store, instead of sending it to the message queue.
 
 ---
 ## Design & Implementation 
 
+- **Strangler Fig** 
+	Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.
+- **Sidecar Pattern** 
+	Deploy components of an application into a separate process or container to provide isolation and encapsulation. 
+	The Sidecar is attached to a parent application and provides supporting features for the application. The sidecar also shares the same lifecycle as the parent application, being created and retired alongside the parent.
+	E.x - Authentication. The Sidecar can intercept requests and add API keys, Bearer Tokens or it can intercept and validate incoming requests. Other examples: logs, metrics, proxying
+- **Leader Election**
+	Coordinate the actions performed by a collection of collaborating instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the others. In essence it's a distributed Mutex that's managed by the Leader, so instances don't overwrite each other's changes.
+- **CQRS - Command and Query Responsibility Segregation** 
+	A pattern that separates read and update operations for a data store. Implementing CQRS in your application can maximize its performance, scalability, and security.
+- **Ambassador** 
+	An Ambassador Service is a specific type of *Sidecar* that acts as a proxy between our main application and the Remote Services. The Ambassador handles implementations such as Retry, Authentication, Circuit Breaking, Logs, Monitoring, Security.
+- **Gateway Routing** 
+	Route requests to multiple services or multiple service instances using a single endpoint.
+- **Gateway Aggregation** 
+	This pattern is useful when a client must make multiple calls to different backend systems to perform an operation. With Gateway Aggregation, the Gateway Makes the requests, combines their responses, and sends the aggregated result to the client.
+- **External Config Store** 
+	Move configuration information out of the application deployment package to a centralized location. This can provide opportunities for easier management and control of configuration data, and for sharing configuration data across applications and application instances.
+- **Backend for Frontend (BFF)**
+	Create separate backend services to be consumed by specific frontend applications or interfaces. This pattern is useful when you want to avoid customizing a single backend for multiple interfaces.
+- **Anti-Corruption Layer** 
+	Implement a facade or adapter layer between different subsystems that don't share the same semantics. This layer translates requests that one subsystem makes to the other subsystem.
 
 
