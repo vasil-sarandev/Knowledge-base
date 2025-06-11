@@ -4,6 +4,6 @@ TicketMaster is an online platform that allows users to purchase tickets for con
 
 Tools I'll be using for the drawings: [Excalidraw](https://excalidraw.com/)
 
-![[high-level-design-ticketmaster.png]]
+![[case-study-ticketmaster.png]]
 
-[[high-level-design-ticketmaster.png]]
+[[case-study-ticketmaster.png]]
