@@ -299,3 +299,4 @@ Performance antipatterns in system design refer to common mistakes or suboptimal
 	Implement a facade or adapter layer between different subsystems that don't share the same semantics. This layer translates requests that one subsystem makes to the other subsystem.
 
 
+--- 
