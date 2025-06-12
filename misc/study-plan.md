@@ -15,7 +15,7 @@
 9. Message brokers
 
 
-I suggest you do the TicketMaster clone to put into practice all your refreshed knowledge.
+I suggest you do a URL-shortener to put into practice all your refreshed knowledge.
 
 Here are some other examples of what you can do:
 
@@ -23,43 +23,51 @@ Here are some other examples of what you can do:
 - https://roadmap.sh/projects/scalable-ecommerce-platform 
 
 --- 
-## Phase 2: Expand with Systems-Oriented Stack (Golang & PostgreSQL)
+## Phase 2: Expand with Relational Databases (PostgreSQL)
 
-**Goal**: Reinforce concepts, performance tradeoffs, and typed backend dev.
+**Goal**: Reinforce concepts, performance tradeoffs, and relational databases.
 
-1. Golang
-2. SQL & PostgreSQL
+1. SQL & PostgreSQL & ORMs
 
-Build the same project(s) you did with Node&MongoDB and all the new technologies.
+Once you're ready with the cheatsheets and learning, build a TicketMaster Clone.
 
 ---
-## Phase 3: Infra/Cloud Readiness
+## Phase 3: Strategic Language Expansion
+
+Goal: Broaden job eligibility for large-scale backend roles (Java, .NET)
+
+- Java & Spring Boot  (Head-First Java, Java Docs)
+
+Once you're ready with learning, build the TicketMaster clone again, but this time with Java and PostgreSQL.
+
+--- 
+## Phase 4: Infra/Cloud Readiness
 
 Goal: Understand how to deploy, scale, and manage infra across environments
 
 1. Kubernetes
-2. Graphql
-3. AWS
-4. Terraform
+2. AWS
+3. Terraform
 
 Maybe build something small when you're done with those.
 
---- 
-## Phase 4 – Strategic Language Expansion
+---
+## Phase 5: Additional languages & Technologies
 
-Goal: Broaden job eligibility for large-scale backend roles (Java, .NET)
+Goal: further increase job eligibility for Big-Tech.
 
-- Java & Springboot 
-- Way further down the line: .NET
+- Golang (Learning Go, Go docs)
+- Graphql
+- Way furher down the line: .NET
 
 ---
-## Phase 5: LeetCode problems
+## Phase 6: LeetCode problems
 
 Start with the https://neetcode.io/roadmap.
 
 ---
 
-## Phase 6: Maintenance of skillset & knowledge
+## Phase 7: Maintenance of skillset & knowledge
 
 - Stay up to date with latest tech & frameworks. Find twitter accounts or reddit communities to be active in.
 - Practice LeetCode daily.

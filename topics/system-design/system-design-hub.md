@@ -25,6 +25,7 @@
 
 - [System Design roadmap - roadmap.sh](https://roadmap.sh/system-design)
 - https://www.hiredintech.com/system-design/ (System Design Interview guide, **this one is pretty great.**)
+- https://www.youtube.com/@hello_interview
 - https://www.youtube.com/watch?v=fhdPyoO6aXI (Designing TicketMaster with an ex-Meta Engineer).
 - https://github.com/donnemartin/system-design-primer (System Design Primer)
 - https://systemdesignschool.io/
