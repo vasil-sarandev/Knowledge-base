@@ -1,4 +1,4 @@
-[Back to Computer Science](computer-science.md)
+[Back to Computer Science](computer-science-hub.md)
 
 # Graphs
 
