@@ -145,7 +145,7 @@ A content delivery network (CDN) is a globally distributed network of proxy serv
 - **Pull CDNs** - Pull CDNs grab new content from your server when the first user requests the content. You leave the content on your server and rewrite URLs to point to the CDN. Pull CDNs work well with traffic-heavy websites.
 
 ---
-## Load Balancer & Reverse Proxy
+## Load Balancer, Reverse Proxy & API Gateway
 
 ### Load Balancer
 
@@ -164,6 +164,18 @@ Some of the benefits a Reverse Proxy provides are:
 - **Increased security** -no information about your backend servers is visible outside your internal network, so malicious clients cannot access them directly to exploit any vulnerabilities. 
 - **Increased scalability and flexibility** - because clients see only the reverse proxy’s IP address, you are free to change the configuration of your backend infrastructure. 
 - **Web acceleration** - through *Intelligent Compression*, *Caching*, or *SSL acceleration*.
+
+### API Gateway
+
+An **API Gateway** is a specialized type of _reverse proxy_ designed to act as a single entry point for client requests in a microservices architecture. It routes incoming API calls to the appropriate backend services and often handles cross-cutting concerns that would otherwise be duplicated across services.
+
+Common responsibilities of an API Gateway include:
+
+- **Authentication and Authorization** – validating tokens and controlling access to services.    
+- **Rate Limiting and Throttling** – protecting services from abuse by limiting request rates.
+- **Request and Response Transformation** – modifying headers, payloads, or protocols.
+- **Logging and Monitoring** – capturing metrics and request logs for observability.
+- **Caching** – storing responses to reduce load on backend services.
 
 ### Load Balancers vs Reverse Proxies
 
