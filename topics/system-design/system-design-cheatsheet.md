@@ -52,8 +52,7 @@ According to the CAP theorem, in a distributed system, you can only support two 
 Consistency Models refer to the ways in which data is stored and managed in a distributed system, and how that data is made available to users and applications. There are three main types of consistency patterns:
 
  - **Strong Consistency** - After an update is made to the data, it will be immediately visible to any subsequent read operations. The data is replicated in a synchronous manner, ensuring that all copies of the data are updated at the same time.
- - **Eventual Consistency** - After an update is made to the data, it will be eventually visible to any subsequent read operations. The data is replicated in an asynchronous manner, ensuring that all copies of the data are eventually updated.
- - **Weak Consistency** - After an update is made to the data, it is not guaranteed that any subsequent read operation will immediately reflect the changes made. The read may or may not see the recent write.
+ - **Eventual (or Weak) Consistency** - After an update is made to the data, it will be eventually visible to any subsequent read operations. The data is replicated in an asynchronous manner, ensuring that all copies of the data are eventually updated.
 
 ### Fault Tolerance
 

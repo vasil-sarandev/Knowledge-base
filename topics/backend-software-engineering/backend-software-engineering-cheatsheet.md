@@ -29,7 +29,7 @@ The Internet is a global network that uses TCP/IP protocols for communication.
 
 ### Relational Databases
 
-Organize data in structured tables with schemas (defined columns and data types), using **Primary & Foreign Keys, and Constraints** for integrity.
+Organize data in structured tables with schemas (defined columns and data types), using **Primary keys and Constraints** for integrity, and **Foreign Keys** to define relationships.
 
 #### Transactions
 
