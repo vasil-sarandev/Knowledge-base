@@ -7,20 +7,14 @@
 1. Wrap up backend software engineering [v]
 2. Computer Science [v]
 3. System Design [v]
-4. DevOps [WIP]
-5. NodeJS
-6. MongoDB
-7. Redis
-8. Docker
-9. Message brokers
+4. NodeJS
+5. MongoDB
+6. Redis
+7. Docker
+8. Message brokers
 
 
 I suggest you do a URL-shortener to put into practice all your refreshed knowledge.
-
-Here are some other examples of what you can do:
-
-- https://roadmap.sh/projects?g=backend
-- https://roadmap.sh/projects/scalable-ecommerce-platform 
 
 --- 
 ## Phase 2: Expand with Relational Databases (PostgreSQL)
@@ -45,9 +39,10 @@ Once you're ready with learning, build the TicketMaster clone again, but this ti
 
 Goal: Understand how to deploy, scale, and manage infra across environments
 
-1. Kubernetes
-2. AWS
-3. Terraform
+1. DevOps 
+2. Kubernetes
+3. AWS
+4. Terraform
 
 Maybe build something small when you're done with those.
 
@@ -61,9 +56,14 @@ Goal: further increase job eligibility for Big-Tech.
 - Way furher down the line: .NET
 
 ---
-## Phase 6: LeetCode problems
+## Phase 6: LeetCode problems / Additional Projects
 
 Start with the https://neetcode.io/roadmap.
+
+Here are some other examples of projects you can do:
+
+- https://roadmap.sh/projects?g=backend
+- https://roadmap.sh/projects/scalable-ecommerce-platform 
 
 ---
 
