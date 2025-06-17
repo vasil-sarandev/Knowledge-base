@@ -10,7 +10,7 @@
 ---
 ## Deep Dive Topics
 
-- [[NodeJS Event Loop]]
+- [NodeJS Event Loop](event-loop.md)
 
 ---
 ## Resources
@@ -18,3 +18,4 @@
 - [Learn NodeJS - Official Docs](https://nodejs.org/en/learn/)
 - [Node.js and Express.js - Full Course - FreeCodeCamp](https://youtu.be/Oe421EPjeBE)
 - [https://youtu.be/rltfdjcXjmk](https://youtu.be/rltfdjcXjmk)
+- [Node JS TypeScript Boilerplate Repo](https://github.com/jsynowiec/node-typescript-boilerplate/tree/main)
