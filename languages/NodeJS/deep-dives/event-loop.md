@@ -7,38 +7,91 @@ The Event Loop is what allows NodeJS to perform non-blocking I/O operations(data
 ![[nodejs-event-loop.png]]
 
 
-## Short Summary of the way Event Loop Works
+The Event Loop is what enables Node.js to perform non-blocking I/O operations (such as database reads, file system access, and HTTP requests) — even though JavaScript itself runs on a single thread. It does this by offloading I/O operations to the system kernel or a worker thread pool whenever possible.
 
-1. A request/event is received
-2. Asynchronous operations are registered and dispatched appropriately to libuv / kernel.
-3. Once the operation completes, the callback is placed into the Event Queue.
-4. The callback is picked up by the Event Loop when it's free (not running synchronous code) and placed into the call stack for execution.
+## How the Event Loop Works (Simplified)
 
-## How Does the Event Loop really work?
+1. A request or event is received (e.g., an incoming HTTP request).
+2. If the operation is asynchronous, it’s registered and dispatched to `libuv`.
+3. For eligible operations, `libuv` delegates them either to the system kernel (if they are natively non-blocking) or to its internal thread pool.
+4. Once the operation completes, a callback is pushed to the Event Queue (also called the Callback Queue).
+5. The Event Loop continuously checks the queue and, when the call stack is clear, pushes callbacks onto it for execution.
 
-### 1. **Initialization**
+---
 
-When Node.js starts, it loads the script, executes synchronous code, and registers any asynchronous tasks (e.g., timers, I/O requests, network operations).
-### 2. Execution of the Input Script
+## libuv and the System Kernel
 
-- The call stack executes synchronous code first.
-- Any asynchronous operations (setTimeout, fs.readFile, network requests) are delegated to libuv.
-### 3. **Handling Asynchronous Operations with libuv**
+`libuv` is a C++ library that powers Node.js's Event Loop and provides a consistent, cross-platform asynchronous I/O API. It uses a hybrid model:
 
-Node.js uses a special C library called libuv which manages a thread pool that offloads heavy tasks and handles asynchronous operations (like file I/O, database operations, or network requests).
+- For **natively non-blocking operations** (such as most network I/O), `libuv` uses the OS’s event notification mechanisms (e.g., `epoll`, `kqueue`, or `IOCP`). These do **not** require additional threads — `libuv` simply registers interest in events and responds when the kernel notifies it.  
+- For **blocking or non-asynchronous system calls** (such as file system access, certain DNS lookups, or cryptographic operations), `libuv` delegates work to a **fixed-size thread pool**. This prevents blocking the main thread while still allowing asynchronous APIs in user code.
 
-### 4. Callback Execution
+This architecture allows Node.js to efficiently handle a large number of concurrent operations, despite running JavaScript in a single-threaded environment.
 
-Once the thread pool completes its tasks, it sends callbacks to the event queue. The event loop processes these callbacks, but only when the call stack is empty (i.e., when no synchronous code is currently executing).
-### 5. **Event Loop Phases**
+## Event Loop Phases and Microtasks
 
-The event loop goes through multiple phases, each designed to handle a different set of operations. It checks for timers, events, handles asynchronous callbacks, and executes tasks in the correct order.
-### 6. **Callback Execution from Event Queue**
-  
-After the call stack is empty, the event loop picks tasks from the event queue and sends them to the call stack for execution. These tasks could include:
+```
+[current operation]
+  ↓
+process.nextTick() queue
+  ↓
+microtasks queue (Resolved Promises - Promise.then(), queueMicrotask)
+  ↓
+Event Loop Phases:
+  - Timers (setTimeout, setInterval)
+  - Pending Callbacks (some system level I/O callbacks - DNS Lookup, TCP, ...)
+  - Idle, Prepare (internal)
+  - Poll (retrieve and execute I/O related callbacks)
+  - Check (setImmediate callbacks are invoked here)
+  - Close Callbacks (e.g socket.close())
+  ↓
+Repeat
+```
 
-- Completing network requests
-- Processing I/O events
-- Handling timers like setTimeout or setInterval
+## Scheduling Tasks in the Event Loop
 
+In addition to Promises, Node.js provides several other mechanisms for scheduling tasks in the event loop.
 
+### `process.nextTick()`
+
+`process.nextTick()` is used to schedule a callback to be executed immediately after the current operation completes. 
+
+This is useful for situations where you want to ensure that a callback is executed as soon as possible, but still after the current execution context.
+
+```javascript
+process.nextTick(() => {
+  console.log('Next tick callback');
+});
+console.log('Synchronous task executed');
+```
+
+### `queueMicroTask()`
+
+`queueMicrotask()` is used to schedule a microtask, which is a lightweight task that runs after the currently executing script but before any other I/O events or timers. 
+
+Microtasks include tasks like Promise resolutions and other asynchronous operations that are prioritized over regular tasks.
+
+```javascript
+queueMicrotask(() => {
+  console.log('Microtask is executed');
+});
+console.log('Synchronous task is executed');
+// "Microtask is executed" will be logged after "Synchronous task is executed," but before any I/O operations like timers.
+```
+
+### `setImmediate()`
+
+`setImmediate()` is used to execute a callback after the current event loop cycle finishes and all I/O events have been processed. This means that `setImmediate()` callbacks run after any I/O callbacks, but before timers.
+
+```javascript
+setImmediate(() => {
+  console.log('Immediate callback');
+});
+console.log('Synchronous task executed');
+```
+
+### When to use each?
+
+- Use `process.nextTick()` for tasks that should execute before any I/O events, often useful for deferring operations or handling errors synchronously.
+- Use `queueMicrotask()` for tasks that need to run immediately after the current script and before any I/O or timer callbacks, typically for Promise resolutions.
+- Use `setImmediate()` for tasks that should run after I/O events but before timers.
