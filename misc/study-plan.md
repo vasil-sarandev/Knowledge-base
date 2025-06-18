@@ -7,8 +7,8 @@
 1. Wrap up backend software engineering [v]
 2. Computer Science [v]
 3. System Design [v]
-4. NodeJS
-5. MongoDB
+4. NodeJS [v]
+5. MongoDB [WIP]
 6. Redis
 7. Docker
 8. Message brokers
