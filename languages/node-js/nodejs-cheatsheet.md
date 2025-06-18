@@ -24,6 +24,8 @@ import {add} from './file1';
 
 These days the way to go about this is: use *Typescript* and its compiler to build the code for distribution. Use a typescript runtime environment for development (*tsx* / *ts-node*).
 
+[DigitalOcean: Setting up a Node Project with TS](https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript)
+
 Here's a [nicely setup Node-Typescript boilerplate repo](https://github.com/jsynowiec/node-typescript-boilerplate/tree/main).
 
 ---
