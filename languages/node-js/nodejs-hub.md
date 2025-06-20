@@ -11,11 +11,13 @@
 ## Deep Dive Topics
 
 - [NodeJS Event Loop](event-loop.md)
+- [Layered Architecture in NodeJS](layered-architecture.md)
 - [Promises and async/await](promises-and-async-await.md)
 
 ---
-## Deep Dives from Official Docs that are useful
+## Deep Dives from External / Official Docs
 
+- [Github - Node Best Practices](https://github.com/goldbergyoni/nodebestpractices) (!!!)
 - [Don't Block the Event Loop](https://nodejs.org/en/learn/asynchronous-work/dont-block-the-event-loop)
 - [How to use Streams](https://nodejs.org/en/learn/modules/how-to-use-streams)
 - [Backpressuring in Streams](https://nodejs.org/en/learn/modules/backpressuring-in-streams)

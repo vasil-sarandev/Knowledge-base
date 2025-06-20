@@ -268,6 +268,34 @@ rl.question(`What's your name?`, name => {
 });
 ```
 
+
+## Layered Architecture in NodeJS
+
+Keeps concerns separated, improves testability and maintainability.
+
+- **Controller**: Handles HTTP requests, calls services, sends responses.
+- **Service**: Contains business logic, coordinates data and operations.
+- **Repository**: Handles database access and raw queries.
+
+## Project Structure
+
+```
+my-system
+├─ apps (components)
+│  ├─ orders  
+   │  ├─ entry-points
+   │  │  ├─ api # controller comes here
+   │  │  ├─ message-queue # message consumer comes here
+   │  ├─ domain # features and flows: DTO, services, logic
+   │  ├─ data-access # DB calls w/o ORM
+│  ├─ users
+│  ├─ payments
+├─ libraries (generic cross-component functionality)
+│  ├─ logger
+│  ├─ authenticator
+```
+
+
 ## Testing Node Applications
 
 Since Node v21, Node includes a robust and flexible built-in test runner.
