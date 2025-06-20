@@ -1,7 +1,5 @@
 # Learning & Knowledge Hub
 
-testing new rsa key.
-
 This repository contains a centralized place of storage for my notes regarding different software engineering concepts, topics and technologies and interview preparation cheatsheets.
 
 ## Topics
