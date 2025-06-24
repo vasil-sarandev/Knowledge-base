@@ -21,67 +21,63 @@ app.listen(port, () => {
 
 ## Basic Routing
 
-Route definitions take the following structure: 
 
 ```typescript
-app.METHOD(PATH, HANDLER)
-// `app` is an instance of `express`.
-// `METHOD` is an [HTTP request method] in lowercase
-// `PATH` is a path on the server.
-// `HANDLER` is the function executed when the route is matched.
+// productRouter.ts
+import { Router } from 'express';
 
-app.get('/', (req,res) => {
-	res.send('Respoding to a GET request');
+export const productRouter = Router()
+productsRouter.get('/', productsController.getAll);
+productsRouter.get('/:id', productsController.getById);
+
+// appRouter.ts
+import {productRouter, usersRouter} from '@components';
+
+export const appRouter = Router();
+appRouter.use('/products', productsRouter);
+appRouter.use('/users', usersRouter);
+
+// app.ts
+import {appRouter} from 'appRouter';
+
+app.use(appRouter);
+
+```
+### Working with Parameters
+
+```typescript
+router.get('/user/:username', function (req, res) {
+	const username = req.params.username;
+	const user = userService.get(username);
+	res.json(user);
 });
-app.post('/', (req,res) => {...});
-app.put('/', (req,res) => {...});
-app.delete('/', (req,res) => {...});
-app.all('/', (req,res) => {// matches all HTTP methods})
 ```
 
 ---
 ## Response API
-
-```typescript
-// res.download() - prompt a file to be downloaded.
-res.download(path.join(__dirname, 'file'));
-
-// res.end() - ends the response process.```
-res.status(404).end()
-
-// res.json() - sends a JSON response
-res.json({username: 'stan'});
-
-// res.redirect - redirects a request
-res.redirect(301, 'google.com');
-
-// res.send - sends a response of various types (Buffer, String, Boolean, Array)
-res.send(Buffer.from('<p> hennlou</p>'));
-
-// res.sendFile - sends a file to the client and attemps to serve it(e.x - pdf, html, ..etc)
-res.sendFile(path.join(__dirname, 'mypdf.pdf'));
-
-// res.set - set the response's HTTP Header's FIELD to VALUE
-res.set('Content-Type', 'text/plain')
-
-// res.status - sets the HTTP status for the response. It is a chainable alias of Node's response.statusCode.
-res.status(200).json(myData);
-
-```
 
 |                    |                                                                                       |
 | ------------------ | ------------------------------------------------------------------------------------- |
 | `res.download()`   | Prompt a file to be downloaded.                                                       |
 | `res.end()`        | End the response process.                                                             |
 | `res.json()`       | Send a JSON response.                                                                 |
-|                    |                                                                                       |
 | `res.redirect()`   | Redirect a request.                                                                   |
 | `res.render()`     | Render a view template.                                                               |
 | `res.send()`       | Send a response of various types.                                                     |
-| `res.sendFile()`   | Send a file as an octet stream.                                                       |
+| `res.sendFile()`   | Send a file to the client an attempt to serve it                                      |
 | `res.sendStatus()` | Set the response status code and send its string representation as the response body. |
-|                    |                                                                                       |
+**Examples**
 
+```typescript
+res.download(path.join(__dirname, 'file'));
+res.status(404).end()
+res.json({username: 'stan'});
+res.redirect(301, 'google.com');
+res.send(Buffer.from('<p> hennlou</p>'));
+res.sendFile(path.join(__dirname, 'mypdf.pdf'));
+res.set('Content-Type', 'text/plain')
+res.status(200).json(myData);
+```
 ---
 ## Serving Static Files
 
@@ -98,7 +94,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 // http://localhost:3000/js/app.js
 ```
 
-### Downloading files to client
+---
+## Downloading files to client
 
 We have 2 options - we can either stream the file and pipe it to the response or just use the built in `download` method
 
@@ -130,44 +127,77 @@ app.get('file-download-api', async (req,res) => {
 
 ---
 
-## Error Middlewares
+## Middlewares
 
-Error Middlewares have 4 parameters instead of the usual `(req,res,next)`.
 
-Otherwise they behave exactly like regular middleware and you can have a number of them in different order.
 ```typescript
-const erorrMiddleware = (err, req, res, next) => {
-	console.error(err.stack);
-	res.status(500);
-	res.json({ message: 'Internal server error.' });
+const loggerMiddleware = (req,res, next) => {
+	console.log(`RECEIVED ${req.method} ${req.url} @${Date.now()}`);
 	next();
+}
+
+// app.ts
+app.use(loggerMiddleware);
+```
+
+### Error Middleware Implementation
+
+It's common to use custom *Error* objects and utilize them in the ErrorMiddleware. Error Middlewares MUST provide 4 parameters instead of the usual 3 for middlewares.
+
+Make sure to add the error middleware AFTER the *appRouter* in `app.ts`
+
+```typescript
+import { NextFunction, Request, Response } from 'express';
+
+const SERVER_ERROR_MESSAGE = 'An unexpected error has ocurred';
+
+export interface IAppError extends Error {
+	status: number;
+}
+
+export class AppError extends Error implements IAppError {
+	status: number;
+	constructor(status: number, message: string) {
+		super(message);
+		this.status = status;
+	}
+}
+
+export const errorMiddleware = (
+error: AppError,
+request: Request,
+response: Response,
+next: NextFunction,
+) => {
+	if (!error) {
+	next();
+	}
+	const status = error.status ? error.status : 500;
+	const message = status === 500 ? SERVER_ERROR_MESSAGE : error.message;
+	response.status(status).json({ message });
 };
 ```
 
----
-
-## API fundamentals
-
-### Working with Parameters
-
-```typescript
-app.get('/user/:username', function (req, res) {
-	const username = req.params.username;
-	const user = userRepository.get(username);
-	res.json(user);
-});
-```
-
-### Parsing JSONs
+### Common Middlewares
 
 ```typescript
 const app = express()
 
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded (FORM bodies too)
+app.use(cors({
+  origin: 'https://example.com',
+  methods: ['GET', 'POST'],
+  credentials: true
+})); // enable CORS
 
-app.post('/profile', (req, res, next) => {
-  console.log(req.body)
-  res.json(req.body)
-})
+// ORDER is important - logger naturally should be first, error middleware right after router.
+app.use([loggerMiddleware, myCustomMiddleware1, myCustomMiddleware2]);
+app.use(appRouter);
+app.use(errorMiddleware);
+
+// 404 middleware
+app.use('*', (req, res) => {
+  res.status(404).json({ error: 'Not Found' });
+});
 ```
