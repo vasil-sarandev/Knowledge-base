@@ -8,6 +8,16 @@
 - [MongoDB Cheatsheet](mongodb-cheatsheet.md)
 
 ---
+
+## Deep Dives (ext)
+
+- [Aggregation - MongoDB Manual](https://www.mongodb.com/docs/manual/aggregation/)
+- [Data Modeling - MongoDB Manual](https://www.mongodb.com/docs/manual/data-modeling/)
+- [Replication - MongoDB Manual](https://www.mongodb.com/docs/manual/replication/)
+- [Sharding - MongoDB Manual](https://www.mongodb.com/docs/manual/sharding/) 
+
+
+---
 ## Resources
 
 - [MongoDB documentation](https://www.mongodb.com/docs/manual/)

@@ -1,4 +1,4 @@
-[Back to course index](structured-query-language.md)
+[Back to course index](sql-hub.md)
 
 ## Social-Network Modification Exercises
 

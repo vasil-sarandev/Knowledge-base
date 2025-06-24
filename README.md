@@ -11,7 +11,7 @@ This repository contains a centralized place of storage for my notes regarding d
 
 ## Languages
 
-- [SQL (Structured Query Language)](structured-query-language.md)
+- [SQL (Structured Query Language)](sql-hub.md)
 - [NodeJS](nodejs-hub.md)
 
 ## Technologies
