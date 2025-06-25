@@ -9,10 +9,11 @@
 3. System Design [v]
 4. NodeJS [v]
 5. Express [v]
-6. MongoDB [WIP]
-7. Redis
+6. MongoDB [v]
+7. Redis [WIP]
 8. Docker
-9. Message brokers
+9. Microservices with NodeJS
+10. Message brokers
 
 
 I suggest you do a URL-shortener to put into practice all your refreshed knowledge.

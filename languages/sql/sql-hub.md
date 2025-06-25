@@ -15,7 +15,8 @@
 ---
 ## Deep Dives
 
-- [TODO]
+- [Data Types in PostgreSQL](data-types-in-postgresql.md)
+- [Conditional Expressions in PostgreSQL](conditional-expressions-in-postgresql.md)
 
 ---
 ## Exercises

@@ -1,8 +1,9 @@
-[Back to course frontpage](structured-query-language.md)
+# Data Types in PostgreSQL
 
-## DATA TYPES
+#deep-dive 
 
-#### BOOLEAN
+---
+## BOOLEAN
 
 PostgreSQL supports a single Boolean data type: BOOLEAN that can have three values: true, false and NULL.
 
@@ -14,7 +15,8 @@ The following table shows the valid literal values for TRUE and FALSE in Postgre
 
 ![Boolean type](boolean.png)
 
-#### CHAR, VARCHAR, AND TEXT
+---
+## CHAR, VARCHAR, AND TEXT
 
 PostgreSQL provides three primary character types:
 
@@ -30,7 +32,8 @@ CHAR(n) - fixed length, padded with spaces
 TEXT, VARCHAR - variable unlimited length
 ```
 
-#### NUMERIC
+---
+## NUMERIC
 
 The NUMERIC type can store numbers with a lot of digits. Typically, you use the NUMERIC type for storing numbers that require exactness such as monetary amounts or quantities.
 
@@ -51,7 +54,8 @@ The following declares the price column with the numeric type that can store tot
 price NUMERIC(7,2) --12345.993553243 -> 12345.99
 ```
 
-#### DOUBLE PRECISION
+---
+## DOUBLE PRECISION
 
 In PostgreSQL, the `DOUBLE PRECISION` is an inexact, variable-precision numeric type.
 
@@ -59,7 +63,8 @@ Inexact means that PostgreSQL cannot exactly convert some values into an interna
 
 If your application requires exact storage and calculation, it’s recommended to use the `NUMERIC` type instead.
 
-#### REAL
+---
+## REAL
 
 The REAL data type allows you to store single-precision floating-point numbers in the database.
 
@@ -76,7 +81,8 @@ CREATE TABLE weather (
 )
 ```
 
-#### INTEGER, SMALLINT, BIGINT
+---
+## INTEGER, SMALLINT, BIGINT
 
 To store the whole numbers in PostgreSQL, you can use one of the following integer types:
 
@@ -88,7 +94,8 @@ The following table illustrates the limitations of each type:
 
 ![Limitations-integers](int-bigint-smallint.png)
 
-#### DATE
+--
+## DATE
 
 PostgreSQL offers the `DATE` data type that allows you to store date data.
 
@@ -196,7 +203,8 @@ FROM
 --           3 | Ethel      | Webb      | 1975 |     1 |   1
 ```
 
-#### TIMESTAMP(s)
+---
+## TIMESTAMP(s)
 
 PostgreSQL provides you with two temporal data types for handling timestamps:
 
@@ -262,7 +270,8 @@ FOR EACH ROW
 EXECUTE FUNCTION update_updated_at();
 ```
 
-#### INTERVAL
+---
+## INTERVAL
 
 The interval values are very useful when doing date or time arithmetic. For example, if you want to know the time of 3 hours 2 minutes ago at the current time of last year, you can use the following statement:
 
@@ -279,7 +288,8 @@ SELECT
 -- 2024-01-31 21:34:52.242914-05 | 2023-01-31 18:14:52.242914-05
 ```
 
-#### TIME
+---
+## TIME
 
 PostgreSQL provides the `TIME` data type that allows you to store the time data in the database.
 
@@ -293,7 +303,8 @@ In this syntax, the precision specifies the fractional seconds precision for the
 
 The `TIME` data type requires 8 bytes and its allowed range is from `00:00:00` to `24:00:00.`
 
-#### UUID
+---
+## UUID
 
 `UUID` stands for Universal Unique Identifier defined by RFC 4122 and other related standards.
 
@@ -318,7 +329,8 @@ CREATE TABLE contacts (
 );
 ```
 
-#### ARRAY
+---
+## ARRAY
 
 In PostgreSQL, an array of a collection of elements that have the same data type.
 
@@ -347,7 +359,8 @@ INSERT INTO contacts (name, phones)
 VALUES('John Doe',ARRAY [ '(408)-589-5846','(408)-589-5555' ]);
 ```
 
-#### hstore
+---
+## hstore
 
 The `hstore` module implements the `hstore` data type for storing key-value pairs in a single value. The keys and values are text strings only.
 
@@ -385,7 +398,8 @@ FROM
 --output: 978-1449370000
 ```
 
-#### JSON
+---
+## JSON
 
 `JSON` stands for JavaScript Object Notation. `JSON` is a lightweight data interchange format that is readable for humans and simple for computers to parse.
 
@@ -418,7 +432,8 @@ PostgreSQL offers two data types for storing JSON:
 
 In practice, you should use `JSONB` to store JSON data unless you have specialized requirements such as retaining the ordering of keys in the JSON documents.
 
-#### ENUM
+---
+## ENUM
 
 In PostgreSQL, an `enum` type is a custom data type that allows you to define a list of possible values for a column.
 
@@ -430,7 +445,8 @@ AS
 ENUM('value1', 'value2', 'value3', ...);
 ```
 
-#### BYTEA
+---
+## BYTEA
 
 In PostgreSQL, `BYTEA` is a binary data type that you can use to store binary strings or byte sequences. `BYTEA` stands for the binary array.
 

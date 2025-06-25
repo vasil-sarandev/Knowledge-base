@@ -100,49 +100,33 @@ db.inventory.find( { price: { $type: 'double' } } );
 
 ## Basic CRUD
 
-### Insert
+- ### Insert
+	- [`db.collection.insertOne()`.](https://www.mongodb.com/docs/manual/reference/method/db.collection.insertOne/#mongodb-method-db.collection.insertOne)
+	- [`db.collection.insertMany()`.](https://www.mongodb.com/docs/manual/reference/method/db.collection.insertMany/#mongodb-method-db.collection.insertMany)
+- ### Read
+	- [`db.collection.find()`](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/#mongodb-method-db.collection.find) 
+- ### Update
+	- [`db.collection.updateOne()`.](https://www.mongodb.com/docs/manual/reference/method/db.collection.updateOne/#mongodb-method-db.collection.updateOne)
+	- [`db.collection.updateMany()`.](https://www.mongodb.com/docs/manual/reference/method/db.collection.updateMany/#mongodb-method-db.collection.updateMany)
+	- [`db.collection.replaceOne()`.](https://www.mongodb.com/docs/manual/reference/method/db.collection.replaceOne/#mongodb-method-db.collection.replaceOne)
+- ### Delete
+	- [`db.collection.deleteMany()`.](https://www.mongodb.com/docs/manual/reference/method/db.collection.deleteMany/#mongodb-method-db.collection.deleteMany)
+	- [`db.collection.deleteOne()`.](https://www.mongodb.com/docs/manual/reference/method/db.collection.deleteOne/#mongodb-method-db.collection.deleteOne)
 
-The MongoDB shell provides the following methods to insert documents into a collection:
-
-- To insert a single document, use [`db.collection.insertOne()`.](https://www.mongodb.com/docs/manual/reference/method/db.collection.insertOne/#mongodb-method-db.collection.insertOne)
-- To insert multiple documents, use [`db.collection.insertMany()`.](https://www.mongodb.com/docs/manual/reference/method/db.collection.insertMany/#mongodb-method-db.collection.insertMany)
+### Examples
 
 ```javascript
 db.movies.insertOne({title: "The Favourite", genres: [ "Drama", "History" ]})
 db.movies.insertMany([{title: "The Favourite", genres: ["Drama"], ...}])
-```
 
-### Read
-
-Use the [`db.collection.find()`](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/#mongodb-method-db.collection.find) method in the MongoDB Shell to query documents in a collection.
-
-```javascript
 db.movies.find( { "title": "Titanic" } );
 db.movies.find( { rated: { $in: [ "PG", "PG-13" ] } } )
 db.movies.find( { countries: "Mexico", "imdb.rating": { $gte: 7 } } )
 db.movies.find( { year: 2010, $or: [ { "awards.wins": { $gte: 5 } }, { genres: "Drama" } ]
 } )
-```
 
-### Update
-
-The MongoDB shell provides the following methods to update documents in a collection:
-
-- To update a single document, use [`db.collection.updateOne()`.](https://www.mongodb.com/docs/manual/reference/method/db.collection.updateOne/#mongodb-method-db.collection.updateOne)
-- To update multiple documents, use [`db.collection.updateMany()`.](https://www.mongodb.com/docs/manual/reference/method/db.collection.updateMany/#mongodb-method-db.collection.updateMany)
-- To replace a document, use [`db.collection.replaceOne()`.](https://www.mongodb.com/docs/manual/reference/method/db.collection.replaceOne/#mongodb-method-db.collection.replaceOne)
-
-```javascript
 db.movies.updateOne( { title: "Twilight" }, { $set: {title: "Twilight 2"} })
-```
 
-### Delete
-The MongoDB shell provides the following methods to delete documents from a collection:
-
-- To delete multiple documents, use [`db.collection.deleteMany()`.](https://www.mongodb.com/docs/manual/reference/method/db.collection.deleteMany/#mongodb-method-db.collection.deleteMany)
-- To delete a single document, use [`db.collection.deleteOne()`.](https://www.mongodb.com/docs/manual/reference/method/db.collection.deleteOne/#mongodb-method-db.collection.deleteOne)
-
-```javascript
 db.movies.deleteMany({}) // deletes all documents in collection
 db.movies.deleteMany( { title: "Titanic" } )
 db.movies.deleteOne( { cast: "Brad Pitt" } )
@@ -191,13 +175,61 @@ For situations that require atomicity of reads and writes to multiple documents 
 
 ## Data Modelling
 
-TODO!!!
+Data Modelling refers to the organization of data within a database and the links between related entities. Data in MongoDB has a **flexible schema model**, which means:
+
+- *Documents* within a single *collection* are not required to have the same set of fields (but they do generally share a similar structure. To ensure consistency - use schema validation rules).
+- A field's data type can differ between documents within a collection.
+
+### Schema Design: Differences between Relational and Document Databases
+
+When you design a schema for a document database like MongoDB, there are a couple of important differences from relational databases to consider.
+
+| Relational Database Behavior                                                                             | Document Database Behavior                                                                                                                                                                                           |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| You must determine a table's schema before you insert data.                                              | Your schema can change over time as the needs of your application change.                                                                                                                                            |
+| You often need to join data from several different tables to return the data needed by your application. | The flexible data model lets you store data to match the way your application returns data, and avoid joins. Avoiding joins across multiple collections improves performance and reduces your deployment's workload. |
+
+### Embedding vs Referencing Documents
+
+When you design your data model in MongoDB, consider the structure of your documents and the ways your application uses data from related entities.
+
+To link related data, you can either:
+
+- Embed related data within a single document.
+- Store related data in a separate collection and access it with a [reference.](https://www.mongodb.com/docs/manual/data-modeling/#std-label-data-modeling-reference)
+
+**For many use cases in MongoDB, the denormalized data model is optimal and recommended.**
+
+#### Embedded data
+
+Embedded documents store related data in a single document structure. A document can contain arrays and sub-documents with related data. These **denormalized** data models allow applications to retrieve related data in a single database operation.
+
+This is the recommended way to Link Related Data in Document Databases.
+
+#### References
+
+References store relationships between data by including links, called **references**, from one document to another. For example, a `customerId` field in an `orders` collection indicates a reference to a document in a `customers` collection.
+
+Applications can resolve these references to access the related data. Broadly, these are _normalized_ data models.
+
+### Data Modelling Considerations
+
+When you embed related data in a single document, you may duplicate data between two collections. Duplicating data lets your application query related information about multiple entities in a single query while logically separating entities in your model.
+
+If the duplicated data is not updated often, then there is minimal additional work required to keep the two collections consistent. However, if the duplicated data is updated often, using a [reference](https://www.mongodb.com/docs/manual/data-modeling/#std-label-data-modeling-reference) to link related data may be a better approach.
+
+  
+Before you duplicate data, consider the following factors:
+
+- How often the duplicated data needs to be updated.
+- The performance benefit for reads when data is duplicated.
+
 
 ---
 
 ## Replication
 
-A _replica set_ in MongoDB is a group of [`mongod`](https://www.mongodb.com/docs/manual/reference/program/mongod/#mongodb-binary-bin.mongod) processes that maintain the same data set. Replica sets provide redundancy and [high availability](https://www.mongodb.com/docs/manual/reference/glossary/#std-term-high-availability), and are the basis for all production deployments. 
+A _replica set_ in MongoDB is a group of *mongod* processes that maintain the same data set. Replica sets provide redundancy and high availability, and are the basis for all production deployments. 
 
 **How Replication works in MongoDB**
 

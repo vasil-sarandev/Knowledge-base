@@ -1,10 +1,9 @@
-[Back to course frontpage](structured-query-language.md)
+# Conditional Expressions and Operators in PostgreSQL
 
-Table of Contents:
+#deep-dive
 
-## Conditional Expressions and Operators
-
-#### 1. CASE
+---
+## CASE
 
 The PostgreSQL `CASE` expression is the same as IF/ELSE statement in other programming languages. It allows you to add if-else logic to the query to form a powerful query.
 
@@ -69,7 +68,8 @@ ORDER BY
   title;
 ```
 
-#### 2. COALESCE
+---
+## COALESCE
 
 The `COALESCE()` function accepts a list of arguments and returns the first non-null argument.
 
@@ -95,7 +95,8 @@ FROM
   posts;```
 ````
 
-#### 3. NULLIF
+---
+## 3. NULLIF
 
 The `NULLIF()` function is one of the most common conditional expressions provided by PostgreSQL.
 
@@ -122,7 +123,8 @@ FROM
   posts;
 ```
 
-#### 4. CAST
+---
+## 4. CAST
 
 There are many cases in which you want to convert a value of one type into another. PostgreSQL offers the `CAST()` function and cast operator `(::)` to do this.
 
