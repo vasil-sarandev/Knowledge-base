@@ -4,10 +4,15 @@
 
 The Event Loop is what allows NodeJS to perform non-blocking I/O operations(database reads, file reads, requests) — despite the fact that a single JavaScript thread is used by default — by offloading operations to the system kernel whenever possible.
 
+---
+## Visualization
+
 ![[nodejs-event-loop.png]]
 
 
 The Event Loop is what enables Node.js to perform non-blocking I/O operations (such as database reads, file system access, and HTTP requests) — even though JavaScript itself runs on a single thread. It does this by offloading I/O operations to the system kernel or a worker thread pool whenever possible.
+
+---
 
 ## How the Event Loop Works (Simplified)
 
@@ -28,6 +33,7 @@ The Event Loop is what enables Node.js to perform non-blocking I/O operations (s
 
 This architecture allows Node.js to efficiently handle a large number of concurrent operations, despite running JavaScript in a single-threaded environment.
 
+---
 ## Event Loop Phases and Microtasks
 
 ```
@@ -48,6 +54,7 @@ Event Loop Phases:
 Repeat
 ```
 
+---
 ## Scheduling Tasks in the Event Loop
 
 In addition to Promises, Node.js provides several other mechanisms for scheduling tasks in the event loop.

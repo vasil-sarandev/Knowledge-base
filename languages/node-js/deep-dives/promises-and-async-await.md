@@ -4,6 +4,8 @@
 
 A **Promise** is a special object in JavaScript that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. Essentially, a Promise is a placeholder for a value that is not yet available but will be in the future.
 
+---
+
 ## Creating Promises using the Promise constructor
 
 ```typescript
@@ -17,6 +19,7 @@ const myPromise = new Promise((resolve, reject) => {
 });
 ```
 
+---
 ## async/await
 
 One of the best ways to work with Promises in modern JavaScript is using **async/await**. This allows you to write asynchronous code that looks synchronous, making it much easier to read and maintain and avoids callback hell.
@@ -38,3 +41,5 @@ const readFile = async () => {
   }
 }
 ```
+
+---
