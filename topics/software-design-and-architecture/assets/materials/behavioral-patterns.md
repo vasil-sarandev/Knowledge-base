@@ -1,9 +1,8 @@
-[Back to Software Design Patterns](software-design-patterns.md)
-
 # Behavioral Design Patterns
 
 This type of design patterns provide solution for the better interaction between objects, how to provide lose coupling, and flexibility to extend easily in future.
 
+---
 ## List of Behavioral Design Patterns 
 
 - [_Template Method_](#template-method) - used to create a template method stub and defer some of the steps of implementation to the subclasses.

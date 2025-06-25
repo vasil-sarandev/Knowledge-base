@@ -1,5 +1,3 @@
-[Back to Computer Science](computer-science-hub.md)
-
 # Graph Algorithms
 
 #deep-dive

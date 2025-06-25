@@ -1,5 +1,3 @@
-[Back to Backend-Software-Engineering](backend-software-engineering-hub.md)
-
 # Authentication
 
 #deep-dive

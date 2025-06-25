@@ -1,5 +1,3 @@
-[Back to Computer Science](computer-science-hub.md)
-
 # Tree Algorithms
 
 #deep-dive

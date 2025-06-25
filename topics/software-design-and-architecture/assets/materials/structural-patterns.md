@@ -1,9 +1,10 @@
-[Back to Software Design Patterns](software-design-patterns.md)
-
 # Structural Design Patterns
+
+#deep-dive
 
 Structural design patterns explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient.
 
+---
 ## List of Structural Design Patterns
 
 - [_Adapter_](#adapter) - Provides an interface between two unrelated entities so that they can work together.

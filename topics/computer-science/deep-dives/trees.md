@@ -1,5 +1,3 @@
-[Back to Computer Science](computer-science-hub.md)
-
 # Trees
 
 #deep-dive

@@ -5,8 +5,7 @@
 ---
 ## Cheatsheet
 
-- [Structured Query Language Cheatsheet](languages/structured-query-language/cheatsheet.md)
-
+- [Structured Query Language Cheatsheet](sql-cheatsheet.md)
 ---
 ## Resources
 
@@ -17,13 +16,3 @@
 
 - [Data Types in PostgreSQL](data-types-in-postgresql.md)
 - [Conditional Expressions in PostgreSQL](conditional-expressions-in-postgresql.md)
-
----
-## Exercises
-
-1. [Movie Rating Exercices](movie-rating-exercises.md)
-2. [Movie Rating Exercises - Extras](movie-rating-exercices-extras.md)
-3. [Social Network Exercises](social-network-exercises.md)
-4. [Social Network Exercises - Extras](social-network-exercises-extras.md)
-5. [Movie Modifying Exercises](movie-modifying-exercises.md)
-6. [Social Network Modifying Exercises](social-network-modifying-exercises.md)
