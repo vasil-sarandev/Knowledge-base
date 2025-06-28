@@ -12,8 +12,9 @@
 6. MongoDB [v]
 7. Redis [WIP]
 8. Docker
-9. Microservices with NodeJS
-10. Message brokers
+9. Prometheus & Grafana
+10. Microservices with NodeJS
+11. Message brokers
 
 
 I suggest you do a URL-shortener to put into practice all your refreshed knowledge.

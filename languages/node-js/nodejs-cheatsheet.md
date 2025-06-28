@@ -30,6 +30,19 @@ These days the way to go about this is: use *Typescript* and its compiler to bui
 
 Here's a [nicely setup Node-Typescript boilerplate repo](https://github.com/jsynowiec/node-typescript-boilerplate/tree/main).
 
+**sample package.json commands**
+
+```json
+{
+	"scripts": {
+		"dev": "tsx watch src/app.ts --env-file=.env",
+		"build": "tsc",
+		"start": "node dist/app.js",
+		"test": "echo \"No tests yet\""
+	}
+};
+```
+
 ---
 ## Asynchronous Work
 ### Concurrency 
