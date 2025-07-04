@@ -10,8 +10,8 @@
 4. NodeJS [v]
 5. Express [v]
 6. MongoDB [v]
-7. Redis [WIP]
-8. Docker
+7. Redis [v]
+8. Docker [WIP]
 9. Microservices with NodeJS
 10. Message brokers
 
