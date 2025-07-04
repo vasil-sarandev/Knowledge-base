@@ -74,7 +74,6 @@ Every node is bigger than its left subtree and smaller than its right subtree. A
 | Full Binary Tree     | Each node has 0 or 2 children                          |
 | Complete Binary Tree | All levels filled except possibly last (left to right) |
 | Balanced Tree        | Height balanced (e.g. AVL, Red-Black Trees)            |
-|                      |                                                        |
 #### Heap
 
 - Complete binary tree with heap property.
