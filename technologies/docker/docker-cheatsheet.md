@@ -112,6 +112,31 @@ docker compose down // removes everything
 docker compose down --volumes // removes everything, including volumes
 ```
 
+### Docker Compose Example
+
+```javascript
+services:
+	app:
+		image: node-express-ts-app:dev
+		build:
+			context: .
+			target: dev
+		volumes:
+			- .:/usr/src/app # Mount current directory inside container
+			- /usr/src/app/node_modules # Prevent overwriting node_modules inside container
+		ports:
+			- '3000:3000'
+		depends_on:
+			- mongo
+
+	mongo:
+		image: mongo
+		volumes:
+			- mongo-data:/data/db # Persist mongo data to named volume
+
+	volumes:
+		mongo-data:
+```
 ---
 
 ## DockerFile

@@ -11,9 +11,10 @@
 5. Express [v]
 6. MongoDB [v]
 7. Redis [v]
-8. Docker [DONE WITH NOTES, CONTAINERIZE YOUR APPLICATION]
-9. Microservices with NodeJS
-10. Message brokers
+8. Docker [v]
+9. AWS Kafka [WIP]
+10. Microservices with NodeJS
+
 
 
 I suggest you do a URL-shortener to put into practice all your refreshed knowledge.
@@ -43,11 +44,12 @@ Once you're ready with learning, build the TicketMaster clone again, but this ti
 
 Goal: Understand how to deploy, scale, and manage infra across environments
 
-1. Prometheus & Grafana
-2. DevOps 
-3. Kubernetes
-4. AWS
-5. Terraform
+1. DevOps
+2. GitHub Actions
+3. AWS
+4. Prometheus & Grafana
+5. Kubernetes
+6. Terraform
 
 Maybe build something small when you're done with those.
 
