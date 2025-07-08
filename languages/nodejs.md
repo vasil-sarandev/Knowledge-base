@@ -70,16 +70,23 @@ Keeps concerns separated, improves testability and maintainability.
 - **Repository**: Handles database access and raw queries.
 
 ---
-## Deep Dive Topics
-
-- [Event Loop - NodeJS Reference](https://nodejs.org/en/learn/asynchronous-work/event-loop-timers-and-nexttick)
-- [Don't Block the Event Loop](https://nodejs.org/en/learn/asynchronous-work/dont-block-the-event-loop)
-- [How to use Streams](https://nodejs.org/en/learn/modules/how-to-use-streams) 
-- [NodeJS Project Architecture Best Practices](https://github.com/goldbergyoni/nodebestpractices#1-project-architecture-practices)
-
----
 ## Resources
 
-- [Learn NodeJS - Official Docs](https://nodejs.org/en/learn/)
-- [Github - Node Best Practices](https://github.com/goldbergyoni/nodebestpractices) - This one is awesome and has a lot of info about architecture, code style, production practices, and etc.
-- [Github - Vasil Sarandev - Node Starter Kit](https://github.com/vasil-sarandev/node-starter)
+- **Deep Dives**
+	- [Event Loop - NodeJS Reference](https://nodejs.org/en/learn/asynchronous-work/event-loop-timers-and-nexttick)
+	- [Don't Block the Event Loop](https://nodejs.org/en/learn/asynchronous-work/dont-block-the-event-loop)
+	- [NodeJS Project Architecture Best Practices](https://github.com/goldbergyoni/nodebestpractices#1-project-architecture-practices)
+
+- **Hands-on**
+	- [Reading Files with NodeJS](https://nodejs.org/en/learn/manipulating-files/reading-files-with-nodejs)
+	- [How to use Streams](https://nodejs.org/en/learn/modules/how-to-use-streams) 
+	- [Writing Files with NodeJS](https://nodejs.org/en/learn/manipulating-files/writing-files-with-nodejs)
+	- [Read Input from Command Line in NodeJS](https://nodejs.org/en/learn/command-line/accept-input-from-the-command-line-in-nodejs)
+
+- **Docs & References**
+	- [Learn NodeJS - Official Docs](https://nodejs.org/en/learn/)
+	- [Github - Node Best Practices](https://github.com/goldbergyoni/nodebestpractices) - This one is awesome and has a lot of info about architecture, code style, production practices, and etc.
+	- [Github - Vasil Sarandev - Node Starter Kit](https://github.com/vasil-sarandev/node-starter)
+
+
+

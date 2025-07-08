@@ -36,15 +36,14 @@ For most MongoDB use cases, **denormalized (embedded) models are recommended**, 
 [Official Reference for Schema Design / Data Modeling - MongoDB](https://www.mongodb.com/docs/manual/data-modeling/)
 
 ---
-## Deep Dives
-
-- [Aggregation - MongoDB Manual](https://www.mongodb.com/docs/manual/aggregation/)
-- [Replication - MongoDB Manual](https://www.mongodb.com/docs/manual/replication/)
-- [Sharding - MongoDB Manual](https://www.mongodb.com/docs/manual/sharding/) 
-
----
 ## Resources
 
-- [MongoDB documentation](https://www.mongodb.com/docs/manual/)
-- [MongoDB shell documentation](https://www.mongodb.com/docs/mongodb-shell/)
-- [Course: Schema Design Patterns and Antipatterns](https://learn.mongodb.com/courses/schema-design-patterns-and-antipatterns)
+- **Deep Dives** 
+	- [Aggregation - MongoDB Manual](https://www.mongodb.com/docs/manual/aggregation/)
+	- [Replication - MongoDB Manual](https://www.mongodb.com/docs/manual/replication/)
+	- [Sharding - MongoDB Manual](https://www.mongodb.com/docs/manual/sharding/) 
+
+- **Docs & References** 
+	- [MongoDB documentation](https://www.mongodb.com/docs/manual/)
+	- [MongoDB shell documentation](https://www.mongodb.com/docs/mongodb-shell/)
+	- [Course: Schema Design Patterns and Antipatterns](https://learn.mongodb.com/courses/schema-design-patterns-and-antipatterns)

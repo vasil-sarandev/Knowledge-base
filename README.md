@@ -28,3 +28,7 @@ The sections of most of these topics were extracted from [roadmap.sh](https://ro
 - [Apache Kafka](apache-kafka.md)
 
 ---
+## Resources
+
+- https://awesome-architecture.com/ (Curated list of awesome articles and resources to learn and practice software architecture, patterns and principles)
+- https://roadmaps.sh (Roadmaps for software engineering topics and technologies)

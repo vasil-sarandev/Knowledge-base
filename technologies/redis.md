@@ -25,13 +25,16 @@ Typical use cases:
 ---
 ## Deep Dives
 
-- [Microservices Architecture with Redis](https://redis.io/learn/howtos/solutions/microservices/common-data/microservices-arch)
-- [Real-time Chat App with Redis & AWS](https://redis.io/learn/create/aws/chatapp)
-- [Redis for Query Caching](https://redis.io/learn/howtos/solutions/microservices/caching)
-- [Interservice Communication with Redis](https://redis.io/learn/howtos/solutions/microservices/interservice-communication)
-- [API Gateway Caching with Redis](https://redis.io/learn/howtos/solutions/microservices/api-gateway-caching)
 
 ---
 ## Resources
 
-- [Redis Official Docs](https://redis.io/docs/latest/)
+- **Deep Dives / Hands-on**
+	- [API Gateway Caching with Redis](https://redis.io/learn/howtos/solutions/microservices/api-gateway-caching)
+	- [Interservice Communication with Redis](https://redis.io/learn/howtos/solutions/microservices/interservice-communication)
+	- [Redis for Query Caching](https://redis.io/learn/howtos/solutions/microservices/caching)
+	- [Microservices Architecture with Redis](https://redis.io/learn/howtos/solutions/microservices/common-data/microservices-arch)
+	- [Real-time Chat App with Redis & AWS](https://redis.io/learn/create/aws/chatapp)
+
+- **Docs & References**
+	- [Redis Official Docs](https://redis.io/docs/latest/)

@@ -1,5 +1,7 @@
 # Apache Kafka
 
+#technology
+
 Apache Kafka is a distributed event streaming platform designed for high-throughput, fault-tolerant, and scalable real-time data pipelines and streaming applications.
 
 Typical use cases:
@@ -22,15 +24,11 @@ Typical use cases:
 - **Offset**: A unique identifier for each record within a partition, used to track consumption progress.
 
 ---
-## Deep Dives (ext)
-
-- [Kafka Official Documentation](https://kafka.apache.org/documentation/)
-- [Confluent Kafka Tutorials](https://developer.confluent.io/learn-kafka/)
-- [Kafka in Microservices Architecture](https://www.confluent.io/blog/microservices-architecture-kafka/)
-- [Stream Processing with Kafka Streams](https://kafka.apache.org/documentation/streams/)
-
----
 ## Resources
 
-- [Apache Kafka Official Site](https://kafka.apache.org/)
-- [Confluent.io](https://www.confluent.io/)
+- **Deep Dives**
+	- [Confluent.io Kafka Deep Dive Topics](https://developer.confluent.io/learn/)
+
+- **Docs and References**
+	- [Kafka Official Documentation](https://kafka.apache.org/documentation/)
+	- [Confluent.io - Official Managed Kafka Reference](https://developer.confluent.io/)
