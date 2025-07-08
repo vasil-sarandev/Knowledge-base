@@ -12,12 +12,11 @@
 6. MongoDB [v]
 7. Redis [v]
 8. Docker [v]
-9. AWS Kafka [WIP]
-10. Microservices with NodeJS
+9. Apache Kafka [WIP]
 
 
 
-I suggest you do a URL-shortener to put into practice all your refreshed knowledge.
+I suggest you do a URL-shortener to put into practice all your refreshed knowledge. Use Microservices and all the tech here in this shit.
 
 --- 
 ## Phase 2: Expand with Relational Databases (PostgreSQL)

@@ -15,13 +15,16 @@ The sections of most of these topics were extracted from [roadmap.sh](https://ro
 ---
 ## Languages
 
-- [SQL (Structured Query Language)](sql-hub.md)
-- [NodeJS](nodejs-hub.md)
+- [Structured Query Language (SQL)](structured-query-language.md)
+- [NodeJS](nodejs.md)
 
 ---
 ## Technologies
 
-- [Express](express-hub.md)
-- [MongoDB](mongodb-hub.md) 
+- [ExpressJS](express.md)
+- [MongoDB](mongodb.md) 
+- [Docker](docker.md)
+- [Redis](redis.md)
+- [Apache Kafka](apache-kafka.md)
 
 ---
