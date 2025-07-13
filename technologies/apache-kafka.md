@@ -13,6 +13,16 @@ Typical use cases:
 - **High-throughput, fault-tolerant event storage**
 
 ---
+## Resources
+
+- **Deep Dives**
+	- [Confluent.io Kafka Deep Dive Topics](https://developer.confluent.io/learn/)
+
+- **Docs and References**
+	- [Kafka Official Documentation](https://kafka.apache.org/documentation/)
+	- [Confluent.io - Official Managed Kafka Reference](https://developer.confluent.io/)
+
+---
 ## Core Concepts
 
 - **Topic**: A named stream of records (like a category or feed name).
@@ -24,11 +34,4 @@ Typical use cases:
 - **Offset**: A unique identifier for each record within a partition, used to track consumption progress.
 
 ---
-## Resources
 
-- **Deep Dives**
-	- [Confluent.io Kafka Deep Dive Topics](https://developer.confluent.io/learn/)
-
-- **Docs and References**
-	- [Kafka Official Documentation](https://kafka.apache.org/documentation/)
-	- [Confluent.io - Official Managed Kafka Reference](https://developer.confluent.io/)

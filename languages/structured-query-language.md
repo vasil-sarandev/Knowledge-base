@@ -1,6 +1,6 @@
 # Structured Query Language Cheatsheet
 
-#cheatsheet
+#language
 
 SQL or "sequel" has been around for decades and supports a many billion dollar markets.
 It is supported by all major commercial database systems and is a declarative language, based on relational algebra.

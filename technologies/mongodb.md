@@ -5,6 +5,19 @@
 MongoDB is a NoSQL document database designed for ease of development and horizontal scaling.
 
 ---
+## Resources
+
+- **Deep Dives** 
+	- [Aggregation - MongoDB Manual](https://www.mongodb.com/docs/manual/aggregation/)
+	- [Replication - MongoDB Manual](https://www.mongodb.com/docs/manual/replication/)
+	- [Sharding - MongoDB Manual](https://www.mongodb.com/docs/manual/sharding/) 
+
+- **Docs & References** 
+	- [MongoDB documentation](https://www.mongodb.com/docs/manual/)
+	- [MongoDB shell documentation](https://www.mongodb.com/docs/mongodb-shell/)
+	- [Course: Schema Design Patterns and Antipatterns](https://learn.mongodb.com/courses/schema-design-patterns-and-antipatterns)
+
+---
 ## Core Concepts
 
 - A **document** is a key-value data structure (similar to a JSON object).
@@ -36,14 +49,3 @@ For most MongoDB use cases, **denormalized (embedded) models are recommended**, 
 [Official Reference for Schema Design / Data Modeling - MongoDB](https://www.mongodb.com/docs/manual/data-modeling/)
 
 ---
-## Resources
-
-- **Deep Dives** 
-	- [Aggregation - MongoDB Manual](https://www.mongodb.com/docs/manual/aggregation/)
-	- [Replication - MongoDB Manual](https://www.mongodb.com/docs/manual/replication/)
-	- [Sharding - MongoDB Manual](https://www.mongodb.com/docs/manual/sharding/) 
-
-- **Docs & References** 
-	- [MongoDB documentation](https://www.mongodb.com/docs/manual/)
-	- [MongoDB shell documentation](https://www.mongodb.com/docs/mongodb-shell/)
-	- [Course: Schema Design Patterns and Antipatterns](https://learn.mongodb.com/courses/schema-design-patterns-and-antipatterns)

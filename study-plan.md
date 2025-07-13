@@ -23,9 +23,8 @@ I suggest you do a URL-shortener to put into practice all your refreshed knowled
 
 **Goal**: Reinforce concepts, performance tradeoffs, and relational databases.
 
-1. SQL
-2. PostgreSQL
-3. TypeORM / Prisma / Sequelize (pick one)
+1. PostgreSQL
+2. TypeORM / Prisma / Sequelize (pick one)
 
 Once you're ready with the cheatsheets and learning, build a TicketMaster Clone.
 

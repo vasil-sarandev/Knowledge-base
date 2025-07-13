@@ -7,10 +7,10 @@ This repository contains a centralized place of storage for my notes regarding d
 
 The sections of most of these topics were extracted from [roadmap.sh](https://roadmap.sh) roadmaps.
 
-- [Computer Science](computer-science-hub.md)
-- [Software Design and Architecture](software-design-and-architecture-hub.md)
-- [System Design](system-design-hub.md)
-- [Backend Software Engineering](backend-software-engineering-hub.md)
+- [Computer Science](computer-science.md)
+- [Software Design and Architecture](software-design-and-architecture.md)
+- [System Design](system-design.md)
+- [Backend Software Engineering](backend-software-engineering.md)
 
 ---
 ## Languages
@@ -22,7 +22,7 @@ The sections of most of these topics were extracted from [roadmap.sh](https://ro
 ## Technologies
 
 - [ExpressJS](express.md)
-- [MongoDB](mongodb.md) 
+- [MongoDB](mongodb.md)
 - [Docker](docker.md)
 - [Redis](redis.md)
 - [Apache Kafka](apache-kafka.md)
@@ -32,3 +32,4 @@ The sections of most of these topics were extracted from [roadmap.sh](https://ro
 
 - https://awesome-architecture.com/ (Curated list of awesome articles and resources to learn and practice software architecture, patterns and principles)
 - https://roadmaps.sh (Roadmaps for software engineering topics and technologies)
+- https://neetcode.io/ - Curated LeetCode problems

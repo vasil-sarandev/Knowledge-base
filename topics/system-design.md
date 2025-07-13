@@ -1,8 +1,26 @@
 # System Design
 
-#cheatsheet
+#topic
 
 In software engineering, system design is a phase in the software development process that focuses on the high-level design of a software system, including the architecture and components, and how they interact with each other.
+
+---
+## Resources
+
+- **Deep Dives**
+	- [How to do a System Design of a Software Application](how-to-do-a-system-design.md)
+
+- **Case Studies** 
+	- [TicketMaster System Design](system-design-ticketmaster.md)
+	- [Bitly System Design](system-design-bitly.md)
+	- [Twitter System Design](system-design-twitter.md)
+	- [Instagram System Design](system-design-instagram.md)
+
+- **Other Resources**
+	- [System Design roadmap - roadmap.sh](https://roadmap.sh/system-design)
+	- https://www.hiredintech.com/system-design/ (System Design Interview guide, **this one is pretty great.**)
+	- https://www.youtube.com/@hello_interview (System Design Youtube Channel)
+	- https://github.com/donnemartin/system-design-primer (System Design Primer)
 
 ---
 ## General Terminology
@@ -74,7 +92,7 @@ Message Queues and Brokers are intermediaries that enable **asynchronous communi
 ---
 ## Databases
 
-[Backend Software Engineering Topic - Databases](backend-software-engineering-cheatsheet.md#Databases)
+[Backend Software Engineering Topic - Databases](backend-software-engineering.md#Databases)
 
 ---
 

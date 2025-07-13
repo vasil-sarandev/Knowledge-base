@@ -14,19 +14,6 @@ Typical use cases:
 - **Distributed locks** (e.g., with Redlock algorithm)
 
 ---
-## Core Concepts
-
-- **In-Memory**: Data is stored in RAM → extremely fast reads/writes.
-- **Data Structures**: Supports strings, lists, sets, hashes, sorted sets, streams, hyperloglogs, and bitmaps.
-- **Persistence Options**:
-	- **RDB (Redis Database Backup)** - RDB creates point-in-time snapshots of the dataset at specified intervals, offering efficient storage with minimal performance impact, making it suitable for periodic backups but with potential data loss between snapshots.
-	- **AOF (Append-Only File)** - AOF logs every write operation to disk, providing higher data durability by allowing finer-grained recovery, though it can be more resource-intensive.
-
----
-## Deep Dives
-
-
----
 ## Resources
 
 - **Deep Dives / Hands-on**
@@ -38,3 +25,14 @@ Typical use cases:
 
 - **Docs & References**
 	- [Redis Official Docs](https://redis.io/docs/latest/)
+
+---
+## Core Concepts
+
+- **In-Memory**: Data is stored in RAM → extremely fast reads/writes.
+- **Data Structures**: Supports strings, lists, sets, hashes, sorted sets, streams, hyperloglogs, and bitmaps.
+- **Persistence Options**:
+	- **RDB (Redis Database Backup)** - RDB creates point-in-time snapshots of the dataset at specified intervals, offering efficient storage with minimal performance impact, making it suitable for periodic backups but with potential data loss between snapshots.
+	- **AOF (Append-Only File)** - AOF logs every write operation to disk, providing higher data durability by allowing finer-grained recovery, though it can be more resource-intensive.
+
+---

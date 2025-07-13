@@ -3,6 +3,18 @@
 Docker enables you to package and run an application in a **container** — a lightweight, portable, and isolated environment. Containers ensure consistency across environments: local dev, CI/CD pipelines, cloud, or production.
 
 ---
+## Resources
+
+- **Deep Dives**
+	- [Dockerfile Reference](https://docs.docker.com/reference/dockerfile/) – Build image instructions
+	- [Docker Compose Reference](https://docs.docker.com/compose/) – Multi-container config
+	- [Building Images](https://docs.docker.com/get-started/docker-concepts/building-images/)
+
+- **Docs & References** 
+	- [Docker Official Docs](https://docs.docker.com/)
+	- [Awesome Docker GitHub List](https://github.com/veggiemonk/awesome-docker) – Curated tools, articles, tutorials
+
+---
 ## Core Concepts
 
 - **Docker Image**  
@@ -27,14 +39,5 @@ Without getting too deep, a VM is an entire operating system with its own kernel
 >  **Bottom line:** Containers are faster, lighter, and more scalable than VMs for most application-level use cases.
 
 ---
-## Resources
 
-- **Deep Dives**
-	- [Dockerfile Reference](https://docs.docker.com/reference/dockerfile/) – Build image instructions
-	- [Docker Compose Reference](https://docs.docker.com/compose/) – Multi-container config
-	- [Building Images](https://docs.docker.com/get-started/docker-concepts/building-images/)
-
-- **Docs & References** 
-	- [Docker Official Docs](https://docs.docker.com/)
-	- [Awesome Docker GitHub List](https://github.com/veggiemonk/awesome-docker) – Curated tools, articles, tutorials
 

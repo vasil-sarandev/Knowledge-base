@@ -1,6 +1,14 @@
 # Backend Software Engineering
 
-#cheatsheet 
+#topic 
+
+---
+## Resources
+
+- **Deep Dives**
+	- [Authentication](authentication.md)
+	- [Database Normalization](database-normalization.md)
+	- [Scaling Databases](scaling-databases.md)
 
 ---
 ## Internet & HTTP
@@ -148,17 +156,17 @@ APIs allow software components to communicate:
 ---
 ## Distributed Systems
 
-[System Design Topic - Distributed Systems](system-design-cheatsheet.md#Distributed%20Systems)
+[System Design Topic - Distributed Systems](system-design.md#Distributed%20Systems)
 
 ---
 ## Architectural Styles 
 
-[Software Design and Architecture Topic - Architectural Styles](software-design-and-architecture-cheatsheet.md#Architectural%20Styles)
+[Software Design and Architecture Topic - Architectural Styles](software-design-and-architecture.md#Architectural%20Styles)
 
 ---
 ## Object-Oriented Programming
 
-[Software Design and Architecture Topic - OOP](software-design-and-architecture-cheatsheet.md#Object-Oriented%20Programming)
+[Software Design and Architecture Topic - OOP](software-design-and-architecture.md#Object-Oriented%20Programming)
 
 ---
 ## Web Security
@@ -194,7 +202,7 @@ Messages are signed using the **private key**, and authenticity can be verified 
 ---
 ## Caching
 
-[System Design Topic - Caching](system-design-cheatsheet.md#Caching)
+[System Design Topic - Caching](system-design.md#Caching)
 
 ---
 ## CI/CD & Testing
@@ -241,3 +249,5 @@ Ability to infer internal system state from outputs:
 - **Traces:** End-to-end request path
 
 **Tools:** Prometheus, Grafana, ELK Stack, OpenTelemetry
+
+---
