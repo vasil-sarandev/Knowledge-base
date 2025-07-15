@@ -1,4 +1,4 @@
-# Brainstack - My Personal Knowledge Vault
+# Brainstack - Vasil's Technological Knowledge Vault
 
 This repository contains a centralized place of storage for my personal notes & resources I find valuable in regards to different software engineering concepts, topics and technologies.
 
