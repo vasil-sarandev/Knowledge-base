@@ -33,5 +33,4 @@ Redis is an open-source, **in-memory data store** used as a database, cache, and
 	- **Leaderboard / Ranking** (with sorted sets)
 	- **Distributed locks** (e.g., with Redlock algorithm)
 
-
 ---

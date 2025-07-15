@@ -4,14 +4,6 @@
 
 Apache Kafka is a distributed event streaming platform designed for high-throughput, fault-tolerant, and scalable real-time data pipelines and streaming applications.
 
-Typical use cases:
-
-- **Real-time data pipelines** (ingesting and moving data between systems)
-- **Stream processing** (transforming or enriching data streams)
-- **Event sourcing and messaging** (decoupling microservices)
-- **Log aggregation** and monitoring
-- **High-throughput, fault-tolerant event storage**
-
 ---
 ## Resources
 
@@ -32,6 +24,12 @@ Typical use cases:
 - **Broker**: A Kafka server that stores data and serves clients.
 - **Consumer Group**: A group of consumers coordinating to consume topic partitions collectively.
 - **Offset**: A unique identifier for each record within a partition, used to track consumption progress.
+- **Typical use cases**:
+	- **Real-time data pipelines** (ingesting and moving data between systems)
+	- **Stream processing** (transforming or enriching data streams)
+	- **Event sourcing and messaging** (decoupling microservices)
+	- **Log aggregation** and monitoring
+	- **High-throughput, fault-tolerant event storage**
 
 ---
 
