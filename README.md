@@ -1,6 +1,6 @@
 # Learning & Knowledge Hub
 
-This repository contains a centralized place of storage for my notes & resources I find valuable in regards to different software engineering concepts, topics and technologies.
+This repository contains a centralized place of storage for my personal notes & resources I find valuable in regards to different software engineering concepts, topics and technologies.
 
 The repository is made for the Obisidian MD Reader and uses its rich file links, so in order for the navigation between files to properly work, grab a copy of the repository and boot it as a Vault in Obsidian.
 
