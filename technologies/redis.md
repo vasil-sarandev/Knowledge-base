@@ -4,15 +4,6 @@
 
 Redis is an open-source, **in-memory data store** used as a database, cache, and message broker. It offers sub-millisecond latency, making it ideal for performance-critical use cases.
 
-Typical use cases:
-
-- **Caching** (query results, API responses, sessions)
-- **Real-time messaging** (via Pub/Sub or Streams)
-- **Rate limiting** (token bucket, sliding window)
-- **Queue systems** (using lists or streams)
-- **Leaderboard / Ranking** (with sorted sets)
-- **Distributed locks** (e.g., with Redlock algorithm)
-
 ---
 ## Resources
 
@@ -34,5 +25,13 @@ Typical use cases:
 - **Persistence Options**:
 	- **RDB (Redis Database Backup)** - RDB creates point-in-time snapshots of the dataset at specified intervals, offering efficient storage with minimal performance impact, making it suitable for periodic backups but with potential data loss between snapshots.
 	- **AOF (Append-Only File)** - AOF logs every write operation to disk, providing higher data durability by allowing finer-grained recovery, though it can be more resource-intensive.
+- **Typical use cases**:
+	- **Caching** (query results, API responses, sessions)
+	- **Real-time messaging** (via Pub/Sub or Streams)
+	- **Rate limiting** (token bucket, sliding window)
+	- **Queue systems** (using lists or streams)
+	- **Leaderboard / Ranking** (with sorted sets)
+	- **Distributed locks** (e.g., with Redlock algorithm)
+
 
 ---

@@ -35,3 +35,21 @@ Typical use cases:
 
 ---
 
+## KRaft and ZooKeeper
+
+- **ZooKeeper**
+	- **Role**: Originally, Kafka relied on **Apache ZooKeeper** to manage cluster metadata such as broker membership, topic configurations, partition assignments, and controller election.
+	- **Challenges**:
+	    - Operational complexity (separate ZooKeeper cluster).
+	    - Latency and inconsistency issues.
+	    - Difficult to scale and maintain.
+- **KRaft (Kafka Raft Metadata Mode)**
+	- **Introduced**: As part of Kafka’s effort to remove the dependency on ZooKeeper.
+	- **Based on**: A Raft consensus protocol implementation built into Kafka.
+	- **Key Features**:
+	    - Kafka brokers themselves manage metadata.
+	    - One broker acts as the **controller** (leader), replicating metadata logs to others.
+	    - Improved consistency, scalability, and simpler architecture.
+	    - Easier deployment (no separate ZooKeeper cluster).
+
+---

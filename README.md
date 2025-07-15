@@ -1,11 +1,12 @@
 # Learning & Knowledge Hub
 
-This repository contains a centralized place of storage for my notes regarding different software engineering concepts, topics and technologies and interview preparation cheatsheets.
+This repository contains a centralized place of storage for my notes & resources I find valuable in regards to different software engineering concepts, topics and technologies.
+
+The repository is made for the Obisidian MD Reader and uses its rich file links, so in order for the navigation between files to properly work, grab a copy of the repository and boot it as a Vault in Obsidian.
 
 ---
-## Topics
 
-The sections of most of these topics were extracted from [roadmap.sh](https://roadmap.sh) roadmaps.
+## Topics
 
 - [Computer Science](computer-science.md)
 - [Software Design and Architecture](software-design-and-architecture.md)
@@ -13,12 +14,14 @@ The sections of most of these topics were extracted from [roadmap.sh](https://ro
 - [Backend Software Engineering](backend-software-engineering.md)
 
 ---
+
 ## Languages
 
 - [Structured Query Language (SQL)](structured-query-language.md)
 - [NodeJS](nodejs.md)
 
 ---
+
 ## Technologies
 
 - [ExpressJS](express.md)
@@ -28,6 +31,7 @@ The sections of most of these topics were extracted from [roadmap.sh](https://ro
 - [Apache Kafka](apache-kafka.md)
 
 ---
+
 ## Resources
 
 - https://awesome-architecture.com/ (Curated list of awesome articles and resources to learn and practice software architecture, patterns and principles)
