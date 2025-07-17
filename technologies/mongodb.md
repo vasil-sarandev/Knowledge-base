@@ -49,3 +49,12 @@ For most MongoDB use cases, **denormalized (embedded) models are recommended**, 
 [Official Reference for Schema Design / Data Modeling - MongoDB](https://www.mongodb.com/docs/manual/data-modeling/)
 
 ---
+## Atomicity and Transactions
+
+While MongoDB doesn't strongly adhere to the ACID model, a write operation is [atomic](https://www.mongodb.com/docs/manual/reference/glossary/#std-term-atomic-operation) on the level of a single document, even if the operation modifies multiple values. When multiple update commands happen in parallel, each individual command ensures that the query condition still matches.
+
+For
+
+To guarantee that concurrent update commands do not conflict with each other, you can specify the expected current value of a field in the update filter.
+
+---
