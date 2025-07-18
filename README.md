@@ -33,6 +33,10 @@ This repository also features an [Example Study Plan](example-study-plan.md) tha
 - [Docker](docker.md)
 - [Redis](redis.md)
 - [Apache Kafka](apache-kafka.md)
+- [Turborepo](turborepo.md)
+- [React](react.md)
+- [Redux & Redux Toolkit](redux-rtk.md)
+- [NextJS](nextjs.md)
 
 ---
 ## Resources
